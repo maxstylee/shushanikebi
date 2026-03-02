@@ -1,0 +1,27 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,700,400&display=swap");
+
+// ცვლადები
+$primary-radius: 1rem;
+$primary-theme-color: rgba(6, 6, 6, 1);
+$primary-text-background: rgb(17, 17, 17);
+$primary-text-color: rgba(137, 137, 137, 1);
+$player-background: rgb(51, 56, 66);
+
+body {
+  background-color: $primary-theme-color;
+  font-family: "Satoshi";
+  font-weight: 400;
+  padding: 1rem 1rem 0 3.4rem;
+}
+
+.content-wrapper {
+  display: grid;
+  padding-bottom: 1.2rem;
+  grid-template-columns: 26rem 1fr;
+  grid-template-rows: 5rem 1fr 8rem;
+  height: 99vh;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+}

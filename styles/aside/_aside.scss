@@ -1,0 +1,32 @@
+@use "../abstracts/default" as d;
+
+.aside-wrapper {
+  grid-area: sidebar;
+  width: 26rem;
+  padding: 1rem 0 0 0;
+  .pinned-music {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    padding: 1.2rem;
+  }
+  .aside-library {
+    margin-bottom: 4.5rem;
+  }
+  li {
+    margin-bottom: 3.2rem;
+    position: relative;
+  }
+  a {
+    color: d.$primary-text-color;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+
+    img {
+      width: 2rem;
+      margin-right: 2.2rem;
+    }
+  }
+}

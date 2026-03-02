@@ -1,0 +1,46 @@
+@use "../abstracts/default" as d;
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 10px 0 5px 0;
+  column-gap: 5px;
+  overflow-x: hidden;
+}
+.main-container.active {
+  grid-template-columns: 1fr 358px;
+}
+.friend-list {
+  width: 358px;
+  background-color: white;
+  font-size: 30px;
+  display: none;
+  opacity: 50%;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(32, 32, 32);
+  background-color: d.$primary-theme-color;
+  border-radius: d.$primary-radius;
+  padding: 10px;
+}
+.friend-list.active {
+  display: block;
+}
+
+.main-content {
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: d.$primary-radius;
+  padding: 2px;
+  width: calc(100vw - 304px);
+  overflow-y: auto;
+
+}
+.main-content.active {
+  width: calc(100vw - 640px);
+}
+
+#music-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: auto;
+}

@@ -1,0 +1,169 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,700,400&display=swap");
+body {
+  background-color: rgb(6, 6, 6);
+  font-family: "Satoshi";
+  font-weight: 400;
+  padding: 1rem 1rem 0 3.4rem;
+}
+
+.content-wrapper {
+  display: grid;
+  padding-bottom: 1.2rem;
+  grid-template-columns: 26rem 1fr;
+  grid-template-rows: 5rem 1fr 8rem;
+  height: 99vh;
+  grid-template-areas: "sidebar header" "sidebar main" "sidebar footer";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-section {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(51, 56, 66);
+  border-radius: 1rem;
+}
+
+.header-section nav,
+.header-section nav ul {
+  display: flex;
+}
+
+.header-section nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.header-section nav li {
+  display: flex;
+}
+.header-section nav ul:first-of-type li {
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+}
+.header-section nav ul:first-of-type li a {
+  width: 21rem;
+}
+.header-section nav ul:first-of-type .header-home {
+  background-color: rgb(17, 17, 17);
+}
+.header-section nav ul:last-of-type {
+  width: 24.5rem;
+  justify-content: space-between;
+}
+.header-section nav ul:last-of-type img {
+  margin: 0;
+}
+
+.header-section nav a {
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-section nav a img {
+  margin-right: 1.8rem;
+}
+
+.aside-wrapper {
+  grid-area: sidebar;
+  width: 26rem;
+  padding: 1rem 0 0 0;
+}
+.aside-wrapper .pinned-music {
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  padding: 1.2rem;
+}
+.aside-wrapper .aside-library {
+  margin-bottom: 4.5rem;
+}
+.aside-wrapper li {
+  margin-bottom: 3.2rem;
+  position: relative;
+}
+.aside-wrapper a {
+  color: rgb(137, 137, 137);
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.aside-wrapper a img {
+  width: 2rem;
+  margin-right: 2.2rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 10px 0 5px 0;
+  column-gap: 5px;
+  overflow-x: hidden;
+}
+
+.main-container.active {
+  grid-template-columns: 1fr 358px;
+}
+
+.friend-list {
+  width: 358px;
+  background-color: white;
+  font-size: 30px;
+  display: none;
+  opacity: 50%;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(32, 32, 32);
+  background-color: rgb(6, 6, 6);
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.friend-list.active {
+  display: block;
+}
+
+.main-content {
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 1rem;
+  padding: 2px;
+  width: calc(100vw - 304px);
+  overflow-y: auto;
+}
+
+.main-content.active {
+  width: calc(100vw - 640px);
+}
+
+#music-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
