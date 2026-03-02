@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <title>SHUSHANIKI</title>
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <aside class="aside-wrapper">
+      <nav>
+        <ul>
+          <li class="aside-library">
+            <a href="">
+              <img src="../asset/icons/Library.svg" alt="Library" />
+              My Library
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Pins.svg" alt="Pins" />
+              Pins
+              <img class="pinned-music" src="../asset/icons/right-arrow.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Playlist.svg" alt="Playlist" />
+              Playlist
+              <img class="pinned-music" src="../asset/icons/right-arrow.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Liked songs.svg" alt="Liked songs" />
+              Liked songs
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Saves.svg" alt="Saves" />
+              Saves
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Albums.svg" alt="Albums" />
+              Albums
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Folders.svg" alt="Folders" />
+              Folders
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Podcasts.svg" alt="Podcasts" />
+              Podcasts
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Audiobooks.svg" alt="Audiobooks" />
+              Audiobooks
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Artists.svg" alt="Artists" />
+              Artists
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <header class="header-section">
+      <nav>
+        <ul>
+          <li class="header-home">
+            <a href="">
+              <img src="../asset/icons/Home-active.svg" alt="Home" />
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Discover.svg" alt="Discover" />
+              Discover
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Search.svg" alt="Search" />
+              Search
+            </a>
+          </li>
+        </ul>
+
+        <!-- header navigation on left -->
+        <ul>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Notification.svg" alt="Notification" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/block.svg" alt="block" />
+            </a>
+          </li>
+          <li id="friends">
+            <a href="#">
+              <img src="../asset/icons/Groups.svg" alt="Groups" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Settings.svg" alt="Settings" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../asset/icons/Sprite.svg" alt="Sprite" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- გვანცას კოდი აქედან იწყება -->
+    <main class="main-container">
+    <section class="main-content">
+  
+        <section class="home__top">
+
+            <div class="home__tabs">
+                <button class="home__tab home__tab--active">All</button>
+                <button class="home__tab">Music</button>
+                <button class="home__tab">Podcasts</button>
+                <button class="home__tab">Audiobooks</button>
+            </div>
+
+            <button class="icon-btn">
+                <img src="../asset/icons/filter.svg" alt="Filter">
+            </button>
+
+        </section>
+
+
+        <!-- Made For You Section -->
+        <section class="madeforu-section">
+
+            <div class="madeforu-section__header">
+                <h2 class="madeforu-section__title">Made For You</h2>
+
+                <div class="madeforu-section__actions">
+
+                    <button class="icon-btn">
+                    <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+                    </button>
+
+                    <button class="icon-btn">
+                    <img src="../asset/icons/next-arrow.svg" alt="Next">
+                    </button>
+
+                    <button class="icon-btn">
+                    <img src="../asset/icons/threedots.svg" alt="More">
+                    </button>
+
+                </div>
+            </div>   
+            
+             <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
+
+            <div class="card-grid">
+
+                <!-- Card 1 -->
+                <div class="music-card">
+                    <div class="music-card__image">
+                        <img src="../asset/images/discover weekly.svg" alt="Discover Weekly">
+                    </div>
+
+                    <div class="music-card__content">
+                        <h3 class="music-card__title">Discover Weekly</h3>
+                        <span class="music-card__badge">50</span>
+                    </div>
+
+                    <p class="music-card__description">
+                    Your weekly mixtape of fresh music.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="music-card">
+                    <div class="music-card__image">
+                    <img src="../asset/images/daily mix 1.svg" alt="Daily Mix 1">
+                    </div>
+
+                    <div class="music-card__content">
+                        <h3 class="music-card__title">Daily Mix 1</h3>
+                        <span class="music-card__badge">50</span>
+                    </div>
+
+                    <p class="music-card__description">
+                    Linkin Park, System Of A Down and more.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+    
+    
+    </section>
+    <section class="friend-list">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </section>
+    </main>
+
+
+    <footer></footer>
+  </div>
+  <script src="../script.js"></script>
+  <script src="../data.js"></script>
+</body>
+
+</html>

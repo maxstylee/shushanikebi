@@ -3,7 +3,13 @@ body {
   background-color: rgb(6, 6, 6);
   font-family: "Satoshi";
   font-weight: 400;
+  letter-spacing: 3%;
   padding: 1rem 1rem 0 3.4rem;
+}
+body button {
+  font-family: "Satoshi";
+  font-weight: 400;
+  letter-spacing: 3%;
 }
 
 .content-wrapper {
@@ -164,6 +170,69 @@ footer {
   flex-direction: row;
   gap: 10px;
   overflow: auto;
+}
+
+.main-content {
+  padding: 1.2rem 2.5rem;
+}
+
+.home__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+
+.home__tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.home__tab {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.home__tab:hover {
+  background-color: #3a3a3a;
+}
+.home__tab--active {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.madeforu-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.2rem;
+}
+
+.madeforu-section__title {
+  color: rgb(224, 224, 224);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.madeforu-section__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
