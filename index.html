@@ -115,7 +115,8 @@
           </li>
           <li id="friends">
             <a href="#">
-              <img src="./asset/icons/Groups.svg" alt="Groups" />
+              <img src="./asset/icons/Groups.svg" alt="Friend List" />
+              <img src="./asset/icons/Groups-active.svg" alt="Friend List" class="friend-list-active" />
             </a>
           </li>
           <li>
@@ -133,14 +134,72 @@
     </header>
     <main class="main-container">
       <section class="main-content">
-        <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
+
+
       </section>
       <section class="friend-list">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <div class="friend-list-action">
+          <p>Friends Activity</p>
+          <div class="action">
+            <img src="./asset/icons/add-friend.svg" alt="Add Friend">
+            <img src="./asset/icons/close.svg" alt="Close" id="close-btn">
+          </div>
+        </div>
+        <ul class="friend-list-wrapper">
+          <li>
+            <div class="friend-profile-image">
+              <img src="./asset/images/friend-image-red.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">FriendlyMusicListener</p>
+              <span>
+                <img src="./asset/icons/vector-green.svg" alt="listening">
+                <p class="music-name">Goosebumps</p>
+                <p class="music-style">&#8226; Travis Scott</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="./asset/images/friend-image-blue.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">AverageMusicEnjoyer</p>
+              <span>
+                <img src="./asset/icons/vector-green.svg" alt="listening">
+                <p class="music-name">Get Lucky</p>
+                <p class="music-style">&#8226; Daft Punk</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="./asset/images/friend-image-green.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">MusicEnthusiast</p>
+              <span>
+                <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                <p class="music-style offline">1h</p>
+                <p class="music-name">would he</p>
+                <p class="music-style">&#8226; joji</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="./asset/images/friend-image-red.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">IListenToMusic56</p>
+              <span>
+                <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                <p class="music-style offline">6h</p>
+                <p class="music-name">Rockstar</p>
+                <p class="music-style">&#8226; Post Malone</p>
+              </span>
+            </div>
+          </li>
         </ul>
       </section>
     </main>

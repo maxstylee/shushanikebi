@@ -247,9 +247,6 @@ let container = document.getElementById("music-container");
 // თითოეული ობიექტისთვის ვქმნით HTML კოდს
 musicData.forEach((item) => {
   container.innerHTML += `
-       <div> 
-       <img src="${item.image}" alt="" />
-       <p>${item.title}</p>
-       </div>
+      
     `;
 });
