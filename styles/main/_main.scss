@@ -3,44 +3,98 @@
 .main-container {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin: 10px 0 5px 0;
-  column-gap: 5px;
+  margin: 1rem 0 0.5rem 0;
+  column-gap: 0.5rem;
   overflow-x: hidden;
 }
 .main-container.active {
-  grid-template-columns: 1fr 358px;
+  grid-template-columns: 1fr 35.8rem;
 }
 .friend-list {
-  width: 358px;
+  width: 33rem;
   background-color: white;
-  font-size: 30px;
-  display: none;
-  opacity: 50%;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(32, 32, 32);
+  font-size: 3rem;
+  border: 0.1rem solid rgb(32, 32, 32);
   background-color: d.$primary-theme-color;
   border-radius: d.$primary-radius;
-  padding: 10px;
+  padding: 2.1rem;
 }
-.friend-list.active {
+
+#friends .friend-list-active {
+  display: none;
+}
+#friends.active .friend-list-active {
   display: block;
 }
-
+#friends.active img {
+  display: none;
+}
+.friend-list-action {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.5rem;
+  p {
+    color: d.$primary-light-text-color;
+    font-size: 1.6rem;
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+.friend-list-wrapper {
+  li {
+    display: flex;
+    margin-bottom: 2.5rem;
+  }
+  .friend-profile-image {
+    margin-right: 12px;
+  }
+}
+.info-about-friend {
+  .friend-name {
+    font-size: 1.2rem;
+    color: d.$primary-light-text-color;
+    margin-bottom: 1rem;
+  }
+  .music-name {
+    color: d.$primary-light-text-color;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  .music-style {
+    font-size: 1.4rem;
+    color: d.$primary-text-color;
+    margin-right: 1.5rem;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-right: 1.5rem;
+    }
+  }
+}
 .main-content {
-  border: 1px solid rgb(32, 32, 32);
+  border: 0.1rem solid rgb(32, 32, 32);
   border-radius: d.$primary-radius;
-  padding: 2px;
-  width: calc(100vw - 304px);
+  padding: 0.2rem;
+  width: calc(100vw - 30.4rem);
   overflow-y: auto;
-
+  transition: width 0.3s ease-in-out;
 }
 .main-content.active {
-  width: calc(100vw - 640px);
+  width: calc(100vw - 64rem);
 }
-
 #music-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 1rem;
   overflow: auto;
 }
