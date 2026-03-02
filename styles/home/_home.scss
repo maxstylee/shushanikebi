@@ -53,3 +53,43 @@
   align-items: center;
   gap: 1.6rem;
 }
+
+.music-card {
+  cursor: pointer;
+}
+
+.music-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.music-card__image {
+  margin-bottom: 0.6rem;
+
+  img {
+    border-radius: 1rem;
+    display: block;
+  }
+}
+
+.music-card__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: d.$primary-light-text-color; 
+}
+
+.music-card__badge {
+  font-size: 1.4rem; 
+  color: #CE6E9A;
+}
+
+.music-card__description {
+  font-size: 1.2rem;
+  color: d.$primary-text-color;
+}
+
+.music-card {
+  position: relative;
+}

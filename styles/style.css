@@ -235,4 +235,43 @@ footer {
   gap: 1.6rem;
 }
 
+.music-card {
+  cursor: pointer;
+}
+
+.music-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.music-card__image {
+  margin-bottom: 0.6rem;
+}
+.music-card__image img {
+  border-radius: 1rem;
+  display: block;
+}
+
+.music-card__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+
+.music-card__badge {
+  font-size: 1.4rem;
+  color: #CE6E9A;
+}
+
+.music-card__description {
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+}
+
+.music-card {
+  position: relative;
+}
+
 /*# sourceMappingURL=style.css.map */
