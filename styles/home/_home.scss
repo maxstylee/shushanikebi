@@ -35,20 +35,20 @@
   justify-content: center;
 }
 
-.madeforu-section__header {
+.content-section__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.2rem;
 }
 
-.madeforu-section__title {
+.content-section__title {
   color: d.$primary-light-text-color; 
   font-size: 2rem;
   font-weight: 700;
 }
 
-.madeforu-section__actions {
+.content-section__actions {
   display: flex;
   align-items: center;
   gap: 1.6rem;

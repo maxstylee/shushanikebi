@@ -258,7 +258,6 @@ musicData.forEach((item) => {
                     </div>
 
                     <p class="music-card__description">
-
                     ${item.author}
                     </p>
        </div>
