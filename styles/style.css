@@ -297,6 +297,8 @@ footer {
 
 .music-card {
   cursor: pointer;
+  position: relative;
+  width: 170px;
 }
 
 .music-card__content {
@@ -322,16 +324,12 @@ footer {
 
 .music-card__badge {
   font-size: 1.4rem;
-  color: #CE6E9A;
+  color: #ce6e9a;
 }
 
 .music-card__description {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
-}
-
-.music-card {
-  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
