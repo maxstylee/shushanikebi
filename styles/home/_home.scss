@@ -59,6 +59,8 @@
 
 .music-card {
   cursor: pointer;
+  position: relative;
+  width: 170px;
 }
 
 .music-card__content {
@@ -93,6 +95,43 @@
   color: d.$primary-text-color;
 }
 
-.music-card {
+.music-card--artist {
+  text-align: center;
+}
+
+.music-card--artist .music-card__image {
+  margin-bottom: 1.2rem;
+
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.music-card__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.music-card__contents--podcast {
   position: relative;
+  background-color: d.$primary-text-background;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.music-card__contents--podcast::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  bottom: 0px;
+  width: 0.4rem;
+  background-color: rgba(133, 197, 133, 0.6);
+
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
 }
