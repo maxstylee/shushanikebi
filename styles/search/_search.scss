@@ -1,0 +1,62 @@
+@use "../abstracts/default" as d;
+
+.search-page__section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-page__section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: d.$primary-light-text-color;
+}
+
+.search-page__recent-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.recent-card {
+  width: 170px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.recent-card__image {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.recent-card__remove {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: d.$primary-text-background;
+  color: d.$primary-text-color;
+  font-size: 2.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-card__remove:hover {
+  color: d.$primary-light-text-color;
+}
+
+.recent-card__title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: d.$primary-light-text-color;
+}
+
+.recent-card__subtitle {
+  font-size: 1.2rem;
+  color: d.$primary-text-color;
+}
