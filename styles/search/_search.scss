@@ -16,6 +16,7 @@
 .search-page__recent-list {
   display: flex;
   gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .recent-card {
@@ -60,3 +61,79 @@
   font-size: 1.2rem;
   color: d.$primary-text-color;
 }
+
+/*-- browse all sectction starts here --*/
+
+.search-page__main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+  color: d.$primary-light-text-color;
+}
+
+.search-page__browse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.search-page__browse-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: d.$primary-light-text-color;
+}
+
+.search-page__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/*-- Discover row --*/
+
+.search-page__browse-section {
+  margin-bottom: 2rem;
+}
+
+.category-card {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category-card--blue {
+  background-color: rgba(30, 50, 100, 1);
+}
+
+.category-card__title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: d.$primary-light-text-color;
+  padding: 2rem;
+}
+
+.category-card__image {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 100px;
+  transform: rotate(25deg);
+  transition: transform 0.3s ease, bottom 0.3s ease, right 0.3s ease;
+}
+
+.category-card__image img {
+  border-radius: 0.5rem;  
+  width: 100%;
+  display: block;
+}
+
+.category-card:hover .category-card__image {
+  transform: rotate(0deg);
+  bottom: 0;
+  right: 0;
+}
+
+
