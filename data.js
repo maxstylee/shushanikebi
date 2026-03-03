@@ -58,6 +58,14 @@ let musicData = [
   },
   {
     id: "music8",
+    title: "Fall Out Boy",
+    author: "Red Hot Chili Peppers, R.E.M., Guns N' Roses...",
+    number: "50",
+    color: "rgb(163, 230, 53)",
+    image: "../asset/images/fall-out-boy.svg",
+  },
+  {
+    id: "music9",
     title: "Adele Radio",
     author: "With Sia, Sam Smith, P!nk and more",
     number: "50",
@@ -65,7 +73,7 @@ let musicData = [
     image: "../asset/images/Adele.svg",
   },
   {
-    id: "music9",
+    id: "music10",
     title: "Daft Punk Radio",
     author: "With Justice, The Chemical Brothers, ...",
     number: "50",
@@ -73,7 +81,7 @@ let musicData = [
     image: "../asset/images/Daft Punk.svg",
   },
   {
-    id: "music10",
+    id: "music11",
     title: "ABBA Radio",
     author: "With Honey M., Bee Gees, Bonnie Tyler, and more",
     number: "50",
@@ -84,14 +92,6 @@ let musicData = [
 
 // YOUR TOP MIXES data start here
 let musicDataMix = [
-  {
-    id: "music11",
-    title: "Fall Out Boy",
-    author: "Red Hot Chili Peppers, R.E.M., Guns N' Roses...",
-    number: "50",
-    color: "rgb(163, 230, 53)",
-    image: "../asset/images/fall-out-boy.svg",
-  },
   {
     id: "music12",
     title: "Rock Mix",
@@ -162,15 +162,15 @@ let musicDataMix = [
 // favorite artist data start here
 let favoriteArtist = [
   {
-    image: "./asset/images/guns-roses.svg",
+    image: "../asset/images/guns-roses.svg",
     title: "Guns N' Roses",
   },
   {
-    image: "./asset/images/Daft-Punk.svg",
+    image: "../asset/images/Daft-Punk.svg",
     title: "Daft Punk",
   },
   {
-    image: "./asset/images/David-Bowie.svg",
+    image: "../asset/images/David-Bowie.svg",
     title: "David Bowie",
   },
 ]; // favorite artist data finish here
@@ -178,17 +178,17 @@ let favoriteArtist = [
 // audiobooks data start here
 let audioBooks = [
   {
-    image: "./asset/images/halo1.svg",
+    image: "../asset/images/halo1.svg",
     title: "Halo: The Flood",
     author: "William C. Dietz",
   },
   {
-    image: "./asset/images/halo2.svg",
+    image: "../asset/images/halo2.svg",
     title: "Halo: First Strike",
     author: "Eric Nylund",
   },
   {
-    image: "./asset/images/halo3.svg",
+    image: "../asset/images/halo3.svg",
     title: "Halo: Ghosts of Onyx",
     author: "Eric Nylund",
   },
@@ -197,7 +197,7 @@ let audioBooks = [
 // podcast data start here
 let podcasts = [
   {
-    image: "./asset/images/halo3.svg",
+    image: "../asset/images/halo3.svg",
     title: "Halo: Ghosts of Onyx",
     author: "Eric Nylund",
   },
@@ -243,7 +243,7 @@ let cardData = [
     color: "rgba(186, 93, 7, 1)",
     image: "../asset/images/Decades.png",
   },
-  
+
   //
 
   {
@@ -296,16 +296,13 @@ musicData.map((item) => {
                     <div class="music-card__image">
                         <img src="${item.image}" alt="music image">
                     </div>
-
                     <div class="music-card__content">
                         <h3 class="music-card__title">${item.title}</h3>
                         <span class="music-card__badge" style="color: ${item.color}">${item.number}</span>
                     </div>
-
                     <p class="music-card__description">
                     ${item.author}
                     </p>
        </div>
     `;
 });
-
