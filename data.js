@@ -1,4 +1,5 @@
-const musicData = [
+// MADE FOR U data start here
+let musicData = [
   {
     id: "music1",
     title: "Discover Weekly",
@@ -79,12 +80,12 @@ const musicData = [
     color: "rgba(166, 186, 211, 1)",
     image: "./asset/images/ABBA.svg",
   },
+]; // MADE FOR U data finished here
 
-  // MADE FOR U section finished here
-
-  // YOUR TOP MIXES sextion starting here
+// YOUR TOP MIXES data start here
+let musicDataMix = [
   {
-    id: "music9",
+    id: "music11",
     title: "Fall Out Boy",
     author: "Red Hot Chili Peppers, R.E.M., Guns N' Roses...",
     number: "50",
@@ -92,7 +93,7 @@ const musicData = [
     image: "./asset/images/fall-out-boy.svg",
   },
   {
-    id: "music10",
+    id: "music12",
     title: "Rock Mix",
     author: "MF DOOM, Daft Punk, The Chainsmokers, and more",
     number: "50",
@@ -101,7 +102,7 @@ const musicData = [
   },
 
   {
-    id: "music11",
+    id: "music13",
     title: "Chill Mix",
     author: "Red Hot Chili Peppers, R.E.M., Guns N' Roses...",
     number: "50",
@@ -109,7 +110,7 @@ const musicData = [
     image: "./asset/images/chill-mix.svg",
   },
   {
-    id: "music12",
+    id: "music14",
     number: "50",
     image: "./asset/images/pop-mix.svg",
     title: "Pop Mix",
@@ -117,7 +118,7 @@ const musicData = [
     author: "Daft Punk, MGMT, Muse, and more",
   },
   {
-    id: "music13",
+    id: "music15",
     number: "50",
     image: "./asset/images/Daft-Punk-Mix.svg",
     title: "Daft Punk Mix",
@@ -125,7 +126,7 @@ const musicData = [
     author: "The Turtles, Van Morrison, ABBA and more",
   },
   {
-    id: "music14",
+    id: "music16",
     number: "50",
     image: "./asset/images/Happy-Mix.svg",
     title: "Happy Mix",
@@ -133,7 +134,7 @@ const musicData = [
     author: "Soft Cell, The Who and The Clash",
   },
   {
-    id: "music15",
+    id: "music17",
     number: "50",
     image: "./asset/images/David-Bowie-Mix.svg",
     title: "David Bowie Mix",
@@ -141,7 +142,7 @@ const musicData = [
     author: "Kylie Minogue, Charli XCX, Cage The Elephant...",
   },
   {
-    id: "music16",
+    id: "music18",
     number: "50",
     image: "./asset/images/Upbeat-Mix.svg",
     title: "Upbeat Mix",
@@ -149,16 +150,59 @@ const musicData = [
     author: "Chuck Berry, Skeeter Davis, Van Morrison and more",
   },
   {
-    id: "music17",
+    id: "music19",
     number: "50",
     image: "./asset/images/60s-Mix.svg",
     title: "60s Mix",
     color: "rgba(221, 19, 139, 1)",
     author: "Chuck Berry, Skeeter Davis, Van Morrison and more",
   },
-];
+]; // YOUR TOP MIXES sextion finish here
 
-const cardData = [
+// favorite artist data start here
+let favoriteArtist = [
+  {
+    image: "./asset/images/guns-roses.svg",
+    title: "Guns N' Roses",
+  },
+  {
+    image: "./asset/images/Daft-Punk.svg",
+    title: "Daft Punk",
+  },
+  {
+    image: "./asset/images/David-Bowie.svg",
+    title: "David Bowie",
+  },
+]; // favorite artist data finish here
+
+// audiobooks data start here
+let audioBooks = [
+  {
+    image: "./asset/images/halo1.svg",
+    title: "Halo: The Flood",
+    author: "William C. Dietz",
+  },
+  {
+    image: "./asset/images/halo2.svg",
+    title: "Halo: First Strike",
+    author: "Eric Nylund",
+  },
+  {
+    image: "./asset/images/halo3.svg",
+    title: "Halo: Ghosts of Onyx",
+    author: "Eric Nylund",
+  },
+]; // audiobooks data finish here
+
+// podcast data start here
+let podcasts = [
+  {
+    image: "./asset/images/halo3.svg",
+    title: "Halo: Ghosts of Onyx",
+    author: "Eric Nylund",
+  },
+];
+let cardData = [
   {
     title: "Made For You",
     color: "rgba(30, 50, 100, 1)",
@@ -199,6 +243,7 @@ const cardData = [
     color: "rgba(186, 93, 7, 1)",
     image: "./asset/images/Decades.png",
   },
+  
   //
 
   {
@@ -245,8 +290,20 @@ const cardData = [
 
 let container = document.getElementById("music-container");
 // თითოეული ობიექტისთვის ვქმნით HTML კოდს
-musicData.forEach((item) => {
+musicData.map((item) => {
   container.innerHTML += `
-      
+       <div>
+    <img src="${item.image}" alt="something">
+    <p> ${item.title}</p>
+  </div>
+    `;
+});
+
+musicData.slice(8).map((item) => {
+  container.innerHTML += `
+       <div>
+    <img src="${item.image}" alt="something">
+    <p> ${item.title}</p>
+  </div>
     `;
 });
