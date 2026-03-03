@@ -8,6 +8,22 @@ $primary-text-color: rgba(137, 137, 137, 1);
 $primary-light-text-color: rgb(224, 224, 224);
 $player-background: rgb(51, 56, 66);
 
+@mixin primary-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: $primary-text-background;
+  color: $primary-light-text-color;
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #3a3a3a;
+  }
+}
+
 body {
   background-color: $primary-theme-color;
   font-family: "Satoshi";
