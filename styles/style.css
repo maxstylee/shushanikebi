@@ -180,7 +180,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.8rem;
 }
 
 .home__tabs {
@@ -214,6 +213,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content-section {
+  margin-top: 3rem;
 }
 
 .content-section__header {
