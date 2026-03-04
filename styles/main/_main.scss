@@ -92,9 +92,4 @@
 .main-content.active {
   width: calc(100vw - 64rem);
 }
-#music-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  overflow: auto;
-}
+

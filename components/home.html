@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
-    <aside class="aside-wrapper">
+
+  <div class="content-wrapper"> <!-- this will wrap all the content on screen -->
+    <aside class="aside-wrapper"> <!-- this is menu navigation on left side-->
+
       <nav>
         <ul>
           <li class="aside-library">
@@ -78,7 +80,8 @@
         </ul>
       </nav>
     </aside>
-    <header class="header-section">
+
+    <header class="header-section"> <!-- this is menu navigation on top header -->
       <nav>
         <ul>
           <li class="header-home">
@@ -135,20 +138,20 @@
 
     <!-- გვანცას კოდი აქედან იწყება -->
     <main class="main-container">
-    <section class="main-content">
-  
+      <section class="main-content">
+
         <section class="home__top">
 
-            <div class="home__tabs">
-                <button class="home__tab home__tab--active">All</button>
-                <button class="home__tab">Music</button>
-                <button class="home__tab">Podcasts</button>
-                <button class="home__tab">Audiobooks</button>
-            </div>
+          <div class="home__tabs">
+            <button class="home__tab home__tab--active">All</button>
+            <button class="home__tab">Music</button>
+            <button class="home__tab">Podcasts</button>
+            <button class="home__tab">Audiobooks</button>
+          </div>
 
-            <button class="icon-btn">
-                <img src="../asset/icons/filter.svg" alt="Filter">
-            </button>
+          <button class="icon-btn">
+            <img src="../asset/icons/filter.svg" alt="Filter">
+          </button>
 
         </section>
 
@@ -156,199 +159,200 @@
         <!-- Made For You Section -->
         <section class="content-section">
 
-            <div class="content-section__header">
-                <h2 class="content-section__title">Made For You</h2>
+          <div class="content-section__header">
+            <h2 class="content-section__title">Made For You</h2>
 
-                <div class="content-section__actions">
-                    <button class="icon-btn">
-                        <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                    </button>
+            <div class="content-section__actions">
+              <button class="icon-btn">
+                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/next-arrow.svg" alt="Next">
-                    </button>
+              <button class="icon-btn">
+                <img src="../asset/icons/next-arrow.svg" alt="Next">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/threedots.svg" alt="More">
-                    </button>
-                </div>
+              <button class="icon-btn">
+                <img src="../asset/icons/threedots.svg" alt="More">
+              </button>
             </div>
-            
-             <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-            <div id="music-container" class="card-grid"></div>
-
+          </div>
+          <div id="music-container" class="card-flex"></div>
         </section>
 
         <!-- Your Top Mixes Section -->
         <section class="content-section">
 
-            <div class="content-section__header">
-                <h2 class="content-section__title">Your Top Mixes</h2>
+          <div class="content-section__header">
+            <h2 class="content-section__title">Your Top Mixes</h2>
 
-                <div class="content-section__actions">
-                    <button class="icon-btn">
-                        <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                    </button>
+            <div class="content-section__actions">
+              <button class="icon-btn">
+                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/next-arrow.svg" alt="Next">
-                    </button>
+              <button class="icon-btn">
+                <img src="../asset/icons/next-arrow.svg" alt="Next">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/threedots.svg" alt="More">
-                    </button>
-                </div>
+              <button class="icon-btn">
+                <img src="../asset/icons/threedots.svg" alt="More">
+              </button>
             </div>
-            
-             <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-            <div id="music-container" class="card-grid"></div>
+          </div>
 
-            <div class="music-card">
-                    <div class="music-card__image">
-                        <img src="../asset/images/rock-mix.svg" alt="music image">
-                    </div>
 
-                    <div class="music-card__content">
-                        <h3 class="music-card__title">Rock Mix</h3>
-                        <span class="music-card__badge">50</span>
-                    </div>
-
-                    <p class="music-card__description">
-                    Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
-                    </p>
-            </div>
+          <div id="top-mixes" class="card-flex"></div>
 
         </section>
 
         <!-- Your favorite artists Section -->
         <section class="content-section">
 
-            <div class="content-section__header">
-                <h2 class="content-section__title">Your favorite artists</h2>
+          <div class="content-section__header">
+            <h2 class="content-section__title">Your favorite artists</h2>
 
-                <div class="content-section__actions">
-                    <button class="icon-btn">
-                        <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                    </button>
+            <div class="content-section__actions">
+              <button class="icon-btn">
+                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/next-arrow.svg" alt="Next">
-                    </button>
+              <button class="icon-btn">
+                <img src="../asset/icons/next-arrow.svg" alt="Next">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/threedots.svg" alt="More">
-                    </button>
-                </div>
+              <button class="icon-btn">
+                <img src="../asset/icons/threedots.svg" alt="More">
+              </button>
             </div>
-            
-             <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-            <div id="music-container" class="card-grid"></div>
+          </div>
 
-            <div class="music-card music-card--artist">
-                <div class="music-card__image">
-                    <img src="../asset/images/Guns n'roses.png" alt="Guns N’ Roses">
-                </div>
-                <h3 class="music-card__title">Guns N’ Roses</h3>
-            </div>
-
+          <div id="favorit-artist" class="card-flex"></div>
         </section>
 
         <!-- Audiobooks for you Section -->
         <section class="content-section">
 
-            <div class="content-section__header">
-                <h2 class="content-section__title">Audiobooks for you</h2>
+          <div class="content-section__header">
+            <h2 class="content-section__title">Audiobooks for you</h2>
 
-                <div class="content-section__actions">
-                    <button class="icon-btn">
-                        <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                    </button>
+            <div class="content-section__actions">
+              <button class="icon-btn">
+                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/next-arrow.svg" alt="Next">
-                    </button>
+              <button class="icon-btn">
+                <img src="../asset/icons/next-arrow.svg" alt="Next">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/threedots.svg" alt="More">
-                    </button>
-                </div>
+              <button class="icon-btn">
+                <img src="../asset/icons/threedots.svg" alt="More">
+              </button>
             </div>
-            
-             <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-            <div id="music-container" class="card-grid"></div>
+          </div>
 
-            <div class="music-card">
-                    <div class="music-card__image">
-                        <img src="../asset/images/halo the flood.svg" alt="music image">
-                    </div>
+          <div id="audio-books" class="card-flex"></div>
 
-                    <div class="music-card__content">
-                        <h3 class="music-card__title">Halo: The Flood</h3>
-                    </div>
-
-                    <p class="music-card__description">
-                    William C. Dietz
-                    </p>
-            </div>
+         
 
         </section>
 
         <!-- Podcasts for you Section -->
         <section class="content-section">
 
-            <div class="content-section__header">
-                <h2 class="content-section__title">Podcasts for you</h2>
+          <div class="content-section__header">
+            <h2 class="content-section__title">Podcasts for you</h2>
 
-                <div class="content-section__actions">
-                    <button class="icon-btn">
-                        <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                    </button>
+            <div class="content-section__actions">
+              <button class="icon-btn">
+                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/next-arrow.svg" alt="Next">
-                    </button>
+              <button class="icon-btn">
+                <img src="../asset/icons/next-arrow.svg" alt="Next">
+              </button>
 
-                    <button class="icon-btn">
-                        <img src="../asset/icons/threedots.svg" alt="More">
-                    </button>
-                </div>
+              <button class="icon-btn">
+                <img src="../asset/icons/threedots.svg" alt="More">
+              </button>
             </div>
-            
-             <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-            <div id="music-container" class="card-grid"></div>
-
-            <div class="music-card">
-                <div class="music-card__image">
-                    <img src="../asset/images/anything goes.png" alt="music image">
-                </div>
-
-                <div class="music-card__contents music-card__contents--podcast">
-                    <h3 class="music-card__title">anything goes...</h3>
-                    <p class="music-card__description">
-                        emma chamberlain
-                    </p>
-                </div>
-            </div>
-
+          </div>
+          <div id="podcasst" class="card-grid"></div>
         </section>
-    
-    
-    </section>
-    <section class="friend-list">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+
+
+      </section>
+      <section class="friend-list">
+        <div class="friend-list-action">
+          <p>Friends Activity</p>
+          <div class="action">
+            <img src="../asset/icons/add-friend.svg" alt="Add Friend">
+            <img src="../asset/icons/close.svg" alt="Close" id="close-btn">
+          </div>
+        </div>
+        <ul class="friend-list-wrapper">
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-red.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">FriendlyMusicListener</p>
+              <span>
+                <img src="../asset/icons/vector-green.svg" alt="listening">
+                <p class="music-name">Goosebumps</p>
+                <p class="music-style">&#8226; Travis Scott</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-blue.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">AverageMusicEnjoyer</p>
+              <span>
+                <img src="../asset/icons/vector-green.svg" alt="listening">
+                <p class="music-name">Get Lucky</p>
+                <p class="music-style">&#8226; Daft Punk</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-green.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">MusicEnthusiast</p>
+              <span>
+                <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                <p class="music-style offline">1h</p>
+                <p class="music-name">would he</p>
+                <p class="music-style">&#8226; joji</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-red.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">IListenToMusic56</p>
+              <span>
+                <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                <p class="music-style offline">6h</p>
+                <p class="music-name">Rockstar</p>
+                <p class="music-style">&#8226; Post Malone</p>
+              </span>
+            </div>
+          </li>
         </ul>
-    </section>
+      </section>
     </main>
 
 
     <footer></footer>
   </div>
   <script src="../script.js"></script>
-  <script src="../data.js"></script>
+  <script type="module" src="../data.js"></script>
 </body>
 
 </html>

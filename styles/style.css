@@ -222,13 +222,6 @@ footer {
   width: calc(100vw - 64rem);
 }
 
-#music-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  overflow: auto;
-}
-
 .main-content {
   padding: 1.2rem 2.5rem;
 }
@@ -237,6 +230,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .home__tabs {
@@ -273,7 +267,7 @@ footer {
 }
 
 .content-section {
-  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .content-section__header {
@@ -324,7 +318,7 @@ footer {
 
 .music-card__badge {
   font-size: 1.4rem;
-  color: #CE6E9A;
+  color: #ce6e9a;
 }
 
 .music-card__description {
@@ -369,6 +363,12 @@ footer {
   background-color: rgba(133, 197, 133, 0.6);
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;
+}
+
+.card-flex {
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
 }
 
 .search-page__section-header {
