@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
-    <aside class="aside-wrapper">
+
+  <div class="content-wrapper"> <!-- this will wrap all the content on screen -->
+    <aside class="aside-wrapper"> <!-- this is menu navigation on left side-->
+
       <nav>
         <ul>
           <li class="aside-library">
@@ -78,7 +80,8 @@
         </ul>
       </nav>
     </aside>
-    <header class="header-section">
+
+    <header class="header-section"> <!-- this is menu navigation on top header -->
       <nav>
         <ul>
           <li class="header-home">
@@ -133,89 +136,38 @@
       </nav>
     </header>
 
-
+    <!-- გვანცას კოდი აქედან იწყება -->
     <main class="main-container">
       <section class="main-content">
-        <!-- გვანცას კოდი იწყება აქ -->
-        <section class="library-page">
 
-            <div class="library-page__topbar">
+        <section class="discover__top">
 
-                <!-- Left side -->
-                <div class="library-page__controls">
-
-                    <button class="icon-btn">
-                        <img src="../asset/icons/menu.svg" alt="Menu">
-                    </button>
-
-                    <button class="icon-btn library-page__view-btn is-active">
-                        <img src="../asset/icons/grid.svg" alt="Grid view">
-                    </button>
-
-                    <div class="library-page__sort">
-                        <button class="icon-btn">
-                        <img src="../asset/icons/sort.svg" alt="Sort">
-                        </button>
-                        <span class="library-page__sort-label">Recent</span>
-                    </div>
-
-                    <div class="library-page__group">
-                        <button class="icon-btn">
-                        <img src="../asset/icons/group.svg" alt="Group">
-                        </button>
-                        <span class="library-page__group-label">Group</span>
-                    </div>
-
-                    <button class="icon-btn">
-                        <img src="../asset/icons/search.svg" alt="Search">
-                    </button>
-
-                </div>
-
-                <!-- Right side -->
-                <button class="icon-btn library-page__add-btn">
-                    <img src="../asset/icons/plus.svg" alt="Add">
-                </button>
-
-            </div>
-
+          <div class="discover__tabs">
+            <button class="discover__tab discover__tab--active">Music</button>
+            <button class="discover__tab">EDM</button>
+            <button class="discover__tab">Indie</button>
+            <button class="discover__tab">Pop</button>
+            <button class="discover__tab">Rock</button>
+            <button class="discover__tab">Alt Rock</button>
+            <button class="discover__tab">Country</button>
+            <button class="discover__tab">R&B</button>
+            <button class="discover__tab">Hip-Hop</button>
+            <button class="discover__tab">Podcast</button>
+            <button class="discover__tab">Audiobooks</button>
+          </div>
         </section>
 
-        <section class="library-section">
-            <div class="library-section__cards">
-                <!-- CARD -->
-                <div class="library-card">
+        
 
-                    <div class="library-card__image">
-                        <img src="../asset/images/likedsong.png" alt="Liked songs">
 
-                        <div class="library-card__pin">
-                            <img src="../asset/icons/pinned.svg" alt="Pinned">
-                        </div>
-                    </div>
 
-                    <div class="library-card__content">
-
-                        <div class="library-card__header">
-                            <h3 class="library-card__title">Liked songs</h3>
-                            <span class="library-card__count">8</span>
-                        </div>
-
-                        <p class="library-card__description">
-                        Numb, Crawling, In the End, and more
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- END CARD -->
-            </div>
-        </section>
-        <!-- გვანცას კოდი მთავრდება აქ -->
-
-        <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
+       
 
       </section>
+      <!-- გვანცას კოდი მთავრდება აქ -->
+
+
+
       <section class="friend-list">
         <div class="friend-list-action">
           <p>Friends Activity</p>

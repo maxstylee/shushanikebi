@@ -1,0 +1,11 @@
+@use "../abstracts/default" as d;
+
+.discover__tab {
+  @include d.primary-button;
+
+  &--active {
+    background-color: #ffffff;
+    color: #000;
+  }
+}
+

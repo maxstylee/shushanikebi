@@ -740,4 +740,22 @@ footer {
   height: 18px;
 }
 
+.discover__tab {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.discover__tab:hover {
+  background-color: #3a3a3a;
+}
+.discover__tab--active {
+  background-color: #ffffff;
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
