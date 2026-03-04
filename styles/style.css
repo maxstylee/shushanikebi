@@ -505,4 +505,53 @@ footer {
   right: 0;
 }
 
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort, .library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.library-page__sort-label, .library-page__group-label {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: rgb(17, 17, 17);
+  border-radius: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@use "../abstracts/default" as d;
+
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort,.library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: d.$primary-text-background;
+}
+
+.library-page__sort-label,.library-page__group-label {
+  font-size: 1.4rem;
+  color: d.$primary-text-color;
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: d.$primary-text-background;
+  border-radius: 0.5rem;
+}
