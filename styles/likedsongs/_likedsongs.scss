@@ -1,0 +1,122 @@
+@use "../abstracts/default" as d;
+
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* Right Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort,.library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: d.$primary-text-background;
+}
+
+.library-page__sort-label,.library-page__group-label {
+  font-size: 1.4rem;
+  color: d.$primary-text-color;
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: d.$primary-text-background;
+  border-radius: 0.5rem;
+}
+
+/*** liked songs section starts here ***/
+
+.liked-songs__header,
+.song-row {
+  display: grid;
+  grid-template-columns: 40px 300px 300px 70px 40px;
+  align-items: center;
+  justify-content: start;
+}
+
+.liked-songs__header {
+  font-size: 1.4rem;
+  color: d.$primary-text-color;
+  padding: 1.2rem;
+}
+
+.liked-songs__divider {
+  height: 2px;
+  background-color: d.$primary-text-background;
+  margin-bottom: 2rem;
+}
+
+.song-row {
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.song-row:hover {
+  background-color: d.$primary-text-background;
+
+  .song-row__album {
+    color: d.$primary-light-text-color;
+  }
+}
+
+.song-row__title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-row__title-group img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: block;
+}
+
+.song-row__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  color: d.$primary-light-text-color;
+}
+
+.song-row__number {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: d.$primary-text-color;
+}
+.song-row__album, .song-row__duration, .song-row__artist {
+  font-size: 1.4rem;
+  color: d.$primary-text-color;
+}
+
+.song-row__like img {
+  width: 18px;
+  height: 18px;
+}

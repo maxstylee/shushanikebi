@@ -505,4 +505,239 @@ footer {
   right: 0;
 }
 
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* Left Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort, .library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.library-page__sort-label, .library-page__group-label {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: rgb(17, 17, 17);
+  border-radius: 0.5rem;
+}
+
+/*** library-section starts here ***/
+.library-section__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+/* Card */
+.library-card {
+  width: 170px;
+  cursor: pointer;
+}
+
+/* Image Block */
+.library-card__image {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.library-card__image img {
+  width: 100%;
+  display: block;
+}
+
+/* Pin */
+.library-card__pin {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.library-card__pin img {
+  width: 19px;
+  height: 19px;
+}
+
+/* text */
+.library-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.library-card__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+
+.library-card__count {
+  font-size: 1.4rem;
+  color: rgb(30, 215, 96);
+}
+
+.library-card__description {
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* Right Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort, .library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.library-page__sort-label, .library-page__group-label {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: rgb(17, 17, 17);
+  border-radius: 0.5rem;
+}
+
+/*** liked songs section starts here ***/
+.liked-songs__header,
+.song-row {
+  display: grid;
+  grid-template-columns: 40px 300px 300px 70px 40px;
+  align-items: center;
+  justify-content: start;
+}
+
+.liked-songs__header {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+  padding: 1.2rem;
+}
+
+.liked-songs__divider {
+  height: 2px;
+  background-color: rgb(17, 17, 17);
+  margin-bottom: 2rem;
+}
+
+.song-row {
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.song-row:hover {
+  background-color: rgb(17, 17, 17);
+}
+.song-row:hover .song-row__album {
+  color: rgb(224, 224, 224);
+}
+
+.song-row__title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-row__title-group img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: block;
+}
+
+.song-row__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  color: rgb(224, 224, 224);
+}
+
+.song-row__number {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(137, 137, 137);
+}
+
+.song-row__album, .song-row__duration, .song-row__artist {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+.song-row__like img {
+  width: 18px;
+  height: 18px;
+}
+
 /*# sourceMappingURL=style.css.map */
