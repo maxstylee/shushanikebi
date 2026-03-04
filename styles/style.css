@@ -510,6 +510,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 /* Left Controls */
@@ -552,6 +553,71 @@ footer {
 .library-page__view-btn.is-active {
   background-color: rgb(17, 17, 17);
   border-radius: 0.5rem;
+}
+
+/*** library-section starts here ***/
+.library-section__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+/* Card */
+.library-card {
+  width: 170px;
+  cursor: pointer;
+}
+
+/* Image Block */
+.library-card__image {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.library-card__image img {
+  width: 100%;
+  display: block;
+}
+
+/* Pin */
+.library-card__pin {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.library-card__pin img {
+  width: 19px;
+  height: 19px;
+}
+
+/* text */
+.library-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.library-card__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+
+.library-card__count {
+  font-size: 1.4rem;
+  color: rgb(30, 215, 96);
+}
+
+.library-card__description {
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
 }
 
 /*# sourceMappingURL=style.css.map */

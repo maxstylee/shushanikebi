@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 /* Left Controls */
@@ -47,4 +48,73 @@
 .library-page__view-btn.is-active {
   background-color: d.$primary-text-background;
   border-radius: 0.5rem;
+}
+
+/*** library-section starts here ***/
+
+.library-section__cards {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.1rem;            
+}
+
+/* Card */
+.library-card {
+  width: 170px;
+  cursor: pointer;
+}
+
+/* Image Block */
+.library-card__image {
+  position: relative;
+  margin-bottom: 0.6rem;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Pin */
+.library-card__pin {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: d.$primary-text-background;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+/* text */
+.library-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.library-card__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: d.$primary-light-text-color;
+}
+
+.library-card__count {
+  font-size: 1.4rem;
+  color: rgba(30, 215, 96, 1);
+}
+
+.library-card__description {
+  font-size: 1.2rem;
+  color: d.$primary-text-color;
 }
