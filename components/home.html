@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
-    <aside class="aside-wrapper">
+
+  <div class="content-wrapper"> <!-- this will wrap all the content on screen -->
+    <aside class="aside-wrapper"> <!-- this is menu navigation on left side-->
+
       <nav>
         <ul>
           <li class="aside-library">
@@ -78,7 +80,8 @@
         </ul>
       </nav>
     </aside>
-    <header class="header-section">
+
+    <header class="header-section"> <!-- this is menu navigation on top header -->
       <nav>
         <ul>
           <li class="header-home">
@@ -173,10 +176,7 @@
               </button>
             </div>
           </div>
-
-          <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-          <div id="music-container" class="card-grid"></div>
-
+          <div id="music-container" class="card-flex"></div>
         </section>
 
         <!-- Your Top Mixes Section -->
@@ -200,23 +200,8 @@
             </div>
           </div>
 
-          <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-          <div id="music-container" class="card-grid"></div>
 
-            <div class="music-card">
-                    <div class="music-card__image">
-                        <img src="../asset/images/rock-mix.svg" alt="music image">
-                    </div>
-
-                    <div class="music-card__content">
-                        <h3 class="music-card__title">Rock Mix</h3>
-                        <span class="music-card__badge">50</span>
-                    </div>
-
-                    <p class="music-card__description">
-                    Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
-                    </p>
-            </div>
+          <div id="top-mixes" class="card-flex"></div>
 
         </section>
 
@@ -241,16 +226,7 @@
             </div>
           </div>
 
-          <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-          <div id="music-container" class="card-grid"></div>
-
-            <div class="music-card music-card--artist">
-                <div class="music-card__image">
-                    <img src="../asset/images/Guns n'roses.png" alt="Guns N’ Roses">
-                </div>
-                <h3 class="music-card__title">Guns N’ Roses</h3>
-            </div>
-
+          <div id="favorit-artist" class="card-flex"></div>
         </section>
 
         <!-- Audiobooks for you Section -->
@@ -274,22 +250,9 @@
             </div>
           </div>
 
-          <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-          <div id="music-container" class="card-grid"></div>
+          <div id="audio-books" class="card-flex"></div>
 
-            <div class="music-card">
-                    <div class="music-card__image">
-                        <img src="../asset/images/halo the flood.svg" alt="music image">
-                    </div>
-
-                    <div class="music-card__content">
-                        <h3 class="music-card__title">Halo: The Flood</h3>
-                    </div>
-
-                    <p class="music-card__description">
-                    William C. Dietz
-                    </p>
-            </div>
+         
 
         </section>
 
@@ -313,23 +276,7 @@
               </button>
             </div>
           </div>
-
-          <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-          <div id="music-container" class="card-grid"></div>
-
-            <div class="music-card">
-                <div class="music-card__image">
-                    <img src="../asset/images/anything goes.png" alt="music image">
-                </div>
-
-                <div class="music-card__contents music-card__contents--podcast">
-                    <h3 class="music-card__title">anything goes...</h3>
-                    <p class="music-card__description">
-                        emma chamberlain
-                    </p>
-                </div>
-            </div>
-
+          <div id="podcasst" class="card-grid"></div>
         </section>
 
 
@@ -405,7 +352,7 @@
     <footer></footer>
   </div>
   <script src="../script.js"></script>
-  <script src="../data.js"></script>
+  <script type="module" src="../data.js"></script>
 </body>
 
 </html>
