@@ -1,0 +1,93 @@
+@use "../abstracts/default" as d;
+
+.artist-hero {
+  position: relative; 
+  height: 426px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Overlay */
+.artist-hero__overlay { 
+    position: absolute;
+    border-radius: inherit;
+    inset: 0; 
+    } 
+
+.artist-hero__overlay img {
+  /* width: 100%; */
+  object-fit: cover;
+}    
+
+/* Content */
+.artist-hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 3.5rem;
+}
+
+/* Text */
+.artist-hero__name {
+  font-size: 5rem;
+  font-weight: 900;
+  color: d.$primary-light-text-color;
+  margin-bottom: 2rem;
+}
+
+.artist-hero__listeners {
+  font-size: 1.4rem;
+  color: d.$primary-light-text-color;
+}
+
+/* Actions */
+.artist-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Base button */
+.btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Play */
+.btn--play {
+  width: 40px;
+}
+
+/* Follow */
+.btn--follow {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: rgba(137, 137, 137, 0.25);
+  color: d.$primary-light-text-color;
+  font-size: 1.4rem;
+}
+
+/* Icon buttons */
+.btn--icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--icon img {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.btn--icon:hover img {
+  opacity: 1;
+}
