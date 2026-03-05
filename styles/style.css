@@ -759,7 +759,7 @@ footer {
 }
 
 .discover__top {
-  margin-bottom: 1.2rem;
+  padding: 1.2rem 2.5rem;
 }
 
 .discover-page {
@@ -985,6 +985,10 @@ footer {
 
 .btn--icon:hover img {
   opacity: 1;
+}
+
+.main-content--no-padding {
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
