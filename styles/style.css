@@ -991,4 +991,68 @@ footer {
   padding: 0;
 }
 
+/* nav starts here */
+.artist-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4.6rem;
+  border-bottom: 0.1rem solid rgb(32, 32, 32);
+}
+
+/* List */
+.artist-nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+}
+
+/* Buttons */
+.artist-nav__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(137, 137, 137);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.artist-nav__btn:hover {
+  color: rgb(224, 224, 224);
+}
+
+/* Active */
+.artist-nav__btn--active {
+  color: rgb(224, 224, 224);
+}
+
+.artist-nav__btn--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  width: 100%;
+  height: 2px;
+  background: rgb(30, 215, 96);
+  border-radius: 2px;
+}
+
+/* Search */
+.artist-nav__search {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.artist-nav__search img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.artist-nav__search:hover img {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
