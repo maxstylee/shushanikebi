@@ -1,0 +1,77 @@
+@use "../abstracts/default" as d;
+
+.artist-about {
+  padding: 4rem 4.5rem;
+}
+
+.artist-about__layout {
+  display: grid;
+  grid-template-columns: 130px 1fr 250px;
+  gap: 12rem;
+}
+
+/* Rank Badge */
+.artist-about__rank-badge {
+  position: relative;
+  width: 132px;
+}
+
+.artist-about__rank-image {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.artist-about__rank-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: d.$primary-light-text-color;
+}
+
+.artist-about__rank-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.artist-about__rank-text {
+  font-size: 1.4rem;
+}
+
+/* Bio */
+.artist-about__text {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: d.$primary-text-color;
+}
+
+/* Stats */
+.artist-about__stat {
+  margin-bottom: 2.3rem;
+}
+
+.artist-about__stat-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: d.$primary-light-text-color;
+}
+
+.artist-about__stat-label, .artist-about__city-count {
+  font-size: 1.4rem;
+  line-height: 1.75;
+  color: d.$primary-text-color;
+}
+
+.artist-about__city {
+  margin-bottom: 2.3rem;
+}
+
+.artist-about__city-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: d.$primary-light-text-color;
+}
