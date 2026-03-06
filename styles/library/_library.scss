@@ -16,7 +16,8 @@
 }
 
 /* Sort & Group (icon + text) */
-.library-page__sort,.library-page__group {
+.library-page__sort,
+.library-page__group {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -39,7 +40,8 @@
   background-color: d.$primary-text-background;
 }
 
-.library-page__sort-label,.library-page__group-label {
+.library-page__sort-label,
+.library-page__group-label {
   font-size: 1.4rem;
   color: d.$primary-text-color;
 }
@@ -54,14 +56,15 @@
 
 .library-section__cards {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 1.1rem;            
+  flex-wrap: wrap;
+  // gap: 1.1rem;
 }
 
 /* Card */
 .library-card {
   width: 170px;
   cursor: pointer;
+  margin: 0 1.1rem 5rem 1.1rem;
 }
 
 /* Image Block */
@@ -117,4 +120,7 @@
 .library-card__description {
   font-size: 1.2rem;
   color: d.$primary-text-color;
+}
+.aside-wrapper.active {
+  background-color: d.$primary-text-background;
 }

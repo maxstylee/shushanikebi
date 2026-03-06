@@ -386,7 +386,7 @@ let podcastData = [
     image: "../asset/images/Videos.svg",
   },
 ];
-
+// audiobooks data start here
 let audioBooksData = [
   {
     title: "Audiobooks",
@@ -414,6 +414,66 @@ let audioBooksData = [
     image: "../asset/images/Self-Help.svg",
   },
 ];
+// liked songs data start here
+
+let likedCardsData = [
+  {
+    number: "1",
+    image: "../asset/images/get-lucky.svg",
+    title: "Get Lucky",
+    author: "Daft Punk",
+    duration: "4:35",
+    album: "Random Access Memories",
+  },
+  {
+    number: "2",
+    image: "../asset/images/get-lucky.svg",
+    title: "Instant Crush",
+    author: "Daft Punk, Julian Casablancas",
+    duration: "5:37",
+    album: "Random Access Memories",
+  },
+  {
+    number: "3",
+    image: "../asset/images/Melancholy.svg",
+    title: "On Melancholy Hill",
+    author: "Gorillaz",
+    album: "Plastic Beach",
+    duration: "3:53",
+  },
+  {
+    number: "4",
+    image: "../asset/images/Tainted Love.svg",
+    title: "Tainted Love",
+    author: "Soft Cell",
+    album: "Non-Stop Erotic Cabaret",
+    duration: "2:33",
+  },
+  {
+    number: "5",
+    image: "../asset/images/One More Time.svg",
+    title: "One More Time",
+    author: "Daft Punk",
+    album: "Discovery",
+    duration: "5:20",
+  },
+  {
+    number: "6",
+    image: "../asset/images/Electric Feel.svg",
+    title: "Electric Feel",
+    author: "MGMT",
+    album: "Oracular Spectacular",
+    duration: "3:49",
+  },
+  {
+    number: "7",
+    image: "../asset/images/get-lucky.svg",
+    title: "Daft Punk",
+    author: "Daft Punk",
+    album: "Random Access Memories",
+    duration: "4:35",
+  },
+];
 
 export default {
   musicData,
@@ -427,4 +487,5 @@ export default {
   entertainmentData,
   podcastData,
   audioBooksData,
+  likedCardsData,
 };

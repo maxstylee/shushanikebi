@@ -25,14 +25,26 @@ tabsHome.forEach((tab) => {
 
   });
 });
-const tabs = document.querySelectorAll(".home__tab");
+const tabsDiscover = document.querySelectorAll(".discover__tab");
 
-tabs.forEach((tab) => {
+tabsDiscover.forEach((tab) => {
   tab.addEventListener("click", function () {
 
-    tabs.forEach((element) => element.classList.remove("focuse"));
+    tabsDiscover.forEach((element) => element.classList.remove("focuse"));
 
     this.classList.add("focuse");
+
+  });
+});
+
+const artistNavButton = document.querySelectorAll(".artist-nav__btn");
+
+artistNavButton.forEach((tab) => {
+  tab.addEventListener("click", function () {
+
+    artistNavButton.forEach((element) => element.classList.remove("artist-nav__btn--active"));
+
+    this.classList.add("artist-nav__btn--active");
 
   });
 });

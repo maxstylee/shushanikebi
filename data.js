@@ -72,7 +72,7 @@ if (audBooks) {
 }
 
 // 5. Podcasts
-const podcast = document.getElementById("podcasst"); // Note: Double 's' as per your original code
+const podcast = document.getElementById("podcasst");
 if (podcast) {
   podcast.innerHTML = AllData.podcasts.map(
     (item) => `
@@ -103,6 +103,7 @@ if (discover) {
     `,
   );
 }
+// 6. Genres Cards
 const genres = document.getElementById("genres-cards");
 if (genres) {
   genres.innerHTML = AllData.genres.map(
@@ -116,6 +117,7 @@ if (genres) {
     `,
   );
 }
+// Mood & Activity Cards
 const moodActivity = document.getElementById("mood-activity");
 if (moodActivity) {
   moodActivity.innerHTML = AllData.moodActivityData.map(
@@ -129,6 +131,7 @@ if (moodActivity) {
     `,
   );
 }
+// entertainment Cards
 const entertaiment = document.getElementById("entertaiment");
 if (entertaiment) {
   entertaiment.innerHTML = AllData.entertainmentData.map(
@@ -142,6 +145,7 @@ if (entertaiment) {
     `,
   );
 }
+// podcast Cards
 const podcasts = document.getElementById("podcasts");
 if (podcasts) {
   podcasts.innerHTML = AllData.podcastData.map(
@@ -155,6 +159,7 @@ if (podcasts) {
     `,
   );
 }
+// audioBooks
 const audioBooks = document.getElementById("audiobooks");
 if (audioBooks) {
   audioBooks.innerHTML = AllData.audioBooksData.map(
@@ -168,3 +173,77 @@ if (audioBooks) {
     `,
   );
 }
+
+// card generation in library
+let libraryCards = document.getElementById("library-cards");
+
+if (libraryCards) {
+  libraryCards.innerHTML += AllData.musicDataMix.map(
+    (item) => `
+       <div class="library-card">
+                    <div class="library-card__image">
+                        <img src="${item.image}" alt="${item.title}">
+                        <div class="library-card__pin">
+                            <img src="../asset/icons/pinned.svg" alt="Pinned">
+                        </div>
+                    </div>
+                    <div class="library-card__content">
+                        <div class="library-card__header">
+                            <h3 class="library-card__title">${item.title}</h3>
+                            <span class="library-card__count">${item.number}</span>
+                        </div>
+                        <p class="library-card__description">
+                        ${item.author}
+                        </p>
+                    </div>
+                </div>
+    `,
+  );
+  libraryCards.innerHTML += AllData.musicData.map(
+    (item) => `
+       <div class="library-card">
+                    <div class="library-card__image">
+                        <img src="${item.image}" alt="${item.title}">
+                        <div class="library-card__pin">
+                            <img src="../asset/icons/pinned.svg" alt="Pinned">
+                        </div>
+                    </div>
+                    <div class="library-card__content">
+                        <div class="library-card__header">
+                            <h3 class="library-card__title">${item.title}</h3>
+                            <span class="library-card__count">${item.number}</span>
+                        </div>
+                        <p class="library-card__description">
+                        ${item.author}
+                        </p>
+                    </div>
+                </div>
+    `,
+  );
+}
+
+// liked music generator
+
+let likedSongs = document.getElementById("liked-song-generator");
+
+likedSongs.innerHTML += AllData.likedCardsData.map(
+  (item) => `
+      <div class="liked-songs__list">
+              <div class="song-row">
+                <span class="song-row__number">${item.number}</span>
+                <div class="song-row__title-group">
+                  <img src="${item.image}" alt="${item.title}" />
+                  <div class="song-row__text">
+                    <h3 class="song-row__title">${item.title}</h3>
+                    <p class="song-row__artist">${item.author}</p>
+                  </div>
+                </div>
+                <span class="song-row__album">Random Access Memories</span>
+                <span class="song-row__duration">${item.duration}</span>
+                <div class="song-row__like">
+                  <img src="../asset/icons/heart-active.svg" alt="Liked" />
+                </div>
+              </div>
+            </div>
+    `,
+);
