@@ -10,3 +10,29 @@ function toggleFriends() {
 }
 friendsIcon.onclick = toggleFriends;
 closeIcon.onclick = toggleFriends;
+// friend list toggle button logic
+
+// category choose class change logic
+
+const tabsHome = document.querySelectorAll(".home__tab");
+
+tabsHome.forEach((tab) => {
+  tab.addEventListener("click", function () {
+
+    tabsHome.forEach((element) => element.classList.remove("focuse"));
+
+    this.classList.add("focuse");
+
+  });
+});
+const tabs = document.querySelectorAll(".home__tab");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
+
+    tabs.forEach((element) => element.classList.remove("focuse"));
+
+    this.classList.add("focuse");
+
+  });
+});

@@ -203,99 +203,228 @@ let podcasts = [
   },
 ];
 
-let cardData = [
+// search music discover data start here
+let discoverCards = [
   {
     title: "Made For You",
     color: "rgba(30, 50, 100, 1)",
-    image: "../asset/images/made for you.png",
+    image: "../asset/images/made for you.svg",
   },
   {
     title: "new releases",
     color: "rgba(186, 93, 7, 1)",
-    image: "../asset/images/new releases.png",
+    image: "../asset/images/new releases.svg",
   },
   {
     title: "Spotify Classics",
     color: "rgba(30, 50, 100, 1)",
-    image: "../asset/images/Spotify Classics.png",
+    image: "../asset/images/Spotify Classics.svg",
   },
   {
     title: "Charts",
     color: "rgba(141, 103, 171, 1)",
-    image: "../asset/images/Charts.png",
+    image: "../asset/images/Charts.svg",
   },
   {
     title: "Trending",
     color: "rgba(176, 40, 151, 1)",
-    image: "../asset/images/Trending.png",
+    image: "../asset/images/Trending.svg",
   },
   {
     title: "Discover",
     color: "rgba(141, 103, 171, 1)",
-    image: "../asset/images/Discover.png",
+    image: "../asset/images/Discover.svg",
   },
   {
     title: "Spotify Singles",
     color: "rgba(119, 119, 119, 1)",
-    image: "../asset/images/Spotify Singles.png",
+    image: "../asset/images/Spotify Singles.svg",
   },
   {
     title: "Decades",
     color: "rgba(186, 93, 7, 1)",
-    image: "../asset/images/Decades.png",
+    image: "../asset/images/Decades.svg",
   },
+];
 
-  //
+// search music genres data start here
 
+let genres = [
   {
     title: "Pop",
     color: "rgba(20, 138, 8, 1)",
-    image: "../asset/images/Pop.png",
+    image: "../asset/images/Pop.svg",
   },
   {
     title: "Country",
     color: "rgba(216, 64, 0, 1)",
-    image: "../asset/images/Country.png",
+    image: "../asset/images/Country.svg",
   },
   {
     title: "Hip-Hop",
     color: "rgba(80, 55, 80, 1)",
-    image: "../asset/images/Hip-Hop.png",
+    image: "../asset/images/Hip-Hop.svg",
   },
   {
     title: "Rock",
     color: "rgba(0, 100, 80, 1)",
-    image: "../asset/images/Rock.png",
+    image: "../asset/images/Rock.svg",
   },
   {
     title: "Indie",
     color: "rgba(233, 20, 41, 1)",
-    image: "../asset/images/Indie.png",
+    image: "../asset/images/Indie.svg",
   },
   {
     title: "Punk",
     color: "rgba(30, 50, 100, 1)",
-    image: "../asset/images/Punk.png",
+    image: "../asset/images/Punk.svg",
   },
   {
     title: "Metal",
     color: "rgba(233, 20, 41, 1)",
-    image: "../asset/images/Metal.png",
+    image: "../asset/images/Metal.svg",
   },
   {
     title: "Instrumental",
     color: "rgba(83, 122, 161, 1)",
-    image: "../asset/images/Instrumental.png",
+    image: "../asset/images/Instrumental.svg",
   },
 ];
 
+// search music activity data start here
 
+let moodActivityData = [
+  {
+    title: "In the car",
+    color: "rgb(45, 70, 185)",
+    image: "../asset/images/In the car.svg",
+  },
+  {
+    title: "Mood",
+    color: "rgb(225, 17, 140)",
+    image: "../asset/images/Mood.svg",
+  },
+  {
+    title: "Workout",
+    color: "rgb(119, 119, 119)",
+    image: "../asset/images/Workout.svg",
+  },
+  {
+    title: "Chill",
+    color: "rgb(216, 64, 0)",
+    image: "../asset/images/Chill.svg",
+  },
+  {
+    title: "Sleep",
+    color: "rgb(30, 50, 100)",
+    image: "../asset/images/Sleep.svg",
+  },
+  {
+    title: "Party",
+    color: "rgb(83, 122, 161)",
+    image: "../asset/images/Party.svg",
+  },
+  {
+    title: "At Home",
+    color: "rgb(81, 121, 161)",
+    image: "../asset/images/At Home.svg",
+  },
+  {
+    title: "Focus",
+    color: "rgb(80, 55, 80)",
+    image: "../asset/images/Focus.svg",
+  },
+];
 
-export default{
-    musicData,
-    musicDataMix,
-    favoriteArtist,
-    audioBooks,
-    podcasts,
-    cardData,
-}
+// search music entertainment data start here
+
+let entertainmentData = [
+  {
+    title: "Netflix",
+    color: "rgb(235, 30, 50)",
+    image: "../asset/images/Netflix.svg",
+  },
+  {
+    title: "Anime",
+    color: "rgb(216, 64, 0)",
+    image: "../asset/images/Anime.svg",
+  },
+  {
+    title: "Disney",
+    color: "rgb(13, 115, 236)",
+    image: "../asset/images/Disney.svg",
+  },
+  {
+    title: "Gaming",
+    color: "rgb(232, 17, 91)",
+    image: "../asset/images/Gaming.svg",
+  },
+];
+
+// search music podcastCards data start here
+
+let podcastData = [
+  {
+    title: "Podcasts",
+    color: "rgb(0, 100, 80)",
+    image: "../asset/images/Podcasts.svg",
+  },
+  {
+    title: "Podcast Charts",
+    color: "rgb(13, 115, 236)",
+    image: "../asset/images/Podcast Charts.svg",
+  },
+  {
+    title: "Podcast New Releases",
+    color: "rgb(39, 133, 106)",
+    image: "../asset/images/Podcast New Releases.svg",
+  },
+  {
+    title: "Videos",
+    color: "rgb(230, 30, 50)",
+    image: "../asset/images/Videos.svg",
+  },
+];
+
+let audioBooksData = [
+  {
+    title: "Audiobooks",
+    color: "rgb(30, 50, 100)",
+    image: "../asset/images/Audiobooks.svg",
+  },
+  {
+    title: "Sci-Fi & Fantasy Essentials",
+    color: "rgb(141, 103, 171)",
+    image: "../asset/images/Sci-Fi.svg",
+  },
+  {
+    title: "Fiction & Literature",
+    color: "rgb(80, 55, 80)",
+    image: "../asset/images/Fiction.svg",
+  },
+  {
+    title: "Mystery & Thriller",
+    color: "rgb(30, 50, 100)",
+    image: "../asset/images/Mystery.svg",
+  },
+  {
+    title: "Self-Help",
+    color: "rgb(0, 100, 80)",
+    image: "../asset/images/Self-Help.svg",
+  },
+];
+
+export default {
+  musicData,
+  musicDataMix,
+  favoriteArtist,
+  audioBooks,
+  podcasts,
+  discoverCards,
+  genres,
+  moodActivityData,
+  entertainmentData,
+  podcastData,
+  audioBooksData,
+};

@@ -14,16 +14,28 @@
 .home__tabs {
   display: flex;
   gap: 0.5rem;
+  justify-content: space-between;
+  width: 34.5rem;
 }
 
 .home__tab {
   @include d.primary-button;
-
-  &--active {
-    background-color: #ffffff;
-    color: #000;
-  }
+  // margin-right: 1rem;
 }
+.home__tab.focuse {
+  background-color: #ffffff;
+  color: rgb(17, 17, 17);
+  font-weight: 600;
+}
+
+// .home__tab.focuse::after {
+//   display: block;
+//   content: attr(data-text);
+//   font-weight: bold;
+//   height: 0;
+//   overflow: hidden;
+//   visibility: hidden;
+// }
 
 .icon-btn {
   background: none;

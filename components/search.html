@@ -81,21 +81,21 @@
     <header class="header-section">
       <nav>
         <ul>
-          <li class="header-home">
-            <a href="">
-              <img src="../asset/icons/Home-active.svg" alt="Home" />
+          <li>
+            <a href="./home.html">
+              <img src="../asset/icons/Home.svg" alt="Home" />
               Home
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./discover.html">
               <img src="../asset/icons/Discover.svg" alt="Discover" />
               Discover
             </a>
           </li>
-          <li>
-            <a href="">
-              <img src="../asset/icons/Search.svg" alt="Search" />
+          <li class="header-search">
+            <a href="./search.html">
+              <img src="../asset/icons/Search-active.svg" alt="Search" />
               Search
             </a>
           </li>
@@ -137,218 +137,224 @@
     <main class="main-container">
       <section class="main-content">
 
-            <!-- recent searches -->
-            <section class="search-page">
+        <!-- recent searches -->
+        <section class="search-page">
 
-                    <div class="search-page__section-header">
-                        <h2 class="search-page__section-title">Recent searches</h2>
+          <div class="search-page__section-header">
+            <h2 class="search-page__section-title">Recent searches</h2>
 
-                        <button class="icon-btn">
-                            <img src="../asset/icons/threedots.svg" alt="More">
-                        </button>
-                    </div>
+            <button class="icon-btn">
+              <img src="../asset/icons/threedots.svg" alt="More">
+            </button>
+          </div>
 
-                    <div class="search-page__recent-list">
-                        <div class="recent-card">
+          <div class="search-page__recent-list">
+            <div class="recent-card">
 
-                            <div class="recent-card__image">
-                                <img src="../asset/images/daft punk pn.png" alt="music image">
-                                <button class="recent-card__remove">×</button>
-                            </div>
-                            <h3 class="recent-card__title">Daft Punk</h3>
+              <div class="recent-card__image">
+                <img src="../asset/images/daft punk pn.png" alt="music image">
+                <button class="recent-card__remove">×</button>
+              </div>
+              <h3 class="recent-card__title">Daft Punk</h3>
 
-                        </div>
+            </div>
 
-                        <div class="recent-card">
+            <div class="recent-card">
 
-                            <div class="recent-card__image">
-                                <img src="../asset/images/david bowie.png" alt="music image">
-                                <button class="recent-card__remove">×</button>
-                            </div>
-                            <h3 class="recent-card__title">David Bowie</h3>
+              <div class="recent-card__image">
+                <img src="../asset/images/david bowie.png" alt="music image">
+                <button class="recent-card__remove">×</button>
+              </div>
+              <h3 class="recent-card__title">David Bowie</h3>
 
-                        </div>
+            </div>
 
-                        <div class="recent-card recent-card--square">
+            <div class="recent-card recent-card--square">
 
-                            <div class="recent-card__image">
-                                <img src="../asset/images/black holes.png" alt="music image">
-                                <button class="recent-card__remove">×</button>
-                            </div>
-                            <h3 class="recent-card__title">Black Holes...</h3>
-                            <p class="recent-card__subtitle">Muse</p>
+              <div class="recent-card__image">
+                <img src="../asset/images/black holes.png" alt="music image">
+                <button class="recent-card__remove">×</button>
+              </div>
+              <h3 class="recent-card__title">Black Holes...</h3>
+              <p class="recent-card__subtitle">Muse</p>
 
-                        </div>
-                    </div>
+            </div>
+          </div>
 
-            </section>
+        </section>
 
-            <!-- browse all sectction starts here -->
-            <section class="search-page__browse">
+        <!-- browse all sectction starts here -->
+        <section class="search-page__browse">
 
-                <h2 class="search-page__main-title">Browse all</h2>
+          <h2 class="search-page__main-title">Browse all</h2>
 
-                <!-- Discover row -->
-                <div class="search-page__browse-section">
-                    <div class="search-page__browse-header">
-                        <h3 class="search-page__browse-title">Discover</h3>
+          <!-- Discover row -->
+          <div class="search-page__browse-section">
+            <div class="search-page__browse-header">
+              <h3 class="search-page__browse-title">Discover</h3>
 
-                        <div class="search-page__actions">
-                            <button class="icon-btn">
-                                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                            </button>
+              <div class="search-page__actions">
+                <button class="icon-btn">
+                  <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+                </button>
 
-                            <button class="icon-btn">
-                                <img src="../asset/icons/next-arrow.svg" alt="Next">
-                            </button>
-                        </div>
-                    </div>
+                <button class="icon-btn">
+                  <img src="../asset/icons/next-arrow.svg" alt="Next">
+                </button>
+              </div>
+            </div>
+            <div id="discover-cards" class="category-flex"><!-- CARD generator -->
+            </div>
+          </div>
 
-                    <div class="category-grid">
+          <!-- Genres row -->
+          <div class="search-page__browse-section">
+            <div class="search-page__browse-header">
+              <h3 class="search-page__browse-title">Genres</h3>
 
-                        <!-- CARD -->
-                        <div class="category-card category-card--blue">
-                            <h3 class="category-card__title">Made For You</h3>
+              <div class="search-page__actions">
+                <button class="icon-btn">
+                  <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+                </button>
 
-                            <div class="category-card__image">
-                                <img src="../asset/images/rock-mix.svg" alt="Made For You">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button class="icon-btn">
+                  <img src="../asset/icons/next-arrow.svg" alt="Next">
+                </button>
+              </div>
+            </div>
 
-                <!-- Genres row -->
-                <div class="search-page__browse-section">
-                    <div class="search-page__browse-header">
-                        <h3 class="search-page__browse-title">Genres</h3>
+            <div id="genres-cards" class="category-flex"><!-- CARD generator -->
 
-                        <div class="search-page__actions">
-                            <button class="icon-btn">
-                                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                            </button>
+            </div>
+          </div>
 
-                            <button class="icon-btn">
-                                <img src="../asset/icons/next-arrow.svg" alt="Next">
-                            </button>
-                        </div>
-                    </div>
+          <!-- Mood&Activity row -->
+          <div class="search-page__browse-section">
+            <div class="search-page__browse-header">
+              <h3 class="search-page__browse-title">Mood & Activity</h3>
 
-                    <div class="category-grid">
+              <div class="search-page__actions">
+                <button class="icon-btn">
+                  <img src="../asset/icons/preview-arrow.svg" alt="Previous">
+                </button>
 
-                        <!-- CARD -->
-                        <div class="category-card category-card--blue">
-                            <h3 class="category-card__title">Made For You</h3>
+                <button class="icon-btn">
+                  <img src="../asset/icons/next-arrow.svg" alt="Next">
+                </button>
+              </div>
+            </div>
 
-                            <div class="category-card__image">
-                                <img src="../asset/images/rock-mix.svg" alt="Made For You">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="mood-activity" class="category-flex"><!-- CARD generator -->
 
-                <!-- Mood&Activity row -->
-                <div class="search-page__browse-section">
-                    <div class="search-page__browse-header">
-                        <h3 class="search-page__browse-title">Mood & Activity</h3>
+            </div>
+          </div>
 
-                         <div class="search-page__actions">
-                            <button class="icon-btn">
-                                <img src="../asset/icons/preview-arrow.svg" alt="Previous">
-                            </button>
+          <!-- Entertainment row -->
+          <div class="search-page__browse-section">
+            <div class="search-page__browse-header">
+              <h3 class="search-page__browse-title">Entertainment</h3>
+            </div>
 
-                            <button class="icon-btn">
-                                <img src="../asset/icons/next-arrow.svg" alt="Next">
-                            </button>
-                        </div>
-                    </div>
+            <div id="entertaiment" class="category-flex"><!-- CARD generator -->
 
-                    <div class="category-grid">
+            </div>
+          </div>
 
-                        <!-- CARD -->
-                        <div class="category-card category-card--blue">
-                            <h3 class="category-card__title">Made For You</h3>
+          <!-- Podcasts row -->
+          <div class="search-page__browse-section">
+            <div class="search-page__browse-header">
+              <h3 class="search-page__browse-title">Podcasts</h3>
+            </div>
 
-                            <div class="category-card__image">
-                                <img src="../asset/images/rock-mix.svg" alt="Made For You">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="podcasts" class="category-flex"><!-- CARD generator -->
 
-                <!-- Entertainment row -->
-                <div class="search-page__browse-section">
-                    <div class="search-page__browse-header">
-                        <h3 class="search-page__browse-title">Entertainment</h3>
-                    </div>
+            </div>
+          </div>
 
-                    <div class="category-grid">
+          <!-- Audiobooks row -->
+          <div class="search-page__browse-section">
+            <div class="search-page__browse-header">
+              <h3 class="search-page__browse-title">Audiobooks</h3>
+            </div>
 
-                        <!-- CARD -->
-                        <div class="category-card category-card--blue">
-                            <h3 class="category-card__title">Made For You</h3>
+            <div id="audiobooks" class="category-flex"><!-- CARD generator -->
 
-                            <div class="category-card__image">
-                                <img src="../asset/images/rock-mix.svg" alt="Made For You">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Podcasts row -->
-                <div class="search-page__browse-section">
-                    <div class="search-page__browse-header">
-                        <h3 class="search-page__browse-title">Podcasts</h3>
-                    </div>
-
-                    <div class="category-grid">
-
-                        <!-- CARD -->
-                        <div class="category-card category-card--blue">
-                            <h3 class="category-card__title">Made For You</h3>
-
-                            <div class="category-card__image">
-                                <img src="../asset/images/rock-mix.svg" alt="Made For You">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Audiobooks row -->
-                <div class="search-page__browse-section">
-                    <div class="search-page__browse-header">
-                        <h3 class="search-page__browse-title">Audiobooks</h3>
-                    </div>
-
-                    <div class="category-grid">
-
-                        <!-- CARD -->
-                        <div class="category-card category-card--blue">
-                            <h3 class="category-card__title">Made For You</h3>
-
-                            <div class="category-card__image">
-                                <img src="../asset/images/rock-mix.svg" alt="Made For You">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+          </div>
 
 
-            </section>
+        </section>
 
 
 
         <!-- <div id="music-container"></div>  --> <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
-      
-    
-    
-      </section>
 
+
+
+      </section>
       <section class="friend-list">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <div class="friend-list-action">
+          <p>Friends Activity</p>
+          <div class="action">
+            <img src="../asset/icons/add-friend.svg" alt="Add Friend">
+            <img src="../asset/icons/close.svg" alt="Close" id="close-btn">
+          </div>
+        </div>
+        <ul class="friend-list-wrapper">
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-red.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">FriendlyMusicListener</p>
+              <span>
+                <img src="../asset/icons/vector-green.svg" alt="listening">
+                <p class="music-name">Goosebumps</p>
+                <p class="music-style">&#8226; Travis Scott</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-blue.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">AverageMusicEnjoyer</p>
+              <span>
+                <img src="../asset/icons/vector-green.svg" alt="listening">
+                <p class="music-name">Get Lucky</p>
+                <p class="music-style">&#8226; Daft Punk</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-green.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">MusicEnthusiast</p>
+              <span>
+                <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                <p class="music-style offline">1h</p>
+                <p class="music-name">would he</p>
+                <p class="music-style">&#8226; joji</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="friend-profile-image">
+              <img src="../asset/images/friend-image-red.svg" alt="Friend">
+            </div>
+            <div class="info-about-friend">
+              <p class="friend-name">IListenToMusic56</p>
+              <span>
+                <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                <p class="music-style offline">6h</p>
+                <p class="music-name">Rockstar</p>
+                <p class="music-style">&#8226; Post Malone</p>
+              </span>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
@@ -357,7 +363,7 @@
     <footer></footer>
   </div>
   <script src="../script.js"></script>
-  <script src="../data.js"></script>
+  <script type="module" src="../data.js"></script>
 </body>
 
 </html>

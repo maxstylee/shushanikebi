@@ -10,15 +10,11 @@
 }
 
 .discover__top {
-    padding: 1.2rem 2.5rem;
+  padding: 1.2rem 2.5rem;
 }
 
 .discover-page {
-  background: linear-gradient(
-    #1b2d2a 0%,
-    #1e3833 40%,
-    #603319 100%
-  );
+  background: linear-gradient(#1b2d2a 0%, #1e3833 40%, #603319 100%);
 
   padding-bottom: 10rem; // ბოლოში რომ არ გაწყდეს
 }
@@ -33,7 +29,7 @@
 /* LEFT SIDE (BIG COVER) */
 
 .discover-hero__main-cover {
-  width: 390px;
+  width: 39rem;
 }
 
 .discover-hero__main-cover img {
@@ -41,7 +37,6 @@
   display: block;
   border-radius: 1rem;
 }
-
 
 /* RIGHT SIDE */
 
@@ -51,11 +46,10 @@
   gap: 1.8rem;
 }
 
-
 /* Mini stacked card */
 
 .discover-hero__mini-cover {
-  width: 180px;
+  width: 1.8rem;
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
@@ -108,18 +102,17 @@
 }
 
 .btn--play {
-  
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 40px;
+    width: 4rem;
   }
 }
 
 .btn--icon img {
-  width: 22px;
+  width: 2.2rem;
   opacity: 0.7;
   transition: opacity 0.2s ease;
 }
@@ -161,4 +154,8 @@
   background-color: d.$primary-text-background;
   transition: all 0.2s ease;
   cursor: pointer;
+}
+
+.header-discover {
+  background-color: rgb(17, 17, 17);
 }
