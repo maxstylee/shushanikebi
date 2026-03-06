@@ -1,0 +1,164 @@
+@use "../abstracts/default" as d;
+
+.discover__tab {
+  @include d.primary-button;
+
+  &--active {
+    background-color: #ffffff;
+    color: #000;
+  }
+}
+
+.discover__top {
+    padding: 1.2rem 2.5rem;
+}
+
+.discover-page {
+  background: linear-gradient(
+    #1b2d2a 0%,
+    #1e3833 40%,
+    #603319 100%
+  );
+
+  padding-bottom: 10rem; // ბოლოში რომ არ გაწყდეს
+}
+
+.discover-hero {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 6rem 22rem;
+}
+
+/* LEFT SIDE (BIG COVER) */
+
+.discover-hero__main-cover {
+  width: 390px;
+}
+
+.discover-hero__main-cover img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+
+/* RIGHT SIDE */
+
+.discover-hero__info {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+
+/* Mini stacked card */
+
+.discover-hero__mini-cover {
+  width: 180px;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* TEXT BLOCK */
+
+.discover-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.discover-hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: d.$primary-light-text-color;
+}
+
+.discover-hero__meta {
+  font-size: 1.4rem;
+  color: d.$primary-text-color;
+}
+
+.discover-hero__meta .dot {
+  margin: 0 0.5rem;
+}
+
+.discover-hero__author {
+  color: d.$primary-light-text-color;
+}
+
+/* ACTIONS */
+
+.discover-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--play {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 40px;
+  }
+}
+
+.btn--icon img {
+  width: 22px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.btn--icon:hover img {
+  opacity: 1;
+}
+
+/* Save group (icon + 500K) */
+
+.discover-hero__save-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discover-hero__likes {
+  font-size: 1.2rem;
+  color: d.$primary-text-color;
+}
+
+/* TAGS */
+
+.discover-hero__tags {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.discover-hero__tag {
+  padding: 0.8rem 1.3rem;
+  border: 2px solid rgba(137, 137, 137, 0.1);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  color: d.$primary-text-color;
+}
+
+.discover-hero__tag:hover {
+  color: d.$primary-light-text-color;
+  background-color: d.$primary-text-background;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,700,400&display=swap");
 body {
   background-color: rgb(6, 6, 6);
@@ -516,6 +517,713 @@ footer {
 
 .header-search {
   background-color: rgb(17, 17, 17);
+}
+
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* Left Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort, .library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.library-page__sort-label, .library-page__group-label {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: rgb(17, 17, 17);
+  border-radius: 0.5rem;
+}
+
+/*** library-section starts here ***/
+.library-section__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+/* Card */
+.library-card {
+  width: 170px;
+  cursor: pointer;
+}
+
+/* Image Block */
+.library-card__image {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.library-card__image img {
+  width: 100%;
+  display: block;
+}
+
+/* Pin */
+.library-card__pin {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.library-card__pin img {
+  width: 19px;
+  height: 19px;
+}
+
+/* text */
+.library-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.library-card__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+
+.library-card__count {
+  font-size: 1.4rem;
+  color: rgb(30, 215, 96);
+}
+
+.library-card__description {
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Wrapper */
+.library-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* Right Controls */
+.library-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Sort & Group (icon + text) */
+.library-page__sort, .library-page__group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.library-page__sort-label, .library-page__group-label {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+/* Active View Button */
+.library-page__view-btn.is-active {
+  background-color: rgb(17, 17, 17);
+  border-radius: 0.5rem;
+}
+
+/*** liked songs section starts here ***/
+.liked-songs__header,
+.song-row {
+  display: grid;
+  grid-template-columns: 40px 300px 300px 70px 40px;
+  align-items: center;
+  justify-content: start;
+}
+
+.liked-songs__header {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+  padding: 1.2rem;
+}
+
+.liked-songs__divider {
+  height: 2px;
+  background-color: rgb(17, 17, 17);
+  margin-bottom: 2rem;
+}
+
+.song-row {
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.song-row:hover {
+  background-color: rgb(17, 17, 17);
+}
+.song-row:hover .song-row__album {
+  color: rgb(224, 224, 224);
+}
+
+.song-row__title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-row__title-group img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: block;
+}
+
+.song-row__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  color: rgb(224, 224, 224);
+}
+
+.song-row__number {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(137, 137, 137);
+}
+
+.song-row__album, .song-row__duration, .song-row__artist {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+.song-row__like img {
+  width: 18px;
+  height: 18px;
+}
+
+.discover__tab {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.discover__tab:hover {
+  background-color: #3a3a3a;
+}
+.discover__tab--active {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.discover__top {
+  padding: 1.2rem 2.5rem;
+}
+
+.discover-page {
+  background: linear-gradient(#1b2d2a 0%, #1e3833 40%, #603319 100%);
+  padding-bottom: 10rem;
+}
+
+.discover-hero {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 6rem 22rem;
+}
+
+/* LEFT SIDE (BIG COVER) */
+.discover-hero__main-cover {
+  width: 390px;
+}
+
+.discover-hero__main-cover img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+/* RIGHT SIDE */
+.discover-hero__info {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+/* Mini stacked card */
+.discover-hero__mini-cover {
+  width: 180px;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.discover-hero__mini-cover img {
+  width: 100%;
+  display: block;
+}
+
+/* TEXT BLOCK */
+.discover-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.discover-hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+}
+
+.discover-hero__meta {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+
+.discover-hero__meta .dot {
+  margin: 0 0.5rem;
+}
+
+.discover-hero__author {
+  color: rgb(224, 224, 224);
+}
+
+/* ACTIONS */
+.discover-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--play img {
+  width: 40px;
+}
+
+.btn--icon img {
+  width: 22px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.btn--icon:hover img {
+  opacity: 1;
+}
+
+/* Save group (icon + 500K) */
+.discover-hero__save-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discover-hero__likes {
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+}
+
+/* TAGS */
+.discover-hero__tags {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.discover-hero__tag {
+  padding: 0.8rem 1.3rem;
+  border: 2px solid rgba(137, 137, 137, 0.1);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+}
+
+.discover-hero__tag:hover {
+  color: rgb(224, 224, 224);
+  background-color: rgb(17, 17, 17);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.artist-hero {
+  position: relative;
+  height: 426px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Overlay */
+.artist-hero__overlay {
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+}
+
+.artist-hero__overlay img {
+  /* width: 100%; */
+  object-fit: cover;
+}
+
+/* Content */
+.artist-hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 3.5rem;
+}
+
+/* Text */
+.artist-hero__name {
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgb(224, 224, 224);
+  margin-bottom: 2rem;
+}
+
+.artist-hero__listeners {
+  font-size: 1.4rem;
+  color: rgb(224, 224, 224);
+}
+
+/* Actions */
+.artist-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Base button */
+.btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Play */
+.btn--play {
+  width: 40px;
+}
+
+/* Follow */
+.btn--follow {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: rgba(137, 137, 137, 0.25);
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+}
+
+/* Icon buttons */
+.btn--icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--icon img {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.btn--icon:hover img {
+  opacity: 1;
+}
+
+.main-content--no-padding {
+  padding: 0;
+}
+
+/* nav starts here */
+.artist-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4.6rem;
+  border-bottom: 0.1rem solid rgb(32, 32, 32);
+}
+
+/* List */
+.artist-nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+}
+
+/* Buttons */
+.artist-nav__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(137, 137, 137);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.artist-nav__btn:hover, .artist-nav__btn--active {
+  color: rgb(224, 224, 224);
+}
+
+.artist-nav__btn--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  width: 100%;
+  height: 2px;
+  background: rgb(30, 215, 96);
+  border-radius: 2px;
+}
+
+/* Search */
+.artist-nav__search {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.artist-nav__search img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.artist-nav__search:hover img {
+  opacity: 1;
+}
+
+/* main content */
+.artist-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 4rem 2.5rem;
+}
+
+/* main left content */
+.artist-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.track-item__info {
+  cursor: pointer;
+}
+
+.artist-section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+}
+
+.track-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.track-item {
+  display: grid;
+  grid-template-columns: 40px 600px 70px 40px;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 0;
+}
+
+.track-item__index, .track-item__artist,
+.track-item__duration, .track-item__streams {
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+}
+
+.track-item__info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.track-item__info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.track-item__title {
+  font-size: 1.6rem;
+  color: rgb(224, 224, 224);
+}
+
+.track-item__like {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.track-item__like img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.track-item__like:hover img {
+  opacity: 1;
+}
+
+/* Popular-სთვის დამატებითი სვეტი */
+.track-list--popular .track-item {
+  grid-template-columns: 40px 300px 300px 70px 40px;
+}
+
+/* main right content */
+.artist-main__right {
+  width: 25%;
+}
+
+.artist-main__right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Artist Pick */
+.artist-pick {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.artist-pick__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+}
+
+.artist-pick__card {
+  display: flex;
+  gap: 1.3rem;
+  padding: 1.3rem;
+  background: rgba(24, 25, 30, 0.3);
+  border-radius: 1rem;
+}
+
+.artist-pick__cover {
+  width: 120px;
+  object-fit: cover;
+}
+
+.artist-pick__text {
+  font-size: 1.5rem;
+  color: rgb(224, 224, 224);
+}
+
+/* Sidebar Image */
+.artist-sidebar__image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Bio */
+.artist-bio__text {
+  font-size: 1.6rem;
+  color: rgb(224, 224, 224);
+}
+
+/* Tags */
+.artist-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.artist-tag {
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  border: 2px solid rgb(137, 137, 137);
+  background: transparent;
+  font-size: 1.2rem;
+  color: rgb(137, 137, 137);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.artist-tag:hover {
+  color: rgb(224, 224, 224);
+  border-color: rgb(17, 17, 17);
 }
 
 /*# sourceMappingURL=style.css.map */

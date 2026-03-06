@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>SHUSHANIKI</title>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <aside class="aside-wrapper">
+        <nav>
+          <ul>
+            <li class="aside-library">
+              <a href="">
+                <img src="../asset/icons/Library.svg" alt="Library" />
+                My Library
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Pins.svg" alt="Pins" />
+                Pins
+                <img
+                  class="pinned-music"
+                  src="../asset/icons/right-arrow.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Playlist.svg" alt="Playlist" />
+                Playlist
+                <img
+                  class="pinned-music"
+                  src="../asset/icons/right-arrow.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Liked songs.svg" alt="Liked songs" />
+                Liked songs
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Saves.svg" alt="Saves" />
+                Saves
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Albums.svg" alt="Albums" />
+                Albums
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Folders.svg" alt="Folders" />
+                Folders
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Podcasts.svg" alt="Podcasts" />
+                Podcasts
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Audiobooks.svg" alt="Audiobooks" />
+                Audiobooks
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Artists.svg" alt="Artists" />
+                Artists
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <header class="header-section">
+        <nav>
+          <ul>
+            <li class="header-home">
+              <a href="">
+                <img src="../asset/icons/Home-active.svg" alt="Home" />
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Discover.svg" alt="Discover" />
+                Discover
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Search.svg" alt="Search" />
+                Search
+              </a>
+            </li>
+          </ul>
+
+          <!-- header navigation on left -->
+          <ul>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Notification.svg" alt="Notification" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/block.svg" alt="block" />
+              </a>
+            </li>
+            <li id="friends">
+              <a href="#">
+                <img src="../asset/icons/Groups.svg" alt="Groups" />
+                <img
+                  src="../asset/icons/Groups-active.svg"
+                  alt="Friend List"
+                  class="friend-list-active"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Settings.svg" alt="Settings" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Sprite.svg" alt="Sprite" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <section class="main-content main-content--no-padding">
+          <!-- გვანცას კოდი იწყება აქ -->
+
+          <section class="artist-hero">
+            <div class="artist-hero__overlay">
+              <img
+                src="../asset/images/daft-pank-hover.png"
+                alt="Daft Punk hover"
+              />
+            </div>
+
+            <div class="artist-hero__content">
+              <div class="artist-hero__info">
+                <h1 class="artist-hero__name">Daft Punk</h1>
+                <p class="artist-hero__listeners">
+                  20,795,080 monthly listeners
+                </p>
+              </div>
+
+              <div class="artist-hero__actions">
+                <button class="btn btn--play">
+                  <img src="../asset/icons/play.svg" alt="Play" />
+                </button>
+
+                <button class="btn btn--follow">Follow</button>
+
+                <button class="btn btn--icon">
+                  <img src="../asset/icons/add-act.svg" alt="Add" />
+                </button>
+
+                <button class="btn btn--icon">
+                  <img src="../asset/icons/queue-act.svg" alt="List" />
+                </button>
+
+                <button class="btn btn--icon">
+                  <img src="../asset/icons/threedots-act.svg" alt="More" />
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <nav class="artist-nav">
+            <ul class="artist-nav__list">
+              <li>
+                <button class="artist-nav__btn artist-nav__btn--active">
+                  Home
+                </button>
+              </li>
+              <li><button class="artist-nav__btn">Albums</button></li>
+              <li><button class="artist-nav__btn">Singles and EPs</button></li>
+              <li><button class="artist-nav__btn">Compilations</button></li>
+              <li><button class="artist-nav__btn">Merch</button></li>
+              <li><button class="artist-nav__btn">About</button></li>
+              <li><button class="artist-nav__btn">Features & More</button></li>
+            </ul>
+
+            <button class="artist-nav__search">
+              <img src="../asset/icons/search.svg" alt="Search" />
+            </button>
+          </nav>
+
+          <section class="artist-main">
+            <section class="artist-main__left">
+              <section class="artist-section">
+                <h2 class="artist-section__title">Your most played</h2>
+
+                <ul class="track-list">
+                  <li class="track-item">
+                    <span class="track-item__index">1</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/daft-pank-sm.png" alt="" />
+                      <div>
+                        <p class="track-item__title">One More Time</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__duration">5:20</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">2</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Get Lucky</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__duration">4:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">3</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Give Life Back to Music</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__duration">4:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">4</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Instant Crush</p>
+                        <p class="track-item__artist">
+                          Daft Punk, Julian Casablancas
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__duration">5:20</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">5</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Around the world</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__duration">4:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="artist-section">
+                <h2 class="artist-section__title">Popular</h2>
+
+                <ul class="track-list track-list--popular">
+                  <li class="track-item">
+                    <span class="track-item__index">1</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Get Lucky</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__streams">1,064,097,461</span>
+                    <span class="track-item__duration">4:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">2</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Instant Crush</p>
+                        <p class="track-item__artist">
+                          Daft Punk, Julian Casablancas
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__streams">464,097,461</span>
+                    <span class="track-item__duration">2:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">3</span>
+
+                    <div class="track-item__info">
+                      <img
+                        src="../asset/images/daft-pank-sm.png"
+                        alt="albumcover"
+                      />
+                      <div>
+                        <p class="track-item__title">One More Time</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__streams">364,263,461</span>
+                    <span class="track-item__duration">4:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">4</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Give Life Back to Music</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__streams">657,097,461</span>
+                    <span class="track-item__duration">3:47</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                  <li class="track-item">
+                    <span class="track-item__index">5</span>
+
+                    <div class="track-item__info">
+                      <img src="../asset/images/getlucky.png" alt="" />
+                      <div>
+                        <p class="track-item__title">Around the world</p>
+                        <p class="track-item__artist">Daft Punk</p>
+                      </div>
+                    </div>
+
+                    <span class="track-item__streams">234,457,461</span>
+                    <span class="track-item__duration">4:35</span>
+
+                    <button class="track-item__like">
+                      <img src="../asset/icons/like.svg" alt="Like" />
+                    </button>
+                  </li>
+                </ul>
+              </section>
+            </section>
+
+            <aside class="artist-main__right">
+              <!-- Artist Pick -->
+              <section class="artist-pick">
+                <h3 class="artist-pick__title">Artist Pick</h3>
+
+                <div class="artist-pick__card">
+                  <img
+                    src="../asset/images/daftpank-art.png"
+                    alt="Artist Pick"
+                    class="artist-pick__cover"
+                  />
+
+                  <p class="artist-pick__text">
+                    Listen to the Best of<br />Daft Punk
+                  </p>
+                </div>
+              </section>
+
+              <!-- Artist Image -->
+              <div class="artist-sidebar__image">
+                <img src="../asset/images/daftpank-art2.png" alt="Daft Punk" />
+              </div>
+
+              <!-- Bio -->
+              <section class="artist-bio">
+                <p class="artist-bio__text">
+                  As they evolved from ’90s French house pioneers to 2000s dance
+                  tastemakers to mainstream heroes in the 2010s, Daft Punk
+                  remained one of dance music's most iconic acts...
+                </p>
+              </section>
+
+              <!-- Tags -->
+              <div class="artist-tags">
+                <button class="artist-tag">Funk</button>
+                <button class="artist-tag">Electronic music</button>
+                <button class="artist-tag">Disco</button>
+                <button class="artist-tag">Soft Rock</button>
+                <button class="artist-tag">Progressive pop</button>
+              </div>
+            </aside>
+          </section>
+
+          <!-- <div id="music-container"></div>  -->
+          <!-- ეს კონტეინერი აგენერირებს ქარდებს -->
+        </section>
+        <!--გვანცა მთავრდება -->
+
+        <section class="friend-list">
+          <div class="friend-list-action">
+            <p>Friends Activity</p>
+            <div class="action">
+              <img src="../asset/icons/add-friend.svg" alt="Add Friend" />
+              <img src="../asset/icons/close.svg" alt="Close" id="close-btn" />
+            </div>
+          </div>
+          <ul class="friend-list-wrapper">
+            <li>
+              <div class="friend-profile-image">
+                <img src="../asset/images/friend-image-red.svg" alt="Friend" />
+              </div>
+              <div class="info-about-friend">
+                <p class="friend-name">FriendlyMusicListener</p>
+                <span>
+                  <img src="../asset/icons/vector-green.svg" alt="listening" />
+                  <p class="music-name">Goosebumps</p>
+                  <p class="music-style">&#8226; Travis Scott</p>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="friend-profile-image">
+                <img src="../asset/images/friend-image-blue.svg" alt="Friend" />
+              </div>
+              <div class="info-about-friend">
+                <p class="friend-name">AverageMusicEnjoyer</p>
+                <span>
+                  <img src="../asset/icons/vector-green.svg" alt="listening" />
+                  <p class="music-name">Get Lucky</p>
+                  <p class="music-style">&#8226; Daft Punk</p>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="friend-profile-image">
+                <img
+                  src="../asset/images/friend-image-green.svg"
+                  alt="Friend"
+                />
+              </div>
+              <div class="info-about-friend">
+                <p class="friend-name">MusicEnthusiast</p>
+                <span>
+                  <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                  <p class="music-style offline">1h</p>
+                  <p class="music-name">would he</p>
+                  <p class="music-style">&#8226; joji</p>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="friend-profile-image">
+                <img src="../asset/images/friend-image-red.svg" alt="Friend" />
+              </div>
+              <div class="info-about-friend">
+                <p class="friend-name">IListenToMusic56</p>
+                <span>
+                  <!-- <img src="./asset/icons/vector-green.svg" alt="listening"> -->
+                  <p class="music-style offline">6h</p>
+                  <p class="music-name">Rockstar</p>
+                  <p class="music-style">&#8226; Post Malone</p>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+    <script src="../script.js"></script>
+    <script type="module" src="../data.js"></script>
+  </body>
+</html>
