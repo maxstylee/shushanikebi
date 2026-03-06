@@ -1264,10 +1264,10 @@ footer {
   border-color: rgb(17, 17, 17);
 }
 
-<<<<<<< HEAD
 .artist-active {
   background-color: rgb(32, 32, 32);
-=======
+}
+
 .artist-about {
   padding: 4rem 4.5rem;
 }
@@ -1392,7 +1392,6 @@ footer {
 .artist-album-card__description {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
->>>>>>> origin
 }
 
 /*# sourceMappingURL=style.css.map */
