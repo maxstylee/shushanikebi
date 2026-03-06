@@ -237,6 +237,8 @@ footer {
 .home__tabs {
   display: flex;
   gap: 0.5rem;
+  justify-content: space-between;
+  width: 34.5rem;
 }
 
 .home__tab {
@@ -252,9 +254,11 @@ footer {
 .home__tab:hover {
   background-color: #3a3a3a;
 }
-.home__tab--active {
+
+.home__tab.focuse {
   background-color: #ffffff;
-  color: #000;
+  color: rgb(17, 17, 17);
+  font-weight: 600;
 }
 
 .icon-btn {
@@ -790,7 +794,7 @@ footer {
 
 /* LEFT SIDE (BIG COVER) */
 .discover-hero__main-cover {
-  width: 390px;
+  width: 39rem;
 }
 
 .discover-hero__main-cover img {
@@ -808,7 +812,7 @@ footer {
 
 /* Mini stacked card */
 .discover-hero__mini-cover {
-  width: 180px;
+  width: 1.8rem;
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
@@ -863,11 +867,11 @@ footer {
   justify-content: center;
 }
 .btn--play img {
-  width: 40px;
+  width: 4rem;
 }
 
 .btn--icon img {
-  width: 22px;
+  width: 2.2rem;
   opacity: 0.7;
   transition: opacity 0.2s ease;
 }
@@ -907,6 +911,10 @@ footer {
   background-color: rgb(17, 17, 17);
   transition: all 0.2s ease;
   cursor: pointer;
+}
+
+.header-discover {
+  background-color: rgb(17, 17, 17);
 }
 
 .artist-hero {
