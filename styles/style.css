@@ -5,7 +5,7 @@ body {
   font-family: "Satoshi";
   font-weight: 400;
   letter-spacing: 3%;
-  padding: 1rem 1rem 0 3.4rem;
+  padding: 1rem 1rem 0 0.9rem;
 }
 body button {
   font-family: "Satoshi";
@@ -20,6 +20,11 @@ body button {
   grid-template-rows: 5rem 1fr 8rem;
   height: calc(100vh - 10px);
   grid-template-areas: "sidebar header" "sidebar main" "sidebar footer";
+  column-gap: 0.7rem;
+}
+
+.primary-active-text {
+  color: rgb(224, 224, 224) !important;
 }
 
 * {
@@ -65,6 +70,10 @@ footer {
 }
 .header-section nav li {
   display: flex;
+  margin-right: 1.5rem;
+}
+.header-section nav li:hover {
+  background-color: rgb(17, 17, 17);
 }
 .header-section nav ul:first-of-type li {
   padding: 1.2rem 3rem;
@@ -98,20 +107,21 @@ footer {
 .aside-wrapper {
   grid-area: sidebar;
   width: 26rem;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0.7rem 2.5rem;
+  border-radius: 1rem;
 }
 .aside-wrapper .pinned-music {
   width: auto;
   position: absolute;
   right: 0;
-  top: -0.7rem;
+  top: 0.2rem;
   padding: 1.2rem;
 }
 .aside-wrapper .aside-library {
   margin-bottom: 4.5rem;
 }
 .aside-wrapper li {
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.1rem;
   position: relative;
 }
 .aside-wrapper a {
@@ -119,6 +129,11 @@ footer {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
+  padding: 1rem 0.9rem;
+  border-radius: 0.5rem;
+}
+.aside-wrapper a:hover {
+  background-color: rgb(32, 32, 32);
 }
 .aside-wrapper a img {
   width: 2rem;
@@ -214,13 +229,13 @@ footer {
   border: 0.1rem solid rgb(32, 32, 32);
   border-radius: 1rem;
   padding: 0.2rem;
-  width: calc(100vw - 30.4rem);
+  width: calc(100vw - 28.6rem);
   overflow-y: auto;
   transition: width 0.3s ease-in-out;
 }
 
 .main-content.active {
-  width: calc(100vw - 64rem);
+  width: calc(100vw - 62rem);
 }
 
 .main-content {
@@ -539,7 +554,8 @@ footer {
 }
 
 /* Sort & Group (icon + text) */
-.library-page__sort, .library-page__group {
+.library-page__sort,
+.library-page__group {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -562,7 +578,8 @@ footer {
   background-color: rgb(17, 17, 17);
 }
 
-.library-page__sort-label, .library-page__group-label {
+.library-page__sort-label,
+.library-page__group-label {
   font-size: 1.4rem;
   color: rgb(137, 137, 137);
 }
@@ -577,13 +594,13 @@ footer {
 .library-section__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.1rem;
 }
 
 /* Card */
 .library-card {
   width: 170px;
   cursor: pointer;
+  margin: 0 1.1rem 5rem 1.1rem;
 }
 
 /* Image Block */
@@ -638,6 +655,10 @@ footer {
   color: rgb(137, 137, 137);
 }
 
+.aside-wrapper.active {
+  background-color: rgb(17, 17, 17);
+}
+
 /* Wrapper */
 .library-page__topbar {
   display: flex;
@@ -654,7 +675,8 @@ footer {
 }
 
 /* Sort & Group (icon + text) */
-.library-page__sort, .library-page__group {
+.library-page__sort,
+.library-page__group {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -677,7 +699,8 @@ footer {
   background-color: rgb(17, 17, 17);
 }
 
-.library-page__sort-label, .library-page__group-label {
+.library-page__sort-label,
+.library-page__group-label {
   font-size: 1.4rem;
   color: rgb(137, 137, 137);
 }
@@ -692,7 +715,7 @@ footer {
 .liked-songs__header,
 .song-row {
   display: grid;
-  grid-template-columns: 40px 300px 300px 70px 40px;
+  grid-template-columns: 40px 300px 300px 90px 18px;
   align-items: center;
   justify-content: start;
 }
@@ -748,7 +771,9 @@ footer {
   color: rgb(137, 137, 137);
 }
 
-.song-row__album, .song-row__duration, .song-row__artist {
+.song-row__album,
+.song-row__duration,
+.song-row__artist {
   font-size: 1.4rem;
   color: rgb(137, 137, 137);
 }
@@ -756,6 +781,10 @@ footer {
 .song-row__like img {
   width: 18px;
   height: 18px;
+}
+
+.liked-active {
+  background-color: rgb(32, 32, 32);
 }
 
 .discover__tab {
@@ -771,9 +800,11 @@ footer {
 .discover__tab:hover {
   background-color: #3a3a3a;
 }
-.discover__tab--active {
+
+.discover__tab.focuse {
   background-color: #ffffff;
   color: #000;
+  font-weight: 600;
 }
 
 .discover__top {
@@ -812,7 +843,7 @@ footer {
 
 /* Mini stacked card */
 .discover-hero__mini-cover {
-  width: 1.8rem;
+  width: 18rem;
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
@@ -935,7 +966,6 @@ footer {
 }
 
 .artist-hero__overlay img {
-  /* width: 100%; */
   object-fit: cover;
 }
 
@@ -1234,6 +1264,10 @@ footer {
   border-color: rgb(17, 17, 17);
 }
 
+<<<<<<< HEAD
+.artist-active {
+  background-color: rgb(32, 32, 32);
+=======
 .artist-about {
   padding: 4rem 4.5rem;
 }
@@ -1358,6 +1392,7 @@ footer {
 .artist-album-card__description {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
+>>>>>>> origin
 }
 
 /*# sourceMappingURL=style.css.map */

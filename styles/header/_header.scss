@@ -20,8 +20,13 @@ footer {
 .header-section nav {
   width: 100%;
   justify-content: space-between;
+
   li {
     display: flex;
+    margin-right: 1.5rem;
+  }
+  li:hover {
+    background-color: d.$primary-text-background;
   }
   ul:first-of-type {
     li {
@@ -35,6 +40,7 @@ footer {
       background-color: d.$primary-text-background;
     }
   }
+
   ul:last-of-type {
     width: 24.5rem;
     justify-content: space-between;

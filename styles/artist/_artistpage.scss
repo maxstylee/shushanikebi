@@ -18,7 +18,6 @@
     } 
 
 .artist-hero__overlay img {
-  /* width: 100%; */
   object-fit: cover;
 }    
 
@@ -316,5 +315,8 @@
 .artist-tag:hover {
   color: d.$primary-light-text-color;
   border-color: d.$primary-text-background;
+}
+.artist-active {
+  background-color: d.$libray-hover-color;
 }
 

@@ -2,11 +2,11 @@
 
 .discover__tab {
   @include d.primary-button;
-
-  &--active {
-    background-color: #ffffff;
-    color: #000;
-  }
+}
+.discover__tab.focuse {
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 600;
 }
 
 .discover__top {
@@ -49,7 +49,7 @@
 /* Mini stacked card */
 
 .discover-hero__mini-cover {
-  width: 1.8rem;
+  width: 18rem;
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;

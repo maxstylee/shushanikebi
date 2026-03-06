@@ -16,7 +16,8 @@
 }
 
 /* Sort & Group (icon + text) */
-.library-page__sort,.library-page__group {
+.library-page__sort,
+.library-page__group {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -39,7 +40,8 @@
   background-color: d.$primary-text-background;
 }
 
-.library-page__sort-label,.library-page__group-label {
+.library-page__sort-label,
+.library-page__group-label {
   font-size: 1.4rem;
   color: d.$primary-text-color;
 }
@@ -55,7 +57,7 @@
 .liked-songs__header,
 .song-row {
   display: grid;
-  grid-template-columns: 40px 300px 300px 70px 40px;
+  grid-template-columns: 40px 300px 300px 90px 18px;
   align-items: center;
   justify-content: start;
 }
@@ -111,7 +113,9 @@
   font-weight: 500;
   color: d.$primary-text-color;
 }
-.song-row__album, .song-row__duration, .song-row__artist {
+.song-row__album,
+.song-row__duration,
+.song-row__artist {
   font-size: 1.4rem;
   color: d.$primary-text-color;
 }
@@ -119,4 +123,8 @@
 .song-row__like img {
   width: 18px;
   height: 18px;
+}
+
+.liked-active {
+  background-color: d.$libray-hover-color;
 }

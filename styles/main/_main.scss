@@ -85,11 +85,11 @@
   border: 0.1rem solid rgb(32, 32, 32);
   border-radius: d.$primary-radius;
   padding: 0.2rem;
-  width: calc(100vw - 30.4rem);
+  width: calc(100vw - 28.6rem);
   overflow-y: auto;
   transition: width 0.3s ease-in-out;
 }
 .main-content.active {
-  width: calc(100vw - 64rem);
+  width: calc(100vw - 62rem);
 }
 
