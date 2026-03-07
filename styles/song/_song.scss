@@ -1,0 +1,141 @@
+@use "../abstracts/default" as d;
+
+.song {
+  padding: 2.5rem 1.2rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  &__divider {
+    height: 1px;
+    background-color: rgba(255,255,255,0.1);
+  }
+}
+
+/* HERO */
+.song-hero {
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  gap: 6rem;
+
+  &__image {
+    width: 500px;
+    height: 500px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
+
+.song-hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: d.$primary-light-text-color;
+  width: 720px;
+}
+
+/* TITLE */
+
+.song-hero__title {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+/* META */
+
+.song-hero__meta {
+  display: flex;
+  gap: 1.2rem;
+  color: d.$primary-text-color;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.song-hero__meta-title {
+  color: d.$primary-light-text-color;
+}
+
+.song-hero__meta span::before {
+  content: "•";
+  margin-right: 1.2rem;
+}
+
+/* CONTROLS */
+
+.song-hero__controls {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.song-hero__controls img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* PLAY BUTTON */
+
+.song-hero__controls img:first-child {
+  width: 40px;
+  height: 40px;
+}
+
+/* GENRES */
+
+.song-hero__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.song-hero__genres span {
+  border: 2px solid rgb(137, 137, 137, 0.25);
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  font-size: 1.4rem;
+  color: d.$primary-text-color;
+}
+
+/* ARTISTS */
+
+.song-hero__artists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.song-hero__artist {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.song-hero__artist img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.song-hero__artist-name {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: d.$primary-light-text-color;
+  margin-bottom: 1rem;
+}
+
+.song-hero__artist span {
+  font-size: 1.5rem;
+  color: d.$primary-text-color;
+}
+
+
