@@ -1,5 +1,12 @@
 @use "../abstracts/default" as d;
 
+.main-content--song-background {
+  background: linear-gradient(
+  180deg,
+  #242b37 0%, 
+  #1b1d20 100%)
+}
+
 .song {
   padding: 2.5rem 1.2rem;
 
@@ -42,14 +49,12 @@
 }
 
 /* TITLE */
-
 .song-hero__title {
   font-size: 3.6rem;
   font-weight: 700;
 }
 
 /* META */
-
 .song-hero__meta {
   display: flex;
   gap: 1.2rem;
@@ -68,7 +73,6 @@
 }
 
 /* CONTROLS */
-
 .song-hero__controls {
   display: flex;
   align-items: center;
@@ -82,19 +86,17 @@
 }
 
 /* PLAY BUTTON */
-
 .song-hero__controls img:first-child {
   width: 40px;
   height: 40px;
 }
 
 /* GENRES */
-
 .song-hero__genres {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-
+  cursor: pointer;
 }
 
 .song-hero__genres span {
@@ -106,7 +108,6 @@
 }
 
 /* ARTISTS */
-
 .song-hero__artists {
   display: flex;
   flex-direction: column;
@@ -124,6 +125,7 @@
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .song-hero__artist-name {
@@ -139,3 +141,76 @@
 }
 
 
+/* -- LYRICS SECTION -- */
+.song-lyrics__tabs {
+  display: flex;
+  gap: 5rem;
+  border-bottom: 2px solid rgba(d.$primary-text-color, 0.2);
+  padding-bottom: 1.7rem;
+}
+
+.song-lyrics__tab {
+  background: none;
+  border: none;
+  color: d.$primary-text-color;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.song-lyrics__tab--active {
+  color: d.$primary-light-text-color;
+  position: relative;
+}
+
+.song-lyrics__tab--active::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #22c55e;
+}
+
+.song-lyrics__tab:hover {
+  color: d.$primary-light-text-color;
+}
+
+.song-lyrics__content {
+  display: flex;
+  gap: 21rem;
+  padding-top: 3.5rem;
+}
+
+.song-lyrics__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.song-lyrics__actions img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.song-lyrics__text {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  color: d.$primary-light-text-color;
+  
+  // ტექსტის fade effect
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 30%,
+    rgba(0,0,0,0) 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 30%,
+    rgba(0,0,0,0) 100%
+  );
+}

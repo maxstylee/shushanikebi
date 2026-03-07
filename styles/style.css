@@ -1597,6 +1597,10 @@ footer {
   font-weight: 400;
 }
 
+.main-content--song-background {
+  background: linear-gradient(180deg, #242b37 0%, #1b1d20 100%);
+}
+
 .song {
   padding: 2.5rem 1.2rem;
 }
@@ -1682,6 +1686,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .song-hero__genres span {
@@ -1710,6 +1715,7 @@ footer {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .song-hero__artist-name {
@@ -1722,6 +1728,67 @@ footer {
 .song-hero__artist span {
   font-size: 1.5rem;
   color: rgb(137, 137, 137);
+}
+
+/* -- LYRICS SECTION -- */
+.song-lyrics__tabs {
+  display: flex;
+  gap: 5rem;
+  border-bottom: 2px solid rgba(137, 137, 137, 0.2);
+  padding-bottom: 1.7rem;
+}
+
+.song-lyrics__tab {
+  background: none;
+  border: none;
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.song-lyrics__tab--active {
+  color: rgb(224, 224, 224);
+  position: relative;
+}
+
+.song-lyrics__tab--active::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #22c55e;
+}
+
+.song-lyrics__tab:hover {
+  color: rgb(224, 224, 224);
+}
+
+.song-lyrics__content {
+  display: flex;
+  gap: 21rem;
+  padding-top: 3.5rem;
+}
+
+.song-lyrics__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.song-lyrics__actions img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.song-lyrics__text {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  color: rgb(224, 224, 224);
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
