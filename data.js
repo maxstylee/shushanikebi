@@ -225,9 +225,9 @@ if (libraryCards) {
 // liked music generator
 
 let likedSongs = document.getElementById("liked-song-generator");
-
-likedSongs.innerHTML += AllData.likedCardsData.map(
-  (item) => `
+if (likedSongs) {
+  likedSongs.innerHTML += AllData.likedCardsData.map(
+    (item) => `
       <div class="liked-songs__list">
               <div class="song-row">
                 <span class="song-row__number">${item.number}</span>
@@ -246,4 +246,101 @@ likedSongs.innerHTML += AllData.likedCardsData.map(
               </div>
             </div>
     `,
-);
+  );
+}
+let artistAlbumCards = document.getElementById("artist-album-cards");
+
+if (artistAlbumCards) {
+  artistAlbumCards.innerHTML += AllData.musicDataMix.map(
+    (item) => `
+   <article class="artist-album-card">
+              <div class="artist-album-card__image">
+                <img src="${item.image}" alt="${item.title}" />
+              </div>
+
+              <div class="artist-album-card__content">
+                <div class="artist-album-card__header">
+                  <h3 class="artist-album-card__title">
+                    ${item.title}
+                  </h3>
+                  <span class="artist-album-card__count">${item.number}</span>
+                </div>
+
+                <p class="artist-album-card__description">${item.author}</p>
+              </div>
+            </article>
+           
+    `,
+  );
+  artistAlbumCards.innerHTML += AllData.musicData.map(
+    (item) => `
+   <article class="artist-album-card">
+              <div class="artist-album-card__image">
+                <img src="${item.image}" alt="${item.title}" />
+              </div>
+
+              <div class="artist-album-card__content">
+                <div class="artist-album-card__header">
+                  <h3 class="artist-album-card__title">
+                    ${item.title}
+                  </h3>
+                  <span class="artist-album-card__count">${item.number}</span>
+                </div>
+
+                <p class="artist-album-card__description">${item.author}</p>
+              </div>
+            </article>
+           
+    `,
+  );
+}
+
+let trackListdata = document.getElementById("traack-list-generator");
+if (trackListdata) {
+  trackListdata.innerHTML += AllData.likedCardsData.map(
+    (item, index) => `
+               <li class="track-item">
+                  <span class="track-item__index">${index + 1}</span>
+
+                  <div class="track-item__info">
+                    <img src="${item.image}" alt="${item.title}" />
+                    <div>
+                      <p class="track-item__title">${item.title}</p>
+                      <p class="track-item__artist">${item.author}</p>
+                    </div>
+                  </div>
+
+                  <span class="track-item__duration">${item.duration}</span>
+
+                  <button class="track-item__like">
+                    <img src="../asset/icons/like.svg" alt="Like" />
+                  </button>
+                </li>    
+    `,
+  );
+}
+
+let popularListdata = document.getElementById("popular-cardlist-generator");
+if (popularListdata) {
+  popularListdata.innerHTML += AllData.likedCardsData.map(
+    (item, index) => `
+               <li class="track-item">
+                  <span class="track-item__index">${index + 1}</span>
+
+                  <div class="track-item__info">
+                    <img src="${item.image}" alt="${item.title}" />
+                    <div>
+                      <p class="track-item__title">${item.title}</p>
+                      <p class="track-item__artist">${item.author}</p>
+                    </div>
+                  </div>
+
+                  <span class="track-item__duration">${item.duration}</span>
+
+                  <button class="track-item__like">
+                    <img src="../asset/icons/like.svg" alt="Like" />
+                  </button>
+                </li>    
+    `,
+  );
+}
