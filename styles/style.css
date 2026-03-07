@@ -1264,10 +1264,10 @@ footer {
   border-color: rgb(17, 17, 17);
 }
 
-<<<<<<< HEAD
 .artist-active {
   background-color: rgb(32, 32, 32);
-=======
+}
+
 .artist-about {
   padding: 4rem 4.5rem;
 }
@@ -1392,7 +1392,116 @@ footer {
 .artist-album-card__description {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
->>>>>>> origin
+}
+
+.main-content--background {
+  background: linear-gradient(180deg, #293573 0%, #060606 100%);
+}
+
+.playlist {
+  padding: 1rem 0;
+}
+
+.playlist-layout {
+  display: flex;
+  gap: 3.8rem;
+}
+
+.playlist-left {
+  flex: 1;
+}
+
+.playlist-hero {
+  padding: 0rem 1.2rem;
+  margin-bottom: 3rem;
+}
+.playlist-hero__info {
+  margin-bottom: 2rem;
+}
+.playlist-hero__title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+  margin-bottom: 2rem;
+}
+.playlist-hero__meta {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+.playlist-hero__meta span {
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+.playlist-hero {
+  /* ACTIONS ROW */
+}
+.playlist-hero__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playlist-hero__controls {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.playlist-hero {
+  /* PLAY BUTTON (background removed) */
+}
+.playlist-hero__play {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.playlist-hero__play img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.15s ease;
+}
+.playlist-hero__play:hover img {
+  transform: scale(1.05);
+}
+.playlist-hero {
+  /* STANDARD ICON BUTTON */
+}
+.playlist-hero__button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.playlist-hero__button img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.playlist-hero__button:hover img {
+  opacity: 1;
+}
+
+.playlist-tracks {
+  background: royalblue;
+  padding: 2rem;
+}
+
+.playlist-sidebar {
+  width: 320px;
+  background: seagreen;
+  padding: 2rem;
+}
+
+.liked-songs__divider-light {
+  height: 2px;
+  background-color: rgba(137, 137, 137, 0.15);
+  margin-bottom: 2rem;
+}
+
+.song-row--active:hover {
+  background-color: rgba(87, 118, 230, 0.15);
+}
+
+.song-row__liked:active img {
+  content: url("../asset/icons/heart-active.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

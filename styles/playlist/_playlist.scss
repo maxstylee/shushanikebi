@@ -1,0 +1,122 @@
+@use "../abstracts/default" as d;
+
+.main-content--background {
+    background: linear-gradient(
+    180deg,
+    #293573 0%,
+    #060606 100%
+  );
+}
+
+
+.playlist {
+  padding: 1rem 0;
+}
+
+.playlist-layout {
+  display: flex;
+  gap: 3.8rem;
+}
+
+.playlist-left {
+  flex: 1;
+}
+
+.playlist-hero {
+  padding: 0rem 1.2rem;
+  margin-bottom: 3rem;
+
+  &__info {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: d.$primary-light-text-color;
+    margin-bottom: 2rem;
+  }
+
+  &__meta {
+    font-size: 1.4rem;
+    color: d.$primary-text-color;
+
+    span {
+      font-weight: 500;
+      color: d.$primary-light-text-color;
+    }
+  }
+
+  /* ACTIONS ROW */
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* PLAY BUTTON (background removed) */
+  &__play {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.15s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  /* STANDARD ICON BUTTON */
+  &__button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
+  }
+}
+
+.playlist-tracks {
+  background: royalblue;
+  padding: 2rem;
+}
+
+.playlist-sidebar {
+  width: 320px;
+  background: seagreen;
+  padding: 2rem;
+}
+
+.liked-songs__divider-light {
+    height: 2px;
+    background-color: rgba(137, 137, 137, 0.15);
+    margin-bottom: 2rem;
+}
+
+.song-row--active:hover {
+    background-color: rgba(87, 118, 230, 0.15);
+}
+
+.song-row__liked:active img {
+  content: url("../asset/icons/heart-active.svg");
+}
