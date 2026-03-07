@@ -1394,4 +1394,167 @@ footer {
   color: rgb(137, 137, 137);
 }
 
+.main-content--background {
+  background: linear-gradient(180deg, #293573 0%, #060606 100%);
+}
+
+.playlist {
+  padding: 1rem 0;
+}
+
+.playlist-layout {
+  display: flex;
+  gap: 3.8rem;
+}
+
+.playlist-left {
+  flex: 1;
+}
+
+.playlist-hero {
+  padding: 0rem 1.2rem;
+  margin-bottom: 3rem;
+}
+.playlist-hero__info {
+  margin-bottom: 2rem;
+}
+.playlist-hero__title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: rgb(224, 224, 224);
+  margin-bottom: 2rem;
+}
+.playlist-hero__meta {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+}
+.playlist-hero__meta span {
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+.playlist-hero {
+  /* ACTIONS ROW */
+}
+.playlist-hero__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playlist-hero__controls {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.playlist-hero {
+  /* PLAY BUTTON */
+}
+.playlist-hero__play {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.playlist-hero__play img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.15s ease;
+}
+.playlist-hero__play:hover img {
+  transform: scale(1.05);
+}
+.playlist-hero {
+  /* ICON BUTTON */
+}
+.playlist-hero__button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.playlist-hero__button img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.playlist-hero__button:hover img {
+  opacity: 1;
+}
+
+.liked-songs__divider-light {
+  height: 2px;
+  background-color: rgba(137, 137, 137, 0.15);
+  margin-bottom: 2rem;
+}
+
+.song-row--active:hover {
+  background-color: rgba(87, 118, 230, 0.15);
+}
+
+.song-row__liked:active img {
+  content: url("../asset/icons/heart-active.svg");
+}
+
+/** ASSIDE STARTS HERE */
+.playlist-sidebar {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 2.5rem;
+  /* CARD */
+}
+.playlist-sidebar__card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.playlist-sidebar__card img {
+  width: 100%;
+  display: block;
+}
+.playlist-sidebar {
+  /* GENRES */
+}
+.playlist-sidebar__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.playlist-sidebar__genre {
+  padding: 1rem 1.8rem;
+  border-radius: 4.4rem;
+  border: 2px solid rgba(137, 137, 137, 0.15);
+  background: transparent;
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.playlist-sidebar__genre:hover {
+  border-color: rgb(224, 224, 224);
+  color: rgb(224, 224, 224);
+}
+.playlist-sidebar {
+  /* ARTISTS */
+}
+.playlist-sidebar__artists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.playlist-sidebar__artist {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.playlist-sidebar__artist img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.playlist-sidebar__artist-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(137, 137, 137);
+}
+
 /*# sourceMappingURL=style.css.map */
