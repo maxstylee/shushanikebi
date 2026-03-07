@@ -1446,7 +1446,7 @@ footer {
   gap: 3rem;
 }
 .playlist-hero {
-  /* PLAY BUTTON (background removed) */
+  /* PLAY BUTTON */
 }
 .playlist-hero__play {
   border: none;
@@ -1462,7 +1462,7 @@ footer {
   transform: scale(1.05);
 }
 .playlist-hero {
-  /* STANDARD ICON BUTTON */
+  /* ICON BUTTON */
 }
 .playlist-hero__button {
   border: none;
@@ -1479,17 +1479,6 @@ footer {
   opacity: 1;
 }
 
-.playlist-tracks {
-  background: royalblue;
-  padding: 2rem;
-}
-
-.playlist-sidebar {
-  width: 320px;
-  background: seagreen;
-  padding: 2rem;
-}
-
 .liked-songs__divider-light {
   height: 2px;
   background-color: rgba(137, 137, 137, 0.15);
@@ -1502,6 +1491,70 @@ footer {
 
 .song-row__liked:active img {
   content: url("../asset/icons/heart-active.svg");
+}
+
+/** ASSIDE STARTS HERE */
+.playlist-sidebar {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 2.5rem;
+  /* CARD */
+}
+.playlist-sidebar__card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.playlist-sidebar__card img {
+  width: 100%;
+  display: block;
+}
+.playlist-sidebar {
+  /* GENRES */
+}
+.playlist-sidebar__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.playlist-sidebar__genre {
+  padding: 1rem 1.8rem;
+  border-radius: 4.4rem;
+  border: 2px solid rgba(137, 137, 137, 0.15);
+  background: transparent;
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.playlist-sidebar__genre:hover {
+  border-color: rgb(224, 224, 224);
+  color: rgb(224, 224, 224);
+}
+.playlist-sidebar {
+  /* ARTISTS */
+}
+.playlist-sidebar__artists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.playlist-sidebar__artist {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.playlist-sidebar__artist img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.playlist-sidebar__artist-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(137, 137, 137);
 }
 
 /*# sourceMappingURL=style.css.map */

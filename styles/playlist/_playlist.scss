@@ -8,7 +8,6 @@
   );
 }
 
-
 .playlist {
   padding: 1rem 0;
 }
@@ -60,7 +59,7 @@
     gap: 3rem;
   }
 
-  /* PLAY BUTTON (background removed) */
+  /* PLAY BUTTON */
   &__play {
     border: none;
     background: transparent;
@@ -77,7 +76,7 @@
     }
   }
 
-  /* STANDARD ICON BUTTON */
+  /* ICON BUTTON */
   &__button {
     border: none;
     background: transparent;
@@ -96,17 +95,6 @@
   }
 }
 
-.playlist-tracks {
-  background: royalblue;
-  padding: 2rem;
-}
-
-.playlist-sidebar {
-  width: 320px;
-  background: seagreen;
-  padding: 2rem;
-}
-
 .liked-songs__divider-light {
     height: 2px;
     background-color: rgba(137, 137, 137, 0.15);
@@ -119,4 +107,73 @@
 
 .song-row__liked:active img {
   content: url("../asset/icons/heart-active.svg");
+}
+
+/** ASSIDE STARTS HERE */
+.playlist-sidebar {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 2.5rem;
+
+  /* CARD */
+  &__card {
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /* GENRES */
+  &__genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__genre {
+    padding: 1rem 1.8rem;
+    border-radius: 4.4rem;
+    border: 2px solid rgba(137, 137, 137, 0.15);
+    background: transparent;
+    color: d.$primary-text-color;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: d.$primary-light-text-color;
+      color: d.$primary-light-text-color;
+    }
+  }
+
+  /* ARTISTS */
+  &__artists {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__artist {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__artist-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: d.$primary-text-color;
+  }
 }
