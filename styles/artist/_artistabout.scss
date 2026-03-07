@@ -60,7 +60,8 @@
   color: d.$primary-light-text-color;
 }
 
-.artist-about__stat-label, .artist-about__city-count {
+.artist-about__stat-label,
+.artist-about__city-count {
   font-size: 1.4rem;
   line-height: 1.75;
   color: d.$primary-text-color;
@@ -74,4 +75,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: d.$primary-light-text-color;
+}
+.artist-active {
+  background-color: d.$libray-hover-color;
 }

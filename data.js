@@ -344,3 +344,37 @@ if (popularListdata) {
     `,
   );
 }
+
+let likedMusicData = document.getElementById("liked-songs__generator");
+if (likedMusicData) {
+  likedMusicData.innerHTML += AllData.likedCardsData.map(
+    (item, index) => `
+            <div class="song-row song-row--active">
+                      <span class="song-row__number">${index + 1}</span>
+
+                      <div class="song-row__title-group">
+                        <img
+                          src="${item.image}"
+                          alt="Album cover"
+                        />
+                        <div class="song-row__text">
+                          <h3 class="song-row__title">${item.title}</h3>
+                          <p class="song-row__artist">${item.author}</p>
+                        </div>
+                      </div>
+
+                      <span class="song-row__album"
+                        >${item.author}</span
+                      >
+                      <span class="song-row__duration">${item.duration}</span>
+
+                      <div class="song-row__liked">
+                        <img
+                          src="../asset/icons/like.svg"
+                          alt="Liked"
+                        />
+                      </div>
+                    </div>   
+    `,
+  );
+}

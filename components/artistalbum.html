@@ -10,7 +10,7 @@
 
 <body>
   <div class="content-wrapper">
-    <aside class="aside-wrapper">
+    <aside class="aside-wrapper active">
       <nav>
         <ul>
           <li class="aside-library">
@@ -27,7 +27,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./playlist.html">
               <img src="../asset/icons/Playlist.svg" alt="Playlist" />
               Playlist
               <img class="pinned-music" src="../asset/icons/right-arrow.svg" />
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./album.html">
               <img src="../asset/icons/Albums.svg" alt="Albums" />
               Albums
             </a>
@@ -70,7 +70,7 @@
             </a>
           </li>
           <li>
-            <a href="./artistpage.html">
+            <a href="./artistpage.html" class="artist-active">
               <img src="../asset/icons/Artists.svg" alt="Artists" />
               Artists
             </a>
@@ -175,7 +175,8 @@
         <nav class="artist-nav">
           <ul class="artist-nav__list">
             <li><a href="./artistpage.html"><button class="artist-nav__btn">Home</button></a></li>
-            <li><a href="./artistalbum.html"><button class="artist-nav__btn artist-nav__btn--active">Albums</button></a></li>
+            <li><a href="./artistalbum.html"><button class="artist-nav__btn artist-nav__btn--active">Albums</button></a>
+            </li>
             <li><button class="artist-nav__btn">Singles and EPs</button></li>
             <li><button class="artist-nav__btn">Compilations</button></li>
             <li><button class="artist-nav__btn">Merch</button></li>
@@ -191,7 +192,7 @@
         <section class="artist-albums">
           <div id="artist-album-cards" class="artist-albums__cards">
             <!-- CARD -->
-            
+
             <!-- END CARD -->
           </div>
         </section>

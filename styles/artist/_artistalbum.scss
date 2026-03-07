@@ -6,7 +6,7 @@
 
 .artist-albums__cards {
   display: flex;
-  flex-wrap: wrap;           
+  flex-wrap: wrap;
 }
 
 /* Card */
@@ -49,4 +49,10 @@
 .artist-album-card__description {
   font-size: 1.2rem;
   color: d.$primary-text-color;
+}
+.album-active {
+  background-color: d.$libray-hover-color;
+}
+.artist-active {
+  background-color: d.$libray-hover-color;
 }
