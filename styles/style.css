@@ -1328,7 +1328,8 @@ footer {
   color: rgb(224, 224, 224);
 }
 
-.artist-about__stat-label, .artist-about__city-count {
+.artist-about__stat-label,
+.artist-about__city-count {
   font-size: 1.4rem;
   line-height: 1.75;
   color: rgb(137, 137, 137);
@@ -1342,6 +1343,10 @@ footer {
   font-size: 1.6rem;
   font-weight: 700;
   color: rgb(224, 224, 224);
+}
+
+.artist-active {
+  background-color: rgb(32, 32, 32);
 }
 
 .artist-albums {
@@ -1392,6 +1397,14 @@ footer {
 .artist-album-card__description {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
+}
+
+.album-active {
+  background-color: rgb(32, 32, 32);
+}
+
+.artist-active {
+  background-color: rgb(32, 32, 32);
 }
 
 .main-content--background {
@@ -1557,6 +1570,10 @@ footer {
   color: rgb(137, 137, 137);
 }
 
+.playlist-active {
+  background-color: rgb(32, 32, 32);
+}
+
 .main-content--alb-background {
   background: linear-gradient(180deg, #1d2025 0%, #060606 100%);
 }
@@ -1595,6 +1612,10 @@ footer {
 
 .song-row__title {
   font-weight: 400;
+}
+
+.album-active {
+  background-color: rgb(32, 32, 32);
 }
 
 .main-content--song-background {
