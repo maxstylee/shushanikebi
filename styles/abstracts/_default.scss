@@ -1,17 +1,9 @@
+@use "./variables" as v;
+
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,700,400&display=swap");
 
-// ცვლადები
-$primary-radius: 1rem;
-$primary-button-radius:0.8rem;
-$primary-theme-color: rgba(6, 6, 6, 1);
-$primary-text-background: rgb(17, 17, 17);
-$primary-text-color: rgba(137, 137, 137, 1);
-$primary-light-text-color: rgb(224, 224, 224);
-$libray-hover-color:rgb(32, 32, 32);
-$player-background: rgb(51, 56, 66);
-
 body {
-  background-color: $primary-theme-color;
+  background-color: v.$color-bg-primary;
   font-family: "Satoshi";
   font-weight: 400;
   letter-spacing: 3%;
@@ -37,5 +29,5 @@ body {
 
 }
 .primary-active-text {
-  color: $primary-light-text-color !important;
+  color: v.$color-text-primary !important;
 }

@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 /* Wrapper */
 .library-page__topbar {
@@ -23,26 +24,26 @@
   width: 40px;
   height: 40px;
   @include m.flex-center;
-  border-radius: 0.5rem;
+  border-radius: v.$radius-sm;
   background-color: transparent;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
 .icon-btn:hover {
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-hover;
 }
 
 .library-page__sort-label,
 .library-page__group-label {
-  font-size: 1.4rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
 }
 
 /* Active View Button */
 .library-page__view-btn.is-active {
-  background-color: d.$primary-text-background;
-  border-radius: 0.5rem;
+  background-color: v.$color-bg-hover;
+  border-radius: v.$radius-sm;
 }
 
 /*** liked songs section starts here ***/
@@ -56,29 +57,29 @@
 }
 
 .liked-songs__header {
-  font-size: 1.4rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
   padding: 1.2rem;
 }
 
 .liked-songs__divider {
   height: 2px;
-  background-color: d.$primary-text-background;
+  background-color: v.$color-border-soft;
   margin-bottom: 2rem;
 }
 
 .song-row {
   padding: 1rem;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
+  border-radius: v.$radius-sm;
+  transition: background-color v.$transition-base;
   cursor: pointer;
 }
 
 .song-row:hover {
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-hover;
 
   .song-row__album {
-    color: d.$primary-light-text-color;
+    color: v.$color-text-primary;
   }
 }
 
@@ -94,21 +95,21 @@
 }
 
 .song-row__title {
-  font-size: 1.6rem;
   margin-bottom: 0.4rem;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
 }
 
 .song-row__number {
-  font-size: 1.6rem;
   font-weight: 500;
-  color: d.$primary-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-secondary;
 }
 .song-row__album,
 .song-row__duration,
 .song-row__artist {
-  font-size: 1.4rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
 }
 
 .song-row__like img {
@@ -117,5 +118,5 @@
 }
 
 .liked-active {
-  background-color: d.$libray-hover-color;
+  background-color: v.$color-bg-hover;
 }

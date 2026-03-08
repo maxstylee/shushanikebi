@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .artist-about {
   padding: 4rem 4.5rem;
@@ -30,52 +31,50 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
 }
 
 .artist-about__rank-number {
-  font-size: 3rem;
+  font-size: v.$text-xl;
   font-weight: 700;
 }
 
 .artist-about__rank-text {
-  font-size: 1.4rem;
+  font-size: v.$text-sm;
 }
 
 /* Bio */
 .artist-about__text {
-  font-size: 1.6rem;
   line-height: 1.75;
-  color: d.$primary-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
 }
 
 /* Stats */
-.artist-about__stat {
-  margin-bottom: 2.3rem;
-}
-
-.artist-about__stat-value {
-  font-size: 3rem;
-  font-weight: 700;
-  color: d.$primary-light-text-color;
-}
-
-.artist-about__stat-label,
-.artist-about__city-count {
-  font-size: 1.4rem;
-  line-height: 1.75;
-  color: d.$primary-text-color;
-}
-
+.artist-about__stat,
 .artist-about__city {
   margin-bottom: 2.3rem;
 }
 
-.artist-about__city-name {
-  font-size: 1.6rem;
+.artist-about__stat-value {
   font-weight: 700;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-xl;
+  color: v.$color-text-primary;
 }
+
+.artist-about__stat-label,
+.artist-about__city-count {
+  line-height: 1.75;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
+}
+
+.artist-about__city-name {
+  font-weight: 700;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
+}
+
 .artist-active {
-  background-color: d.$libray-hover-color;
+  background-color: v.$color-bg-hover;
 }

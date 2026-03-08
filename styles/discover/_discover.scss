@@ -1,11 +1,12 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .discover__tab {
   @include m.primary-button;
 }
 .discover__tab.focuse {
-  background-color: #ffffff;
+  background-color: v.$color-text-primary;
   color: #000;
   font-weight: 600;
 }
@@ -38,7 +39,7 @@
 .discover-hero__main-cover img {
   width: 100%;
   display: block;
-  border-radius: 1rem;
+  border-radius: v.$radius-lg;
 }
 
 /* RIGHT SIDE */
@@ -51,7 +52,7 @@
 
 .discover-hero__mini-cover {
   width: 18rem;
-  border-radius: 1rem;
+  border-radius: v.$radius-lg;
   overflow: hidden;
   cursor: pointer;
 
@@ -68,14 +69,14 @@
 }
 
 .discover-hero__title {
-  font-size: 3rem;
+  font-size: v.$text-xl;
   font-weight: 700;
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
 }
 
 .discover-hero__meta {
-  font-size: 1.4rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
 }
 
 .discover-hero__meta .dot {
@@ -83,7 +84,7 @@
 }
 
 .discover-hero__author {
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
 }
 
 /* ACTIONS */
@@ -116,8 +117,8 @@
 }
 
 .discover-hero__likes {
-  font-size: 1.2rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-xs;
+  color: v.$color-text-secondary;
 }
 
 /* TAGS */
@@ -129,19 +130,19 @@
 
 .discover-hero__tag {
   padding: 0.8rem 1.3rem;
-  border: 2px solid rgba(137, 137, 137, 0.1);
-  border-radius: 2rem;
-  font-size: 1.2rem;
-  color: d.$primary-text-color;
-}
+  border: 2px solid v.$color-border-soft;
+  border-radius: v.$radius-pill;
+  font-size: v.$text-xs;
+  color: v.$color-text-secondary;
 
-.discover-hero__tag:hover {
-  color: d.$primary-light-text-color;
-  background-color: d.$primary-text-background;
-  transition: all 0.2s ease;
-  cursor: pointer;
+  &:hover {
+    color: v.$color-text-primary;
+    background-color: v.$color-bg-secondary;
+    transition: all v.$transition-base;
+    cursor: pointer;
+  }
 }
 
 .header-discover {
-  background-color: rgb(17, 17, 17);
+  background-color: v.$color-bg-secondary;
 }

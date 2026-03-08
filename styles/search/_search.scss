@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .search-page__section-header {
   @include m.flex-between;
@@ -9,7 +10,7 @@
 .search-page__section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
 }
 
 .search-page__recent-list {
@@ -36,35 +37,35 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: d.$primary-text-background;
-  color: d.$primary-text-color;
-  font-size: 2.4rem;
+  background-color: v.$color-bg-secondary;
+  color: v.$color-text-secondary;
+  font-size: v.$text-lg;
   cursor: pointer;
   @include m.flex-center;
 }
 
 .recent-card__remove:hover {
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
 }
 
 .recent-card__title {
-  font-size: 1.4rem;
   font-weight: 400;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-primary;
 }
 
 .recent-card__subtitle {
-  font-size: 1.2rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-xs;
+  color: v.$color-text-secondary;
 }
 
 /*-- browse all sectction starts here --*/
 
 .search-page__main-title {
-  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2.6rem;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-lg;
+  color: v.$color-text-primary;
 }
 
 .search-page__browse-header {
@@ -73,9 +74,9 @@
 }
 
 .search-page__browse-title {
-  font-size: 1.8rem;
   font-weight: 500;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
 }
 
 .search-page__actions {
@@ -93,22 +94,22 @@
   position: relative;
   width: 170px;
   height: 170px;
-  border-radius: 1rem;
+  border-radius: v.$radius-lg;
   overflow: hidden;
   cursor: pointer;
 }
 
 .category-card--blue {
-  min-width: 170px;
+  min-width: 17rem;
   margin-right: 1.15rem;
 }
 
 .category-card__title {
   position: relative;
   z-index: 10;
-  font-size: 2rem;
   font-weight: 900;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-lg;
+  color: v.$color-text-primary;
   padding: 2rem;
 }
 
@@ -125,7 +126,7 @@
 }
 
 .category-card__image img {
-  border-radius: 0.5rem;
+  border-radius: v.$radius-sm;
   @include m.image-cover;
 }
 
@@ -141,5 +142,5 @@
   overflow: auto;
 }
 .header-search {
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-secondary;
 }

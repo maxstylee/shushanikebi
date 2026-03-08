@@ -108,7 +108,7 @@ footer {
   grid-area: sidebar;
   width: 26rem;
   padding: 1rem 0 0.7rem 2.5rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
 }
 .aside-wrapper .pinned-music {
   width: auto;
@@ -154,10 +154,10 @@ footer {
 
 .friend-list {
   width: 33rem;
-  background-color: white;
+  background-color: rgb(224, 224, 224);
   font-size: 3rem;
   border: 0.1rem solid rgb(32, 32, 32);
-  background-color: rgb(6, 6, 6);
+  background-color: rgb(17, 17, 17);
   border-radius: 1rem;
   padding: 2.1rem;
 }
@@ -180,8 +180,8 @@ footer {
   margin-bottom: 4.5rem;
 }
 .friend-list-action p {
-  color: rgb(224, 224, 224);
   font-size: 1.6rem;
+  color: rgb(224, 224, 224);
 }
 .friend-list-action .action {
   display: flex;
@@ -198,7 +198,7 @@ footer {
   margin-bottom: 2.5rem;
 }
 .friend-list-wrapper .friend-profile-image {
-  margin-right: 12px;
+  margin-right: 1.2rem;
 }
 
 .info-about-friend .friend-name {
@@ -207,8 +207,8 @@ footer {
   margin-bottom: 1rem;
 }
 .info-about-friend .music-name {
-  color: rgb(224, 224, 224);
   font-size: 1.4rem;
+  color: rgb(224, 224, 224);
   margin-right: 1rem;
 }
 .info-about-friend .music-style {
@@ -267,7 +267,7 @@ footer {
   transition: all 0.2s ease;
 }
 .home__tab:hover {
-  background-color: #3a3a3a;
+  background-color: rgb(58, 58, 58);
 }
 
 .home__tab.focuse {
@@ -377,10 +377,10 @@ footer {
   content: "";
   position: absolute;
   left: 0;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
   width: 0.4rem;
-  background-color: rgba(133, 197, 133, 0.6);
+  background-color: rgba(30, 215, 96, 0.6);
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;
 }
@@ -431,7 +431,7 @@ footer {
   border: none;
   background-color: rgb(17, 17, 17);
   color: rgb(137, 137, 137);
-  font-size: 2.4rem;
+  font-size: 2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -443,8 +443,8 @@ footer {
 }
 
 .recent-card__title {
-  font-size: 1.4rem;
   font-weight: 400;
+  font-size: 1.4rem;
   color: rgb(224, 224, 224);
 }
 
@@ -455,9 +455,9 @@ footer {
 
 /*-- browse all sectction starts here --*/
 .search-page__main-title {
-  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2.6rem;
+  font-size: 2rem;
   color: rgb(224, 224, 224);
 }
 
@@ -469,8 +469,8 @@ footer {
 }
 
 .search-page__browse-title {
-  font-size: 1.8rem;
   font-weight: 500;
+  font-size: 1.6rem;
   color: rgb(224, 224, 224);
 }
 
@@ -494,15 +494,15 @@ footer {
 }
 
 .category-card--blue {
-  min-width: 170px;
+  min-width: 17rem;
   margin-right: 1.15rem;
 }
 
 .category-card__title {
   position: relative;
   z-index: 10;
-  font-size: 2rem;
   font-weight: 900;
+  font-size: 2rem;
   color: rgb(224, 224, 224);
   padding: 2rem;
 }
@@ -576,7 +576,7 @@ footer {
 }
 
 .icon-btn:hover {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(32, 32, 32);
 }
 
 .library-page__sort-label,
@@ -587,7 +587,7 @@ footer {
 
 /* Active View Button */
 .library-page__view-btn.is-active {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(32, 32, 32);
   border-radius: 0.5rem;
 }
 
@@ -613,13 +613,14 @@ footer {
   width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 /* Pin */
 .library-card__pin {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -642,14 +643,14 @@ footer {
 }
 
 .library-card__title {
-  font-size: 1.4rem;
   font-weight: 500;
+  font-size: 1.4rem;
   color: rgb(224, 224, 224);
 }
 
 .library-card__count {
   font-size: 1.4rem;
-  color: rgb(30, 215, 96);
+  color: rgb(137, 137, 137);
 }
 
 .library-card__description {
@@ -698,7 +699,7 @@ footer {
 }
 
 .icon-btn:hover {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(32, 32, 32);
 }
 
 .library-page__sort-label,
@@ -709,7 +710,7 @@ footer {
 
 /* Active View Button */
 .library-page__view-btn.is-active {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(32, 32, 32);
   border-radius: 0.5rem;
 }
 
@@ -730,19 +731,19 @@ footer {
 
 .liked-songs__divider {
   height: 2px;
-  background-color: rgb(17, 17, 17);
+  background-color: rgba(137, 137, 137, 0.15);
   margin-bottom: 2rem;
 }
 
 .song-row {
   padding: 1rem;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
 .song-row:hover {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(32, 32, 32);
 }
 .song-row:hover .song-row__album {
   color: rgb(224, 224, 224);
@@ -762,14 +763,14 @@ footer {
 }
 
 .song-row__title {
-  font-size: 1.6rem;
   margin-bottom: 0.4rem;
+  font-size: 1.6rem;
   color: rgb(224, 224, 224);
 }
 
 .song-row__number {
-  font-size: 1.6rem;
   font-weight: 500;
+  font-size: 1.6rem;
   color: rgb(137, 137, 137);
 }
 
@@ -800,11 +801,11 @@ footer {
   transition: all 0.2s ease;
 }
 .discover__tab:hover {
-  background-color: #3a3a3a;
+  background-color: rgb(58, 58, 58);
 }
 
 .discover__tab.focuse {
-  background-color: #ffffff;
+  background-color: rgb(224, 224, 224);
   color: #000;
   font-weight: 600;
 }
@@ -932,12 +933,11 @@ footer {
 
 .discover-hero__tag {
   padding: 0.8rem 1.3rem;
-  border: 2px solid rgba(137, 137, 137, 0.1);
-  border-radius: 2rem;
+  border: 2px solid rgba(137, 137, 137, 0.15);
+  border-radius: 4.4rem;
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
 }
-
 .discover-hero__tag:hover {
   color: rgb(224, 224, 224);
   background-color: rgb(17, 17, 17);
@@ -1016,8 +1016,8 @@ footer {
 /* Follow */
 .btn--follow {
   padding: 1rem 2rem;
-  border-radius: 2rem;
   background-color: rgba(137, 137, 137, 0.25);
+  border-radius: 2rem;
   color: rgb(224, 224, 224);
   font-size: 1.4rem;
 }
@@ -1065,13 +1065,14 @@ footer {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: rgb(137, 137, 137);
-  position: relative;
   transition: color 0.2s ease;
+  position: relative;
 }
 
-.artist-nav__btn:hover, .artist-nav__btn--active {
+.artist-nav__btn:hover,
+.artist-nav__btn--active {
   color: rgb(224, 224, 224);
 }
 
@@ -1126,8 +1127,8 @@ footer {
 }
 
 .artist-section__title {
-  font-size: 2rem;
   font-weight: 700;
+  font-size: 2rem;
   color: rgb(224, 224, 224);
 }
 
@@ -1186,9 +1187,6 @@ footer {
 /* main right content */
 .artist-main__right {
   width: 25%;
-}
-
-.artist-main__right {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -1202,8 +1200,8 @@ footer {
 }
 
 .artist-pick__title {
-  font-size: 2rem;
   font-weight: 700;
+  font-size: 2rem;
   color: rgb(224, 224, 224);
 }
 
@@ -1221,7 +1219,7 @@ footer {
 }
 
 .artist-pick__text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: rgb(224, 224, 224);
 }
 
@@ -1230,7 +1228,7 @@ footer {
   width: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 /* Bio */
@@ -1247,14 +1245,14 @@ footer {
 }
 
 .artist-tag {
+  border: 2px solid rgba(137, 137, 137, 0.25);
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+  transition: all 0.2s ease;
   padding: 1rem 2rem;
   border-radius: 4.4rem;
-  border: 2px solid rgb(137, 137, 137);
   background: transparent;
-  font-size: 1.2rem;
-  color: rgb(137, 137, 137);
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .artist-tag:hover {
@@ -1310,36 +1308,33 @@ footer {
 
 /* Bio */
 .artist-about__text {
-  font-size: 1.6rem;
   line-height: 1.75;
-  color: rgb(137, 137, 137);
+  font-size: 1.6rem;
+  color: rgb(224, 224, 224);
 }
 
 /* Stats */
-.artist-about__stat {
+.artist-about__stat,
+.artist-about__city {
   margin-bottom: 2.3rem;
 }
 
 .artist-about__stat-value {
-  font-size: 3rem;
   font-weight: 700;
+  font-size: 3rem;
   color: rgb(224, 224, 224);
 }
 
 .artist-about__stat-label,
 .artist-about__city-count {
-  font-size: 1.4rem;
   line-height: 1.75;
+  font-size: 1.4rem;
   color: rgb(137, 137, 137);
 }
 
-.artist-about__city {
-  margin-bottom: 2.3rem;
-}
-
 .artist-about__city-name {
-  font-size: 1.6rem;
   font-weight: 700;
+  font-size: 1.6rem;
   color: rgb(224, 224, 224);
 }
 
@@ -1372,6 +1367,7 @@ footer {
   width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 /* text */
@@ -1383,8 +1379,8 @@ footer {
 }
 
 .artist-album-card__title {
-  font-size: 1.4rem;
   font-weight: 500;
+  font-size: 1.4rem;
   color: rgb(224, 224, 224);
 }
 
@@ -1398,10 +1394,7 @@ footer {
   color: rgb(137, 137, 137);
 }
 
-.album-active {
-  background-color: rgb(32, 32, 32);
-}
-
+.album-active,
 .artist-active {
   background-color: rgb(32, 32, 32);
 }
@@ -1507,7 +1500,7 @@ footer {
 
 /** ASSIDE STARTS HERE */
 .playlist-sidebar {
-  width: 320px;
+  width: 32rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -1533,12 +1526,12 @@ footer {
 }
 .playlist-sidebar__genre {
   padding: 1rem 1.8rem;
+  background: transparent;
+  cursor: pointer;
   border-radius: 4.4rem;
   border: 2px solid rgba(137, 137, 137, 0.15);
-  background: transparent;
   color: rgb(137, 137, 137);
   font-size: 1.4rem;
-  cursor: pointer;
   transition: all 0.2s ease;
 }
 .playlist-sidebar__genre:hover {
@@ -1565,8 +1558,8 @@ footer {
   object-fit: cover;
 }
 .playlist-sidebar__artist-name {
-  font-size: 1.6rem;
   font-weight: 500;
+  font-size: 1.6rem;
   color: rgb(137, 137, 137);
 }
 
@@ -1649,7 +1642,7 @@ footer {
   width: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .song-hero__info {
@@ -1657,7 +1650,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   color: rgb(224, 224, 224);
-  width: 720px;
+  width: 72rem;
 }
 
 /* TITLE */
@@ -1712,8 +1705,8 @@ footer {
 }
 
 .song-hero__genres span {
-  border: 2px solid rgba(137, 137, 137, 0.25);
   padding: 1rem 2rem;
+  border: 2px solid rgba(137, 137, 137, 0.15);
   border-radius: 4.4rem;
   font-size: 1.4rem;
   color: rgb(137, 137, 137);
@@ -1742,13 +1735,13 @@ footer {
 
 .song-hero__artist-name {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: rgb(224, 224, 224);
   margin-bottom: 1rem;
 }
 
 .song-hero__artist span {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: rgb(137, 137, 137);
 }
 
@@ -1756,7 +1749,7 @@ footer {
 .song-lyrics__tabs {
   display: flex;
   gap: 5rem;
-  border-bottom: 2px solid rgba(137, 137, 137, 0.2);
+  border-bottom: 0.2rem solid rgba(137, 137, 137, 0.2);
   padding-bottom: 1.7rem;
 }
 
