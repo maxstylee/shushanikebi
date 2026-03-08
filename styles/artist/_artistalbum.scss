@@ -1,4 +1,5 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .artist-albums {
   padding: 4rem 2.5rem;
@@ -11,8 +12,7 @@
 
 /* Card */
 .artist-album-card {
-  width: 170px;
-  cursor: pointer;
+  @include m.card;
   margin: 0 1.1rem 5rem 1.1rem;
 }
 
@@ -22,16 +22,13 @@
   margin-bottom: 0.6rem;
 
   img {
-    width: 100%;
-    display: block;
+    @include m.image-cover;
   }
 }
 
 /* text */
 .artist-album-card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include m.flex-between;
   margin-bottom: 0.8rem;
 }
 

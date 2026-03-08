@@ -1,0 +1,73 @@
+@use "../abstracts/default" as d;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column($gap:null) {
+  display:flex;
+  flex-direction:column;
+
+  @if $gap {
+    gap:$gap;
+  }
+}
+
+@mixin flex-align($gap:null){
+  display:flex;
+  align-items:center;
+
+  @if $gap {
+    gap:$gap;
+  }
+}
+
+@mixin btn-reset {
+  border:none;
+  background:none;
+  cursor:pointer;
+}
+
+@mixin image-cover {
+  width:100%;
+  display:block;
+  object-fit:cover;
+}
+
+@mixin card($width:170px){
+  width:$width;
+  cursor:pointer;
+}
+
+@mixin icon-hover{
+  opacity:0.8;
+  transition:opacity .2s ease;
+
+  &:hover{
+    opacity:1;
+  }
+}
+
+@mixin primary-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: d.$primary-text-background;
+  color: d.$primary-light-text-color;
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #3a3a3a;
+  }
+}

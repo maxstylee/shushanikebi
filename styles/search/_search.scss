@@ -1,9 +1,8 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .search-page__section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include m.flex-between;
   margin-bottom: 1.5rem;
 }
 
@@ -20,9 +19,8 @@
 }
 
 .recent-card {
-  width: 170px;
+  @include m.card;
   text-align: center;
-  cursor: pointer;
 }
 
 .recent-card__image {
@@ -42,9 +40,7 @@
   color: d.$primary-text-color;
   font-size: 2.4rem;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
 }
 
 .recent-card__remove:hover {
@@ -72,9 +68,7 @@
 }
 
 .search-page__browse-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include m.flex-between;
   margin-bottom: 1.5rem;
 }
 
@@ -132,8 +126,7 @@
 
 .category-card__image img {
   border-radius: 0.5rem;
-  width: 100%;
-  display: block;
+  @include m.image-cover;
 }
 
 .category-card:hover .category-card__image {

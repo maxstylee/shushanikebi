@@ -1,35 +1,28 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 /* Wrapper */
 .library-page__topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include m.flex-between;
   margin-bottom: 3rem;
 }
 
 /* Left Controls */
 .library-page__controls {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  @include m.flex-align(2rem);
 }
 
 /* Sort & Group (icon + text) */
 .library-page__sort,
 .library-page__group {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+  @include m.flex-align(0.6rem);
   cursor: pointer;
 }
 
 .icon-btn {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
   border-radius: 0.5rem;
   background-color: transparent;
   transition: background-color 0.2s ease;
@@ -62,8 +55,7 @@
 
 /* Card */
 .library-card {
-  width: 170px;
-  cursor: pointer;
+  @include m.card;
   margin: 0 1.1rem 5rem 1.1rem;
 }
 
@@ -73,8 +65,7 @@
   margin-bottom: 0.6rem;
 
   img {
-    width: 100%;
-    display: block;
+    @include m.image-cover;
   }
 }
 
@@ -88,9 +79,7 @@
   border-radius: 50%;
   background-color: d.$primary-text-background;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
 
   img {
     width: 19px;
@@ -100,9 +89,7 @@
 
 /* text */
 .library-card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include m.flex-between;
   margin-bottom: 0.8rem;
 }
 

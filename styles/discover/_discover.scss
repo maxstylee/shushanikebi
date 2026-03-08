@@ -1,7 +1,8 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .discover__tab {
-  @include d.primary-button;
+  @include m.primary-button;
 }
 .discover__tab.focuse {
   background-color: #ffffff;
@@ -14,15 +15,17 @@
 }
 
 .discover-page {
-  background: linear-gradient(#1b2d2a 0%, #1e3833 40%, #603319 100%);
+  background: 
+  linear-gradient(
+    #1b2d2a 0%, 
+    #1e3833 40%, 
+    #603319 100%);
 
   padding-bottom: 10rem; // ბოლოში რომ არ გაწყდეს
 }
 
 .discover-hero {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
+  @include m.flex-align(5rem);
   padding: 6rem 22rem;
 }
 
@@ -41,9 +44,7 @@
 /* RIGHT SIDE */
 
 .discover-hero__info {
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
+  @include m.flex-align(1.8rem);
 }
 
 /* Mini stacked card */
@@ -63,9 +64,7 @@
 /* TEXT BLOCK */
 
 .discover-hero__text {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
+  @include m.flex-column(1.8rem);
 }
 
 .discover-hero__title {
@@ -90,21 +89,15 @@
 /* ACTIONS */
 
 .discover-hero__actions {
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
+  @include m.flex-align(2.4rem);
 }
 
 .btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
+  @include m.btn-reset;
 }
 
 .btn--play {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
 
   img {
     width: 4rem;
@@ -113,20 +106,13 @@
 
 .btn--icon img {
   width: 2.2rem;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.btn--icon:hover img {
-  opacity: 1;
+  @include m.icon-hover;
 }
 
 /* Save group (icon + 500K) */
 
 .discover-hero__save-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  @include m.flex-align(1rem);
 }
 
 .discover-hero__likes {
