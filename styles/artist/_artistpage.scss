@@ -1,4 +1,5 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .artist-hero {
   position: relative; 
@@ -47,16 +48,12 @@
 
 /* Actions */
 .artist-hero__actions {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
+  @include m.flex-align(1.4rem);
 }
 
 /* Base button */
 .btn {
-  border: none;
-  cursor: pointer;
-  background: transparent;
+  @include m.btn-reset;
 }
 
 /* Play */
@@ -77,18 +74,11 @@
 .btn--icon {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
 }
 
 .btn--icon img {
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-}
-
-.btn--icon:hover img {
-  opacity: 1;
+  @include m.icon-hover;
 }
 
 .main-content--no-padding {
@@ -97,26 +87,20 @@
 
 /* nav starts here */
 .artist-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include m.flex-between;
   padding: 2rem 4.6rem;
   border-bottom: 0.1rem solid rgb(32, 32, 32);
 }
 
 /* List */
 .artist-nav__list {
-  display: flex;
-  align-items: center;
+  @include m.flex-align(5rem);
   list-style: none;
-  gap: 5rem;
 }
 
 /* Buttons */
 .artist-nav__btn {
-  background: none;
-  border: none;
-  cursor: pointer;
+  @include m.btn-reset;
   font-size: 1.5rem;
   color: d.$primary-text-color;
   position: relative;
@@ -140,9 +124,7 @@
 
 /* Search */
 .artist-nav__search {
-  background: none;
-  border: none;
-  cursor: pointer;
+  @include m.btn-reset;
 }
 
 .artist-nav__search img {
@@ -164,13 +146,12 @@
 
 /* main left content */
 .artist-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include m.flex-column(2rem);
   margin-bottom: 5rem;
 }
 
 .track-item__info {
+  @include m.flex-align(1.2rem);
   cursor: pointer;
 }
 
@@ -182,9 +163,7 @@
 
 .track-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  @include m.flex-column(0.5rem);
 }
 
 .track-item {
@@ -201,12 +180,6 @@
   font-size: 1.4rem;
 }
 
-.track-item__info {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-
 .track-item__info img {
   width: 50px;
   height: 50px;
@@ -219,9 +192,7 @@
 }
 
 .track-item__like {
-  background: none;
-  border: none;
-  cursor: pointer;
+  @include m.btn-reset;
 }
 
 .track-item__like img {
@@ -245,16 +216,12 @@
 }
 
 .artist-main__right {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  @include m.flex-column(3rem);
 }
 
 /* Artist Pick */
 .artist-pick {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include m.flex-column(2rem);
 }
 
 .artist-pick__title {
@@ -283,9 +250,8 @@
 
 /* Sidebar Image */
 .artist-sidebar__image img {
-  width: 100%;
+  @include m.image-cover;
   border-radius: 8px;
-  object-fit: cover;
 }
 
 /* Bio */

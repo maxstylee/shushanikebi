@@ -1,4 +1,5 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .artist-about {
   padding: 4rem 4.5rem;
@@ -25,8 +26,7 @@
 .artist-about__rank-content {
   position: absolute;
   inset: 0;
-  display: flex;
-  flex-direction: column;
+  @include m.flex-column;
   align-items: center;
   justify-content: center;
   text-align: center;

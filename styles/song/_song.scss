@@ -1,4 +1,5 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .main-content--song-background {
   background: linear-gradient(
@@ -11,9 +12,7 @@
   padding: 2.5rem 1.2rem;
 
   &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
+    @include m.flex-column(6rem);
   }
 
   &__divider {
@@ -33,17 +32,14 @@
     height: 500px;
 
     img {
-      width: 100%;
-      object-fit: cover;
+      @include m.image-cover;
       border-radius: 10px;
     }
   }
 }
 
 .song-hero__info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include m.flex-column(2rem);
   color: d.$primary-light-text-color;
   width: 720px;
 }
@@ -74,9 +70,7 @@
 
 /* CONTROLS */
 .song-hero__controls {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+  @include m.flex-align(3rem);
 }
 
 .song-hero__controls img {
@@ -109,15 +103,11 @@
 
 /* ARTISTS */
 .song-hero__artists {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  @include m.flex-column(1.5rem);
 }
 
 .song-hero__artist {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  @include m.flex-align(2rem);
 }
 
 .song-hero__artist img {
@@ -150,11 +140,9 @@
 }
 
 .song-lyrics__tab {
-  background: none;
-  border: none;
+  @include m.btn-reset;
   color: d.$primary-text-color;
   font-size: 1.4rem;
-  cursor: pointer;
 }
 
 .song-lyrics__tab--active {
@@ -183,9 +171,7 @@
 }
 
 .song-lyrics__actions {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  @include m.flex-column(3rem);
 }
 
 .song-lyrics__actions img {

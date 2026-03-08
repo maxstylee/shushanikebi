@@ -1,4 +1,5 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .main-container {
   display: grid;
@@ -38,9 +39,7 @@
     font-size: 1.6rem;
   }
   .action {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include m.flex-between;
     gap: 2.5rem;
     img {
       cursor: pointer;
@@ -73,9 +72,7 @@
     margin-right: 1.5rem;
   }
   span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include m.flex-center;
     img {
       margin-right: 1.5rem;
     }

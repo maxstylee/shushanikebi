@@ -1,35 +1,28 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 /* Wrapper */
 .library-page__topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include m.flex-between;
   margin-bottom: 3rem;
 }
 
 /* Right Controls */
 .library-page__controls {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  @include m.flex-align(2rem);
 }
 
 /* Sort & Group (icon + text) */
 .library-page__sort,
 .library-page__group {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+  @include m.flex-align(0.6rem);
   cursor: pointer;
 }
 
 .icon-btn {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
   border-radius: 0.5rem;
   background-color: transparent;
   transition: background-color 0.2s ease;
@@ -90,16 +83,14 @@
 }
 
 .song-row__title-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  @include m.flex-align(1rem);
 }
 
 .song-row__title-group img {
   width: 50px;
   height: 50px;
-  object-fit: cover;
-  display: block;
+  display:block;
+  object-fit:cover;
 }
 
 .song-row__title {

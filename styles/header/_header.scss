@@ -1,4 +1,5 @@
 @use "../abstracts/default" as d;
+@use "../abstracts/mixins" as m;
 
 .header-section {
   grid-area: header;
@@ -52,8 +53,7 @@ footer {
 .header-section nav a {
   color: d.$primary-text-color;
   font-size: 1.4rem;
-  display: flex;
-  align-items: center;
+  @include m.flex-align;
 }
 .header-section nav a img {
   margin-right: 1.8rem;
