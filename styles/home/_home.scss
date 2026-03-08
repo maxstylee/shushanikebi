@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .main-content {
   padding: 1.2rem 2.5rem;
@@ -23,7 +24,7 @@
 }
 .home__tab.focuse {
   background-color: #ffffff;
-  color: rgb(17, 17, 17);
+  color: v.$color-bg-secondary;
   font-weight: 600;
 }
 
@@ -53,8 +54,8 @@
 }
 
 .content-section__title {
-  color: d.$primary-light-text-color;
-  font-size: 2rem;
+  color: v.$color-text-primary;
+  font-size: v.$text-lg;
   font-weight: 700;
 }
 
@@ -76,25 +77,25 @@
   margin-bottom: 0.6rem;
 
   img {
-    border-radius: 1rem;
+    border-radius: v.$radius-lg;
     display: block;
   }
 }
 
 .music-card__title {
-  font-size: 1.4rem;
+  font-size: v.$text-sm;
   font-weight: 500;
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
 }
 
 .music-card__badge {
-  font-size: 1.4rem;
-  color: #ce6e9a;
+  font-size: v.$text-sm;
+  color: v.$color-accent-purple;
 }
 
 .music-card__description {
-  font-size: 1.2rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-xs;
+  color: v.$color-text-secondary;
 }
 
 .music-card--artist {
@@ -118,19 +119,19 @@
 
 .music-card__contents--podcast {
   position: relative;
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-secondary;
   padding: 1rem 1.2rem;
-  border-radius: 0.5rem;
+  border-radius: v.$radius-sm;
 }
 
 .music-card__contents--podcast::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
   width: 0.4rem;
-  background-color: rgba(133, 197, 133, 0.6);
+  background-color: rgba(v.$color-accent-green, 0.6);
 
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;

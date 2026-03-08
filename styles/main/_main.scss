@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .main-container {
   display: grid;
@@ -13,11 +14,11 @@
 }
 .friend-list {
   width: 33rem;
-  background-color: white;
+  background-color: v.$color-text-primary;
   font-size: 3rem;
-  border: 0.1rem solid rgb(32, 32, 32);
-  background-color: d.$primary-theme-color;
-  border-radius: d.$primary-radius;
+  border: 0.1rem solid v.$color-border;
+  background-color: v.$color-bg-secondary;
+  border-radius: v.$radius-lg;
   padding: 2.1rem;
 }
 
@@ -35,8 +36,8 @@
   justify-content: space-between;
   margin-bottom: 4.5rem;
   p {
-    color: d.$primary-light-text-color;
-    font-size: 1.6rem;
+    font-size: v.$text-md;
+    color: v.$color-text-primary;
   }
   .action {
     @include m.flex-between;
@@ -52,23 +53,23 @@
     margin-bottom: 2.5rem;
   }
   .friend-profile-image {
-    margin-right: 12px;
+    margin-right: 1.2rem;
   }
 }
 .info-about-friend {
   .friend-name {
-    font-size: 1.2rem;
-    color: d.$primary-light-text-color;
+    font-size: v.$text-xs;
+    color: v.$color-text-primary;
     margin-bottom: 1rem;
   }
   .music-name {
-    color: d.$primary-light-text-color;
-    font-size: 1.4rem;
+    font-size: v.$text-sm;
+    color: v.$color-text-primary;
     margin-right: 1rem;
   }
   .music-style {
-    font-size: 1.4rem;
-    color: d.$primary-text-color;
+    font-size: v.$text-sm;
+    color: v.$color-text-secondary;
     margin-right: 1.5rem;
   }
   span {
@@ -79,8 +80,8 @@
   }
 }
 .main-content {
-  border: 0.1rem solid rgb(32, 32, 32);
-  border-radius: d.$primary-radius;
+  border: 0.1rem solid v.$color-border;
+  border-radius: v.$radius-lg;
   padding: 0.2rem;
   width: calc(100vw - 28.6rem);
   overflow-y: auto;

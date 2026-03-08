@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .artist-hero {
   position: relative; 
@@ -7,8 +8,8 @@
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: v.$radius-lg;
+  border-top-right-radius: v.$radius-lg;
 }
 
 /* Overlay */
@@ -37,13 +38,13 @@
 .artist-hero__name {
   font-size: 5rem;
   font-weight: 900;
-  color: d.$primary-light-text-color;
+  color: v.$color-text-primary;
   margin-bottom: 2rem;
 }
 
 .artist-hero__listeners {
-  font-size: 1.4rem;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-primary;
 }
 
 /* Actions */
@@ -64,10 +65,10 @@
 /* Follow */
 .btn--follow {
   padding: 1rem 2rem;
-  border-radius: 2rem;
   background-color: rgba(137, 137, 137, 0.25);
-  color: d.$primary-light-text-color;
-  font-size: 1.4rem;
+  border-radius: 2rem;
+  color: v.$color-text-primary;
+  font-size: v.$text-sm;
 }
 
 /* Icon buttons */
@@ -82,14 +83,14 @@
 }
 
 .main-content--no-padding {
-  padding: 0
+  padding: 0;
 }
 
 /* nav starts here */
 .artist-nav {
   @include m.flex-between;
   padding: 2rem 4.6rem;
-  border-bottom: 0.1rem solid rgb(32, 32, 32);
+  border-bottom: 0.1rem solid v.$color-border;
 }
 
 /* List */
@@ -101,14 +102,15 @@
 /* Buttons */
 .artist-nav__btn {
   @include m.btn-reset;
-  font-size: 1.5rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
+  transition: color v.$transition-base;
   position: relative;
-  transition: color 0.2s ease;
 }
 
-.artist-nav__btn:hover, .artist-nav__btn--active {
-  color: d.$primary-light-text-color;
+.artist-nav__btn:hover, 
+.artist-nav__btn--active {
+  color: v.$color-text-primary;
 }
 
 .artist-nav__btn--active::after {
@@ -118,7 +120,7 @@
   bottom: -22px;
   width: 100%;
   height: 2px;
-  background: rgba(30, 215, 96, 1);
+  background: v.$color-accent-green;
   border-radius: 2px;
 }
 
@@ -156,9 +158,9 @@
 }
 
 .artist-section__title {
-  font-size: 2rem;
   font-weight: 700;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-lg;
+  color: v.$color-text-primary;
 }
 
 .track-list {
@@ -176,8 +178,8 @@
 
 .track-item__index, .track-item__artist, 
 .track-item__duration, .track-item__streams{
-  color: d.$primary-text-color;
-  font-size: 1.4rem;
+  color: v.$color-text-secondary;
+  font-size: v.$text-sm;
 }
 
 .track-item__info img {
@@ -187,8 +189,8 @@
 }
 
 .track-item__title {
-  font-size: 1.6rem;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
 }
 
 .track-item__like {
@@ -197,7 +199,7 @@
 
 .track-item__like img {
   opacity: 0.7;
-  transition: opacity 0.2s ease;
+  transition: opacity v.$transition-base;
 }
 
 .track-item__like:hover img {
@@ -213,9 +215,6 @@
 
 .artist-main__right {
   width: 25%;
-}
-
-.artist-main__right {
   @include m.flex-column(3rem);
 }
 
@@ -225,9 +224,9 @@
 }
 
 .artist-pick__title {
-  font-size: 2rem;
   font-weight: 700;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-lg;
+  color: v.$color-text-primary;
 }
 
 .artist-pick__card {
@@ -235,7 +234,7 @@
   gap: 1.3rem;
   padding: 1.3rem;
   background: rgba(24, 25, 30, 0.3);
-  border-radius: 1rem;
+  border-radius: v.$radius-lg;
 }
 
 .artist-pick__cover {
@@ -244,20 +243,20 @@
 }
 
 .artist-pick__text {
-  font-size: 1.5rem;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
 }
 
 /* Sidebar Image */
 .artist-sidebar__image img {
   @include m.image-cover;
-  border-radius: 8px;
+  border-radius: v.$radius-sm;
 }
 
 /* Bio */
 .artist-bio__text {
-  font-size: 1.6rem;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-md;
+  color: v.$color-text-primary;
 }
 
 /* Tags */
@@ -268,21 +267,23 @@
 }
 
 .artist-tag {
+  border: 2px solid rgba(v.$color-text-secondary, 0.25);
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
+  transition: all v.$transition-base;
   padding: 1rem 2rem;
   border-radius: 4.4rem;
-  border: 2px solid d.$primary-text-color;
   background: transparent;
-  font-size: 1.2rem;
-  color: d.$primary-text-color;
   cursor: pointer;
-  transition: all 0.2s ease;
+  
 }
 
 .artist-tag:hover {
-  color: d.$primary-light-text-color;
-  border-color: d.$primary-text-background;
+  color: v.$color-text-primary;
+  border-color: v.$color-bg-secondary;
 }
+
 .artist-active {
-  background-color: d.$libray-hover-color;
+  background-color: v.$color-bg-hover;
 }
 

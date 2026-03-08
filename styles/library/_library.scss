@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 /* Wrapper */
 .library-page__topbar {
@@ -23,26 +24,26 @@
   width: 40px;
   height: 40px;
   @include m.flex-center;
-  border-radius: 0.5rem;
+  border-radius: v.$radius-sm;
   background-color: transparent;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
 .icon-btn:hover {
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-hover;
 }
 
 .library-page__sort-label,
 .library-page__group-label {
-  font-size: 1.4rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
 }
 
 /* Active View Button */
 .library-page__view-btn.is-active {
-  background-color: d.$primary-text-background;
-  border-radius: 0.5rem;
+  background-color: v.$color-bg-hover;
+  border-radius: v.$radius-sm;
 }
 
 /*** library-section starts here ***/
@@ -66,18 +67,19 @@
 
   img {
     @include m.image-cover;
+    border-radius: v.$radius-lg;
   }
 }
 
 /* Pin */
 .library-card__pin {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-secondary;
 
   @include m.flex-center;
 
@@ -94,20 +96,20 @@
 }
 
 .library-card__title {
-  font-size: 1.4rem;
   font-weight: 500;
-  color: d.$primary-light-text-color;
+  font-size: v.$text-sm;
+  color: v.$color-text-primary;
 }
 
 .library-card__count {
-  font-size: 1.4rem;
-  color: rgba(30, 215, 96, 1);
+  font-size: v.$text-sm;
+  color: v.$color-text-secondary;
 }
 
 .library-card__description {
-  font-size: 1.2rem;
-  color: d.$primary-text-color;
+  font-size: v.$text-xs;
+  color: v.$color-text-secondary;
 }
 .aside-wrapper.active {
-  background-color: d.$primary-text-background;
+  background-color: v.$color-bg-library;
 }

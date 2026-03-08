@@ -1,5 +1,6 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .header-section {
   grid-area: header;
@@ -9,8 +10,8 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: d.$player-background;
-  border-radius: d.$primary-radius;
+  background-color: v.$color-bg-player;
+  border-radius: v.$radius-lg;
 }
 
 .header-section nav,
@@ -27,18 +28,18 @@ footer {
     margin-right: 1.5rem;
   }
   li:hover {
-    background-color: d.$primary-text-background;
+    background-color: v.$color-bg-secondary;
   }
   ul:first-of-type {
     li {
       padding: 1.2rem 3rem;
-      border-radius: d.$primary-radius;
+      border-radius: v.$radius-lg;
       a {
         width: 21rem;
       }
     }
     .header-home {
-      background-color: d.$primary-text-background;
+      background-color: v.$color-bg-secondary;
     }
   }
 
@@ -51,8 +52,8 @@ footer {
   }
 }
 .header-section nav a {
-  color: d.$primary-text-color;
-  font-size: 1.4rem;
+  color: v.$color-text-secondary;
+  font-size: v.$text-sm;
   @include m.flex-align;
 }
 .header-section nav a img {
