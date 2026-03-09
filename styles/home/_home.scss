@@ -2,13 +2,17 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
-.main-content {
-  padding: 1.2rem 2.5rem;
-}
-
 .home__top {
   @include m.flex-between;
   margin-bottom: 3rem;
+  position: sticky;
+  top: -1.2rem;
+  left: 0;
+  z-index: 10;
+  padding:1.2rem !important;
+  background-color: rgba(6, 6, 6, 0.8);
+  backdrop-filter: blur(10rem);
+  // border-radius: v.$radius-lg v.$radius-lg 0 0 ;
 }
 
 .home__tabs {
@@ -28,20 +32,10 @@
   font-weight: 600;
 }
 
-// .home__tab.focuse::after {
-//   display: block;
-//   content: attr(data-text);
-//   font-weight: bold;
-//   height: 0;
-//   overflow: hidden;
-//   visibility: hidden;
-// }
-
 .icon-btn {
   @include m.btn-reset;
   @include m.flex-center;
   padding: 1rem;
-  
 }
 
 .content-section {

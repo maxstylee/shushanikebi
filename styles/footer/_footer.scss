@@ -4,8 +4,8 @@
 
 footer {
   grid-area: footer;
-  background-color: d.$player-background;
-  border-radius: d.$primary-radius;
+  background-color: v.$color-bg-player;
+  border-radius: v.$radius-lg;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -96,7 +96,9 @@ footer {
   .volume-container {
     position: relative;
     cursor: pointer;
-
+    > img {
+      padding-top: 3px;
+    }
     .volume-bar {
       position: absolute;
       right: -5rem;

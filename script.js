@@ -117,7 +117,7 @@ audio.addEventListener("canplay", () => {
 
 let toggleLike = document.getElementById("like-toggle");
 
-function toggleFriends() {
+function toggleHeart() {
   toggleLike.classList.toggle("active");
 }
-toggleLike.onclick = toggleFriends;
+toggleLike.onclick = toggleHeart;

@@ -187,6 +187,9 @@ footer {
   position: relative;
   cursor: pointer;
 }
+.footer-player .volume-container > img {
+  padding-top: 3px;
+}
 .footer-player .volume-container .volume-bar {
   position: absolute;
   right: -5rem;
@@ -381,7 +384,7 @@ main {
 .main-content {
   border: 0.1rem solid rgb(32, 32, 32);
   border-radius: 1rem;
-  padding: 0.2rem;
+  padding: 1.2rem 2.5rem;
   width: calc(100vw - 28.6rem);
   overflow-y: auto;
   transition: width 0.3s ease-in-out;
@@ -391,15 +394,18 @@ main {
   width: calc(100vw - 62rem);
 }
 
-.main-content {
-  padding: 1.2rem 2.5rem;
-}
-
 .home__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3rem;
+  position: sticky;
+  top: -1.2rem;
+  left: 0;
+  z-index: 10;
+  padding: 1.2rem !important;
+  background-color: rgba(6, 6, 6, 0.8);
+  backdrop-filter: blur(10rem);
 }
 
 .home__tabs {
@@ -965,6 +971,13 @@ main {
 
 .discover__top {
   padding: 1.2rem 2.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1.2rem !important;
+  background-color: rgba(6, 6, 6, 0.8);
+  backdrop-filter: blur(10rem);
 }
 
 .discover-page {
