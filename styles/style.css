@@ -49,16 +49,6 @@ a {
   grid-area: header;
 }
 
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-  background-color: rgb(51, 56, 66);
-  border-radius: 1rem;
-}
-
 .header-section nav,
 .header-section nav ul {
   display: flex;
@@ -104,6 +94,165 @@ footer {
   margin-right: 1.8rem;
 }
 
+footer {
+  grid-area: footer;
+  background-color: rgb(51, 56, 66);
+  border-radius: 1rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-player {
+  display: flex;
+  align-items: center;
+}
+.footer-player .controls {
+  display: flex;
+  align-items: center;
+}
+.footer-player .spotify-player {
+  padding: 2.1rem;
+  padding-right: 0;
+}
+.footer-player .control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+.footer-player .control-btn img {
+  width: 3.8rem;
+}
+.footer-player .control-btn .pause-btn {
+  display: none;
+}
+.footer-player .control-btn.active .pause-btn {
+  display: block;
+}
+.footer-player .control-btn.active .play-btn {
+  display: none;
+}
+.footer-player .control-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14.8rem;
+  margin: 0 1.2rem;
+}
+.footer-player .control-arrows img {
+  cursor: pointer;
+}
+.footer-player .progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-player .progress-container span {
+  color: rgb(137, 137, 137);
+}
+.footer-player .progress-container {
+  font-size: 1.2rem;
+}
+.footer-player .player-current-time {
+  margin-right: 1rem;
+}
+.footer-player .player-progress-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 31.7rem;
+  height: 8px;
+  background: rgb(74, 78, 85);
+  border-radius: 5px;
+  overflow: hidden;
+  outline: none;
+  height: 0.5rem;
+}
+.footer-player .player-progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0.5rem;
+  width: 1.5rem;
+  background: rgb(254, 254, 254);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: -40rem 0 0 40rem #ffffff;
+}
+.footer-player .player-duration-time {
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+.footer-player .volume-container {
+  position: relative;
+  cursor: pointer;
+}
+.footer-player .volume-container .volume-bar {
+  position: absolute;
+  right: -5rem;
+  transform: rotate(270deg);
+  bottom: 8.8rem;
+  display: none;
+}
+.footer-player .volume-container:hover .volume-bar {
+  display: block;
+}
+
+.footer-player-music {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-player-music .footer-music__image {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.footer-player-music .footer-music__music-info {
+  display: flex;
+}
+.footer-player-music .footer-music__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-player-music .footer-music__title {
+  color: white;
+}
+.footer-player-music .footer-music__author {
+  color: rgb(137, 137, 137);
+}
+.footer-player-music .footer-music__album {
+  color: rgb(137, 137, 137);
+}
+.footer-player-music .music-controlers {
+  display: flex;
+  align-items: center;
+}
+.footer-player-music .music-controlers img {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.footer-player-music .music-controlers .heart-like-active {
+  display: none;
+}
+.footer-player-music .music-controlers #like-toggle {
+  display: flex;
+  align-items: center;
+}
+.footer-player-music .music-controlers #like-toggle.active .heart-like-active {
+  display: block;
+}
+.footer-player-music .music-controlers #like-toggle.active .heart-like {
+  display: none;
+}
+.footer-player-music .music-controlers .vertical-line {
+  width: 1px;
+  border: 1px solid rgb(77, 80, 87);
+  height: 3.6rem;
+  margin-right: 2rem;
+}
+
 .aside-wrapper {
   grid-area: sidebar;
   width: 26rem;
@@ -138,6 +287,10 @@ footer {
 .aside-wrapper a img {
   width: 2rem;
   margin-right: 2.2rem;
+}
+
+main {
+  grid-area: main;
 }
 
 .main-container {

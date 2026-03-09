@@ -1,5 +1,8 @@
 @use "../abstracts/default" as d;
 
+main {
+  grid-area: main;
+}
 .main-container {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -92,4 +95,3 @@
 .main-content.active {
   width: calc(100vw - 62rem);
 }
-

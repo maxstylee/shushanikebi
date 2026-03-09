@@ -3,14 +3,6 @@
 .header-section {
   grid-area: header;
 }
-main {
-  grid-area: main;
-}
-footer {
-  grid-area: footer;
-  background-color: d.$player-background;
-  border-radius: d.$primary-radius;
-}
 
 .header-section nav,
 .header-section nav ul {
