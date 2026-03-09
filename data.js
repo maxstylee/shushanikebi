@@ -228,22 +228,24 @@ let likedSongs = document.getElementById("liked-song-generator");
 if (likedSongs) {
   likedSongs.innerHTML += AllData.likedCardsData.map(
     (item) => `
-      <div class="liked-songs__list">
-              <div class="song-row">
-                <span class="song-row__number">${item.number}</span>
-                <div class="song-row__title-group">
-                  <img src="${item.image}" alt="${item.title}" />
-                  <div class="song-row__text">
-                    <h3 class="song-row__title">${item.title}</h3>
-                    <p class="song-row__artist">${item.author}</p>
+           <div class="liked-songs__list">
+             <a href="./album.html">
+               <div class="song-row">
+                  <span class="song-row__number">${item.number}</span>
+                  <div class="song-row__title-group">
+                    <img src="${item.image}" alt="${item.title}" />
+                    <div class="song-row__text">
+                      <h3 class="song-row__title">${item.title}</h3>
+                      <p class="song-row__artist">${item.author}</p>
+                    </div>
+                  </div>
+                  <span class="song-row__album">Random Access Memories</span>
+                  <span class="song-row__duration">${item.duration}</span>
+                  <div class="song-row__like">
+                    <img src="../asset/icons/heart-active.svg" alt="Liked" />
                   </div>
                 </div>
-                <span class="song-row__album">Random Access Memories</span>
-                <span class="song-row__duration">${item.duration}</span>
-                <div class="song-row__like">
-                  <img src="../asset/icons/heart-active.svg" alt="Liked" />
-                </div>
-              </div>
+              </a>
             </div>
     `,
   );

@@ -104,14 +104,6 @@ muteBtn.addEventListener("click", () => {
   }
 });
 
-audio.addEventListener("error", (e) => {
-  console.error("აუდიო ფაილის ჩატვირთვის შეცდომა:", audio.error);
-  alert("მუსიკა ვერ იპოვა! შეამოწმე ფაილის გზა და სახელი.");
-});
-
-audio.addEventListener("canplay", () => {
-  console.log("მუსიკა მზად არის დასაკრავად!");
-});
 
 // toggle class for like action
 
