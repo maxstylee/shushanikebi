@@ -102,8 +102,23 @@
               Search
             </a>
           </li>
+          <!-- header navigation mobile version start -->
+          <div class="mobile-version-list">
+            <li>
+              <a href="./library.html">
+                <img src="../asset/icons/Library.svg" alt="Library">
+                Library
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/profile.svg" alt="Profile">
+                Me
+              </a>
+            </li>
+          </div>
+          <!-- header navigation mobile version finish -->
         </ul>
-
         <!-- header navigation on left -->
         <ul>
           <li>
@@ -155,6 +170,11 @@
 
         </section>
 
+        <!-- music section for mobile version -->
+        <section id="mobile-version-list-generator" class="mobile-version__music-wrapper">
+        </section>
+        <!-- music section for mobile version -->
+
 
         <!-- Made For You Section -->
         <section class="content-section">
@@ -163,11 +183,11 @@
             <h2 class="content-section__title">Made For You</h2>
 
             <div class="content-section__actions">
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/preview-arrow.svg" alt="Previous">
               </button>
 
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/next-arrow.svg" alt="Next">
               </button>
 
@@ -186,11 +206,11 @@
             <h2 class="content-section__title">Your Top Mixes</h2>
 
             <div class="content-section__actions">
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/preview-arrow.svg" alt="Previous">
               </button>
 
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/next-arrow.svg" alt="Next">
               </button>
 
@@ -212,11 +232,11 @@
             <h2 class="content-section__title">Your favorite artists</h2>
 
             <div class="content-section__actions">
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/preview-arrow.svg" alt="Previous">
               </button>
 
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/next-arrow.svg" alt="Next">
               </button>
 
@@ -236,11 +256,11 @@
             <h2 class="content-section__title">Audiobooks for you</h2>
 
             <div class="content-section__actions">
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/preview-arrow.svg" alt="Previous">
               </button>
 
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/next-arrow.svg" alt="Next">
               </button>
 
@@ -263,11 +283,11 @@
             <h2 class="content-section__title">Podcasts for you</h2>
 
             <div class="content-section__actions">
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/preview-arrow.svg" alt="Previous">
               </button>
 
-              <button class="icon-btn">
+              <button class="icon-btn arrow-btn">
                 <img src="../asset/icons/next-arrow.svg" alt="Next">
               </button>
 
@@ -402,6 +422,27 @@
           <img src="../asset/icons/music-set.svg" alt="More">
         </div>
       </div>
+
+      <!-- footer mobile version player -->
+      <div class="mobile-footer_music-info">
+        <div class="footer-music__image">
+          <img src="../asset/images/get-lucky.svg" alt="Get lucky">
+        </div>
+        <div class="footer-music__info">
+          <p class="footer-music__title">Get Lucky(feat. Pharrell Williams)</p>
+          <p class="footer-music__author">Daft Punk</p>
+        </div>
+      </div>
+
+      <div class="mobile-footer__music-controls">
+        <img src="../asset/icons/add.svg" alt="Add">
+        <div id="mobile-play-pause" class="mobile-footer__play-pause">
+          <img src="../asset/icons/mobile-play.svg" alt="Play" class="play-btn">
+          <img src="../asset/icons/mobile-pause.svg" alt="Play" class="pause-btn">
+        </div>
+      </div>
+      <!-- footer mobile version player -->
+
     </footer>
   </div>
   <script src="../script.js"></script>

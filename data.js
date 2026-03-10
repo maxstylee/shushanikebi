@@ -101,7 +101,7 @@ if (discover) {
             </div>
         </div>
     `,
-  );
+  ).join("");
 }
 // 6. Genres Cards
 const genres = document.getElementById("genres-cards");
@@ -115,7 +115,7 @@ if (genres) {
             </div>
         </div>
     `,
-  );
+  ).join("");
 }
 // Mood & Activity Cards
 const moodActivity = document.getElementById("mood-activity");
@@ -129,7 +129,7 @@ if (moodActivity) {
             </div>
         </div>
     `,
-  );
+  ).join("");
 }
 // entertainment Cards
 const entertaiment = document.getElementById("entertaiment");
@@ -143,7 +143,7 @@ if (entertaiment) {
             </div>
         </div>
     `,
-  );
+  ).join("");
 }
 // podcast Cards
 const podcasts = document.getElementById("podcasts");
@@ -157,7 +157,7 @@ if (podcasts) {
             </div>
         </div>
     `,
-  );
+  ).join("");
 }
 // audioBooks
 const audioBooks = document.getElementById("audiobooks");
@@ -171,7 +171,7 @@ if (audioBooks) {
             </div>
         </div>
     `,
-  );
+  ).join("");
 }
 
 // card generation in library
@@ -228,22 +228,24 @@ let likedSongs = document.getElementById("liked-song-generator");
 if (likedSongs) {
   likedSongs.innerHTML += AllData.likedCardsData.map(
     (item) => `
-      <div class="liked-songs__list">
-              <div class="song-row">
-                <span class="song-row__number">${item.number}</span>
-                <div class="song-row__title-group">
-                  <img src="${item.image}" alt="${item.title}" />
-                  <div class="song-row__text">
-                    <h3 class="song-row__title">${item.title}</h3>
-                    <p class="song-row__artist">${item.author}</p>
+           <div class="liked-songs__list">
+             <a href="./album.html">
+               <div class="song-row">
+                  <span class="song-row__number">${item.number}</span>
+                  <div class="song-row__title-group">
+                    <img src="${item.image}" alt="${item.title}" />
+                    <div class="song-row__text">
+                      <h3 class="song-row__title">${item.title}</h3>
+                      <p class="song-row__artist">${item.author}</p>
+                    </div>
+                  </div>
+                  <span class="song-row__album">Random Access Memories</span>
+                  <span class="song-row__duration">${item.duration}</span>
+                  <div class="song-row__like">
+                    <img src="../asset/icons/heart-active.svg" alt="Liked" />
                   </div>
                 </div>
-                <span class="song-row__album">Random Access Memories</span>
-                <span class="song-row__duration">${item.duration}</span>
-                <div class="song-row__like">
-                  <img src="../asset/icons/heart-active.svg" alt="Liked" />
-                </div>
-              </div>
+              </a>
             </div>
     `,
   );
@@ -377,4 +379,21 @@ if (likedMusicData) {
                     </div>   
     `,
   );
+}
+// mobile version music list generator
+let mobileMusicList = document.getElementById("mobile-version-list-generator");
+if (mobileMusicList) {
+  mobileMusicList.innerHTML = AllData.likedCardsData.slice(0, 6).map(
+    (item) => `
+          <div class="mobile-version__music-list">
+            <div class="music-image">
+              <img src="${item.image}" alt="${item.title}">
+            </div>
+            <div class="music-info">
+              <p>${item.title}</p>
+              <p>${item.author}</p>
+            </div>
+          </div> 
+    `,
+  ).join('');
 }

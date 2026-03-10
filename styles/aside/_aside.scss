@@ -7,6 +7,9 @@
   width: 26rem;
   padding: 1rem 0 0.7rem 2.5rem;
   border-radius: v.$radius-md;
+  @media (max-width: 1480px) {
+       display: none;
+  }
   .pinned-music {
     width: auto;
     position: absolute;
