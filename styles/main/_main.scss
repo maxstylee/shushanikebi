@@ -23,6 +23,10 @@ main {
   background-color: v.$color-bg-secondary;
   border-radius: v.$radius-lg;
   padding: 2.1rem;
+
+  @media (max-width: 1480px) {
+    display: none;
+  }
 }
 
 #friends .friend-list-active {
@@ -89,6 +93,12 @@ main {
   width: calc(100vw - 28.6rem);
   overflow-y: auto;
   transition: width 0.3s ease-in-out;
+
+  @media (max-width: 1480px) {
+      width: auto;
+      padding: 0 0.7rem;
+      border: none;
+  } 
 }
 .main-content.active {
   width: calc(100vw - 62rem);

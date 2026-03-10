@@ -51,11 +51,17 @@ const playBtn = document.getElementById("play-pause");
 const progressBar = document.getElementById("progress-bar");
 const currentTimeEl = document.getElementById("current-time");
 const durationTimeEl = document.getElementById("duration-time");
+const playBtnMobile = document.getElementById("mobile-play-pause")
 
 // Toggle Play/Pause
 playBtn.addEventListener("click", () => {
   audio.paused ? audio.play() : audio.pause();
   playBtn.classList.toggle("active");
+});
+// Toggle Play/Pause for mobile
+playBtnMobile.addEventListener("click", () => {
+  audio.paused ? audio.play() : audio.pause();
+  playBtnMobile.classList.toggle("active");
 });
 
 // function to format seconds into M:SS

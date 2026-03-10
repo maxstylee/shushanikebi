@@ -211,7 +211,7 @@ let discoverCards = [
     image: "../asset/images/made for you.svg",
   },
   {
-    title: "new releases",
+    title: "New Releases",
     color: "rgba(186, 93, 7, 1)",
     image: "../asset/images/new releases.svg",
   },

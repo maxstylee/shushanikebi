@@ -1,7 +1,35 @@
 @use "../abstracts/default" as d;
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
+@media (max-width: 1480px) {
+  .mobile-version {
+    &__music-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    &__music-list {
+      display: flex;
+      align-items: center;
+      padding: 0.7rem;
+      background-color: v.$color-bg-hover;
+      border-radius: v.$radius-lg;
+      .music-image {
+        margin-right: 0.8rem;
+      }
+      .music-info p {
+        font-size: 1.4rem;
 
+        color: v.$color-text-secondary;
+        &:first-child {
+          color: v.$color-text-primary;
+        }
+      }
+    }
+  }
+}
 .home__top {
   @include m.flex-between;
   margin-bottom: 3rem;
@@ -9,7 +37,6 @@
   top: -1.2rem;
   left: 0;
   z-index: 10;
-  padding:1.2rem !important;
   background-color: rgba(6, 6, 6, 0.8);
   backdrop-filter: blur(10rem);
   // border-radius: v.$radius-lg v.$radius-lg 0 0 ;
@@ -20,6 +47,19 @@
   gap: 0.5rem;
   justify-content: space-between;
   width: 34.5rem;
+
+  @media (max-width: 1480px) {
+    justify-content: start;
+    width: auto;
+    gap: 1rem;
+    button {
+      background-color: v.$color-bg-hover;
+      font-size: 1.2rem;
+      &:first-child {
+        display: none;
+      }
+    }
+  }
 }
 
 .home__tab {
@@ -29,7 +69,6 @@
 .home__tab.focuse {
   background-color: #ffffff;
   color: v.$color-bg-secondary;
-  font-weight: 600;
 }
 
 .icon-btn {
@@ -55,6 +94,11 @@
 
 .content-section__actions {
   @include m.flex-align(1.6rem);
+  @media (max-width: 1480px) {
+    .icon-btn.arrow-btn {
+      display: none;
+    }
+  }
 }
 
 .music-card {
@@ -135,4 +179,10 @@
   display: flex;
   gap: 1rem;
   overflow: auto;
+}
+
+// element hide until responsive
+
+.mobile-version__music-wrapper {
+  display: none;
 }
