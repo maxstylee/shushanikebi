@@ -92,8 +92,9 @@ if (podcast) {
 // 6. Discover Cards
 const discover = document.getElementById("discover-cards");
 if (discover) {
-  discover.innerHTML = AllData.discoverCards.map(
-    (item) => `
+  discover.innerHTML = AllData.discoverCards
+    .map(
+      (item) => `
         <div class="category-card category-card--blue" style="background-color:${item.color} ;">
             <h3 class="category-card__title">${item.title}</h3>
             <div class="category-card__image">
@@ -101,13 +102,15 @@ if (discover) {
             </div>
         </div>
     `,
-  ).join("");
+    )
+    .join("");
 }
 // 6. Genres Cards
 const genres = document.getElementById("genres-cards");
 if (genres) {
-  genres.innerHTML = AllData.genres.map(
-    (item) => `
+  genres.innerHTML = AllData.genres
+    .map(
+      (item) => `
         <div class="category-card category-card--blue" style="background-color:${item.color} ;">
             <h3 class="category-card__title">${item.title}</h3>
             <div class="category-card__image">
@@ -115,13 +118,15 @@ if (genres) {
             </div>
         </div>
     `,
-  ).join("");
+    )
+    .join("");
 }
 // Mood & Activity Cards
 const moodActivity = document.getElementById("mood-activity");
 if (moodActivity) {
-  moodActivity.innerHTML = AllData.moodActivityData.map(
-    (item) => `
+  moodActivity.innerHTML = AllData.moodActivityData
+    .map(
+      (item) => `
         <div class="category-card category-card--blue" style="background-color:${item.color} ;">
             <h3 class="category-card__title">${item.title}</h3>
             <div class="category-card__image">
@@ -129,13 +134,15 @@ if (moodActivity) {
             </div>
         </div>
     `,
-  ).join("");
+    )
+    .join("");
 }
 // entertainment Cards
 const entertaiment = document.getElementById("entertaiment");
 if (entertaiment) {
-  entertaiment.innerHTML = AllData.entertainmentData.map(
-    (item) => `
+  entertaiment.innerHTML = AllData.entertainmentData
+    .map(
+      (item) => `
         <div class="category-card category-card--blue" style="background-color:${item.color} ;">
             <h3 class="category-card__title">${item.title}</h3>
             <div class="category-card__image">
@@ -143,13 +150,15 @@ if (entertaiment) {
             </div>
         </div>
     `,
-  ).join("");
+    )
+    .join("");
 }
 // podcast Cards
 const podcasts = document.getElementById("podcasts");
 if (podcasts) {
-  podcasts.innerHTML = AllData.podcastData.map(
-    (item) => `
+  podcasts.innerHTML = AllData.podcastData
+    .map(
+      (item) => `
         <div class="category-card category-card--blue" style="background-color:${item.color} ;">
             <h3 class="category-card__title">${item.title}</h3>
             <div class="category-card__image">
@@ -157,13 +166,15 @@ if (podcasts) {
             </div>
         </div>
     `,
-  ).join("");
+    )
+    .join("");
 }
 // audioBooks
 const audioBooks = document.getElementById("audiobooks");
 if (audioBooks) {
-  audioBooks.innerHTML = AllData.audioBooksData.map(
-    (item) => `
+  audioBooks.innerHTML = AllData.audioBooksData
+    .map(
+      (item) => `
         <div class="category-card category-card--blue" style="background-color:${item.color} ;">
             <h3 class="category-card__title">${item.title}</h3>
             <div class="category-card__image">
@@ -171,7 +182,8 @@ if (audioBooks) {
             </div>
         </div>
     `,
-  ).join("");
+    )
+    .join("");
 }
 
 // card generation in library
@@ -373,18 +385,22 @@ if (likedMusicData) {
                       <div class="song-row__liked">
                         <img
                           src="../asset/icons/like.svg"
-                          alt="Liked"
+                          alt="Liked" class="like-desktop-version"
                         />
+                        <img src="../asset/icons/heart-active.svg" alt="Liked" class="like-active-desktop-version">
+                        <img src="../asset/icons/threedots.svg" alt="More" class="threedots-movile-version">
                       </div>
-                    </div>   
+                    </div>  
     `,
   );
 }
 // mobile version music list generator
 let mobileMusicList = document.getElementById("mobile-version-list-generator");
 if (mobileMusicList) {
-  mobileMusicList.innerHTML = AllData.likedCardsData.slice(0, 6).map(
-    (item) => `
+  mobileMusicList.innerHTML = AllData.likedCardsData
+    .slice(0, 6)
+    .map(
+      (item) => `
           <div class="mobile-version__music-list">
             <div class="music-image">
               <img src="${item.image}" alt="${item.title}">
@@ -395,5 +411,6 @@ if (mobileMusicList) {
             </div>
           </div> 
     `,
-  ).join('');
+    )
+    .join("");
 }
