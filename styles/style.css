@@ -1989,6 +1989,155 @@ main {
   background-color: rgb(32, 32, 32);
 }
 
+.playlist-search {
+  display: none;
+}
+
+@media (max-width: 1480px) {
+  /* layout */
+  .playlist-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .playlist-sidebar {
+    order: -1;
+    width: 211px;
+    margin: 0 auto;
+  }
+  /* sidebar elements */
+  .playlist-sidebar__genres,
+  .playlist-sidebar__artists {
+    display: none;
+  }
+  /* hero */
+  .playlist-hero {
+    margin-bottom: 2rem;
+  }
+  .playlist-hero__title {
+    font-size: 2rem;
+  }
+  .playlist-hero__search {
+    display: none;
+  }
+  .playlist-hero__controls {
+    gap: 3.1rem;
+  }
+  .playlist-hero__button img {
+    opacity: 1;
+  }
+  /* controls order */
+  .playlist-hero__controls button:nth-child(3) {
+    order: 1;
+  }
+  .playlist-hero__controls button:nth-child(4) {
+    order: 2;
+  }
+  .playlist-hero__controls button:nth-child(5) {
+    order: 3;
+  }
+  .playlist-hero__controls button:nth-child(7) {
+    order: 4;
+  }
+  .playlist-hero__controls button:nth-child(6) {
+    order: 5;
+    visibility: hidden;
+  }
+  .playlist-hero__controls button:nth-child(2) {
+    order: 6;
+  }
+  .playlist-hero__play {
+    order: 7;
+  }
+  /* liked songs header */
+  .liked-songs__header,
+  .liked-songs__divider-light {
+    display: none;
+  }
+  .liked-songs__header,
+  .song-row {
+    grid-template-columns: 325px 1fr;
+  }
+  /* hide columns */
+  .song-row__number,
+  .song-row__album,
+  .song-row__duration {
+    display: none;
+  }
+  /* heart → three dots */
+  .song-row__liked img {
+    display: none;
+  }
+  .song-row__liked::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../asset/icons/threedots.svg") no-repeat center;
+    background-size: contain;
+  }
+  /* spacing cleanup */
+  .song-row,
+  .content-wrapper-playlist {
+    padding: 0;
+  }
+  .main-container {
+    margin: 0;
+    column-gap: 0;
+  }
+  .main-content--background {
+    padding: 0 1.5rem;
+  }
+  /* playlist search */
+  .playlist-search {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 6rem 0 2rem 0;
+  }
+  .playlist-search__field {
+    position: relative;
+    flex: 1;
+  }
+  .playlist-search__input {
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-family: "Satoshi";
+    background: rgba(224, 224, 224, 0.04);
+    color: rgb(224, 224, 224);
+    font-size: 1.4rem;
+    letter-spacing: 3%;
+  }
+  .playlist-search__input::placeholder {
+    color: rgba(137, 137, 137, 0.7);
+  }
+  .playlist-search__icon-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .playlist-search__icon-btn img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    padding-top: 0.2rem;
+  }
+  .playlist-search__sort-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .playlist-search__sort-btn img {
+    width: 22px;
+  }
+}
 .main-content--alb-background {
   background: linear-gradient(180deg, #1d2025 0%, #060606 100%);
 }
