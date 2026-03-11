@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper content-wrapper-playlist">
     <aside class="aside-wrapper active">
       <nav>
         <ul>
@@ -149,9 +149,29 @@
       </nav>
     </header>
 
+    <!-- გვანცა იწყება აქ-->
     <main class="main-container">
       <section class="main-content main-content--background">
-        <!-- გვანცა იწყება აქ-->
+        <!-- mobile version playlist search input start -->
+        <section class="playlist-search">
+          <div class="playlist-search__field">
+            <input 
+              type="text" 
+              class="playlist-search__input" 
+              placeholder="Search playlist"
+            >
+
+            <button class="playlist-search__icon-btn">
+              <img src="../asset/icons/Search.svg" alt="Search">
+            </button>
+          </div>
+
+          <button class="playlist-search__sort-btn">
+            <img src="../asset/icons/sort.svg" alt="Sort">
+          </button>
+        </section>
+        <!-- mobile version playlist search input finish -->
+
         <section class="playlist">
           <div class="playlist-layout">
             <div class="playlist-left">
@@ -199,7 +219,7 @@
                     </div>
 
                     <!-- RIGHT SIDE SEARCH -->
-                    <button class="playlist-hero__button">
+                    <button class="playlist-hero__button playlist-hero__search">
                       <img src="../asset/icons/search.svg" alt="Search" />
                     </button>
                   </div>
