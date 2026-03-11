@@ -3,11 +3,7 @@
 @use "../abstracts/variables" as v;
 
 .main-content--background {
-    background: linear-gradient(
-    180deg,
-    #293573 0%,
-    #060606 100%
-  );
+  background: linear-gradient(180deg, #293573 0%, #060606 100%);
 }
 
 .playlist {
@@ -17,6 +13,9 @@
 .playlist-layout {
   display: flex;
   gap: 3.8rem;
+  @media (max-width: 1480px) {
+    @include m.flex-column(2.4rem);
+  }
 }
 
 .playlist-left {
@@ -27,6 +26,10 @@
   padding: 0rem 1.2rem;
   margin-bottom: 3rem;
 
+  @media (max-width: 1480px) {
+    margin-bottom: 2rem;
+  }
+
   &__info {
     margin-bottom: 2rem;
   }
@@ -36,6 +39,9 @@
     font-weight: 700;
     color: v.$color-text-primary;
     margin-bottom: 2rem;
+    @media (max-width: 1480px) {
+      font-size: v.$text-lg;
+    }
   }
 
   &__meta {
@@ -55,12 +61,14 @@
 
   &__controls {
     @include m.flex-align(3rem);
+    @media (max-width: 1480px) {
+      gap: 3.1rem;
+    }
   }
 
   /* PLAY BUTTON */
   &__play {
     @include m.btn-reset;
-
     img {
       width: 40px;
       height: 40px;
@@ -81,6 +89,9 @@
       height: 20px;
       opacity: 0.8;
       transition: opacity 0.2s ease;
+      @media (max-width: 1480px) {
+        opacity: 1;
+      }
     }
 
     &:hover img {
@@ -90,17 +101,13 @@
 }
 
 .liked-songs__divider-light {
-    height: 2px;
-    background-color: v.$color-border-soft;
-    margin-bottom: 2rem;
+  height: 2px;
+  background-color: v.$color-border-soft;
+  margin-bottom: 2rem;
 }
 
 .song-row--active:hover {
-    background-color: rgba(87, 118, 230, 0.15);
-}
-
-.song-row__liked:active img {
-  content: url("../asset/icons/heart-active.svg");
+  background-color: rgba(87, 118, 230, 0.15);
 }
 
 /** ASSIDE STARTS HERE */
@@ -108,6 +115,12 @@
   width: 32rem;
   @include m.flex-column(3rem);
   margin-right: 2.5rem;
+
+  @media (max-width: 1480px) {
+    order: -1;
+    width: 211px;
+    margin: 0 auto;
+  }
 
   /* CARD */
   &__card {
@@ -124,6 +137,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    @media (max-width: 1480px) {
+      display: none;
+    }
   }
 
   &__genre {
@@ -145,6 +161,9 @@
   /* ARTISTS */
   &__artists {
     @include m.flex-column(1.5rem);
+    @media (max-width: 1480px) {
+      display: none;
+    }
   }
 
   &__artist {
@@ -172,72 +191,70 @@
 .playlist-search {
   display: none;
 }
+.threedots-movile-version {
+  display: none;
+}
+
+.song-row__liked .like-desktop-version {
+  display: block;
+}
+.like-active-desktop-version {
+  display: none;
+}
+.song-row__liked.active {
+  .like-desktop-version {
+    display: none;
+  }
+  .like-active-desktop-version {
+    display: block;
+  }
+}
 
 ////// * RESPONSIVE * //////
 @media (max-width: 1480px) {
-
-  /* layout */
-  .playlist-layout {
-    @include m.flex-column(2.4rem);
-  }
-
-  .playlist-sidebar {
-    order: -1;
-    width: 211px;
-    margin: 0 auto;
-  }
-
-  /* sidebar elements */
-  .playlist-sidebar__genres,
-  .playlist-sidebar__artists {
+  .song-row__liked .like-desktop-version {
     display: none;
   }
-
+  .song-row__liked.active {
+    .like-active-desktop-version {
+      display: none;
+    }
+  }
+  .threedots-movile-version {
+    display: block;
+  }
   /* hero */
-  .playlist-hero {
-    margin-bottom: 2rem;
-  }
-
-  .playlist-hero__title {
-    font-size: v.$text-lg;
-  }
-
   .playlist-hero__search {
     display: none;
   }
-
-  .playlist-hero__controls {
-    gap: 3.1rem;
-  }
-
-  .playlist-hero__button img {
-    opacity: 1;
-  }
-
   /* controls order */
-  .playlist-hero__controls button:nth-child(3) { order: 1; }
-  .playlist-hero__controls button:nth-child(4) { order: 2; }
-  .playlist-hero__controls button:nth-child(5) { order: 3; }
-  .playlist-hero__controls button:nth-child(7) { order: 4; }
-
+  .playlist-hero__controls button:nth-child(3) {
+    order: 1;
+  }
+  .playlist-hero__controls button:nth-child(4) {
+    order: 2;
+  }
+  .playlist-hero__controls button:nth-child(5) {
+    order: 3;
+  }
+  .playlist-hero__controls button:nth-child(7) {
+    order: 4;
+  }
   .playlist-hero__controls button:nth-child(6) {
     order: 5;
     visibility: hidden;
   }
-
-  .playlist-hero__controls button:nth-child(2) { order: 6; }
-
-  .playlist-hero__play { order: 7; }
+  .playlist-hero__controls button:nth-child(2) {
+    order: 6;
+  }
+  .playlist-hero__play {
+    order: 7;
+  }
 
   /* liked songs header */
   .liked-songs__header,
   .liked-songs__divider-light {
     display: none;
-  }
-
-  .liked-songs__header,
-  .song-row {
-    grid-template-columns: 325px 1fr;
   }
 
   /* hide columns */
@@ -247,33 +264,14 @@
     display: none;
   }
 
-  /* heart → three dots */
-  .song-row__liked img {
-    display: none;
-  }
-
-  .song-row__liked::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url("../asset/icons/threedots.svg") no-repeat center;
-    background-size: contain;
-  }
-
   /* spacing cleanup */
-  .song-row,
   .content-wrapper-playlist {
     padding: 0;
   }
 
-  .main-container {
-    margin: 0;
-    column-gap: 0;
-  }
-
   .main-content--background {
     padding: 0 1.5rem;
+    border-radius: 0;
   }
 
   /* playlist search */

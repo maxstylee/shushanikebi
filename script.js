@@ -51,7 +51,7 @@ const playBtn = document.getElementById("play-pause");
 const progressBar = document.getElementById("progress-bar");
 const currentTimeEl = document.getElementById("current-time");
 const durationTimeEl = document.getElementById("duration-time");
-const playBtnMobile = document.getElementById("mobile-play-pause")
+const playBtnMobile = document.getElementById("mobile-play-pause");
 
 // Toggle Play/Pause
 playBtn.addEventListener("click", () => {
@@ -110,7 +110,6 @@ muteBtn.addEventListener("click", () => {
   }
 });
 
-
 // toggle class for like action
 
 let toggleLike = document.getElementById("like-toggle");
@@ -119,3 +118,18 @@ function toggleHeart() {
   toggleLike.classList.toggle("active");
 }
 toggleLike.onclick = toggleHeart;
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const heartImages = document.querySelectorAll(".song-row__liked");
+
+  function toggleHeart() {
+    this.classList.toggle("active");
+  }
+
+  heartImages.forEach(img => {
+    img.addEventListener("click", toggleHeart);
+  });
+});

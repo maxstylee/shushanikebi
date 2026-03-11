@@ -11,6 +11,10 @@ main {
   margin: 1rem 0 0.5rem 0;
   column-gap: 0.5rem;
   overflow-x: hidden;
+  @media (max-width: 1480px) {
+    margin: 0;
+    column-gap: 0;
+  }
 }
 .main-container.active {
   grid-template-columns: 1fr 35.8rem;
@@ -95,10 +99,10 @@ main {
   transition: width 0.3s ease-in-out;
 
   @media (max-width: 1480px) {
-      width: auto;
-      padding: 0 0.7rem;
-      border: none;
-  } 
+    width: auto;
+    padding: 0 0.7rem;
+    border: none;
+  }
 }
 .main-content.active {
   width: calc(100vw - 62rem);
