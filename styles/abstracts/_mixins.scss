@@ -13,47 +13,47 @@
   justify-content: space-between;
 }
 
-@mixin flex-column($gap:null) {
-  display:flex;
-  flex-direction:column;
+@mixin flex-column($gap: null) {
+  display: flex;
+  flex-direction: column;
 
   @if $gap {
-    gap:$gap;
+    gap: $gap;
   }
 }
 
-@mixin flex-align($gap:null){
-  display:flex;
-  align-items:center;
+@mixin flex-align($gap: null) {
+  display: flex;
+  align-items: center;
 
   @if $gap {
-    gap:$gap;
+    gap: $gap;
   }
 }
 
 @mixin btn-reset {
-  border:none;
-  background:none;
-  cursor:pointer;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 @mixin image-cover {
-  width:100%;
-  display:block;
-  object-fit:cover;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-@mixin card($width:170px){
-  width:$width;
-  cursor:pointer;
+@mixin card($width: 170px) {
+  width: $width;
+  cursor: pointer;
 }
 
-@mixin icon-hover{
-  opacity:0.8;
-  transition:opacity .2s ease;
+@mixin icon-hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 
-  &:hover{
-    opacity:1;
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -71,4 +71,24 @@
   &:hover {
     background-color: rgb(58, 58, 58);
   }
+}
+
+@mixin icon-btn {
+  width: 40px;
+  height: 40px;
+  @include flex-center;
+  @include btn-reset;
+  border-radius: v.$radius-sm;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: v.$color-bg-hover;
+  }
+}
+@mixin important-text {
+  font-weight: 700;
+  font-size: v.$text-lg;
+  color: v.$color-text-primary;
+  letter-spacing: 3%;
 }

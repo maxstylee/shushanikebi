@@ -153,16 +153,16 @@
     <main class="main-container">
       <section class="main-content">
 
-         <section class="mobile-version-search-page">
+        <section class="mobile-version-search-page">
           <div class="mobile-version__input-wrapper">
             <input type="text" placeholder="What do you want to play?">
             <img src="../asset/icons/Search.svg" alt="Search" class="mobile-version__search-icon">
           </div>
           <div class="mobile-version__image-search">
-            <img src="../asset/icons/photo-search.svg" alt="Image Search">
+            <img src="../asset/icons/plus.svg" alt="Add">
           </div>
         </section>
-        
+
         <!-- გვანცას კოდი იწყება აქ -->
         <section class="library-page">
 
@@ -171,36 +171,41 @@
             <!-- Left side -->
             <div class="library-page__controls">
 
-              <button class="icon-btn">
+              <button class="library-page__icon-btn btn-hide-mobile">
                 <img src="../asset/icons/menu.svg" alt="Menu">
               </button>
 
-              <button class="icon-btn library-page__view-btn is-active">
+              <button class="library-page__icon-btn library-page__view-btn is-active btn-hide-mobile">
                 <img src="../asset/icons/grid.svg" alt="Grid view">
               </button>
 
               <div class="library-page__sort">
-                <button class="icon-btn">
+                <button class="library-page__icon-btn btn-hide-mobile">
                   <img src="../asset/icons/sort.svg" alt="Sort">
                 </button>
                 <span class="library-page__sort-label">Recent</span>
               </div>
 
               <div class="library-page__group">
-                <button class="icon-btn">
+                <button class="library-page__icon-btn">
                   <img src="../asset/icons/group.svg" alt="Group">
                 </button>
                 <span class="library-page__group-label">Group</span>
               </div>
 
-              <button class="icon-btn">
+              <button class="library-page__icon-btn btn-hide-mobile">
                 <img src="../asset/icons/search.svg" alt="Search">
               </button>
 
+              <button id="mob-version-list-changer"
+                class="library-page__icon-btn library-page__view-btn btn-hide-desktop">
+                <img src="../asset/icons/grid-deactive.svg" alt="Grid view" class="grid-btn">
+                <img src="../asset/icons/menu.svg" alt="Menu" class="menu-btn">
+              </button>
             </div>
 
             <!-- Right side -->
-            <button class="icon-btn library-page__add-btn">
+            <button class="library-page__icon-btn library-page__add-btn">
               <img src="../asset/icons/plus.svg" alt="Add">
             </button>
 
@@ -209,7 +214,7 @@
         </section>
 
 
-        <section class="library-section">
+        <section class="library-section ">
           <div id="library-cards" class="library-section__cards">
             <!-- CARD -->
             <div class="library-card">
@@ -240,6 +245,76 @@
           </div>
         </section>
         <!-- გვანცას კოდი მთავრდება აქ -->
+        <!-- mobile versio library -->
+        <!-- Playlist -->
+        <section class="mobile-version-library-section">
+          <div class="playlist-dropbox__dropdown-wrapper">
+            <div class="playlist-dropbox__dropbox-wrapper">
+              <div class="playlist-dropbox__box-name">
+                <h3>Playlist</h3>
+              </div>
+              <div class="playlist-dropbox__arrow">
+                <img src="../asset/icons/right-arrow.svg" alt="More">
+              </div>
+            </div>
+            <div class="playlist-dropbox__music-list">
+            </div>
+          </div>
+          <!-- Playlists by Spotify -->
+          <div class="playlist-dropbox__dropdown-wrapper">
+            <div class="playlist-dropbox__dropbox-wrapper">
+              <div class="playlist-dropbox__box-name">
+                <h3>Playlists by Spotify</h3>
+              </div>
+              <div class="playlist-dropbox__arrow">
+                <img src="../asset/icons/right-arrow.svg" alt="More">
+              </div>
+            </div>
+            <div class="playlist-dropbox__music-list">
+            </div>
+          </div>
+          <!-- Albums -->
+          <div class="playlist-dropbox__dropdown-wrapper">
+            <div class="playlist-dropbox__dropbox-wrapper">
+              <div class="playlist-dropbox__box-name">
+                <h3>Albums</h3>
+              </div>
+              <div class="playlist-dropbox__arrow">
+                <img src="../asset/icons/right-arrow.svg" alt="More">
+              </div>
+            </div>
+            <div class="playlist-dropbox__music-list">
+            </div>
+          </div>
+          <!-- Folders -->
+          <div class="playlist-dropbox__dropdown-wrapper">
+            <div class="playlist-dropbox__dropbox-wrapper">
+              <div class="playlist-dropbox__box-name">
+                <h3>Folders</h3>
+              </div>
+              <div class="playlist-dropbox__arrow">
+                <img src="../asset/icons/right-arrow.svg" alt="More">
+              </div>
+            </div>
+            <div class="playlist-dropbox__music-list">
+            </div>
+          </div>
+          <!-- Artists -->
+          <div class="playlist-dropbox__dropdown-wrapper">
+            <div class="playlist-dropbox__dropbox-wrapper">
+              <div class="playlist-dropbox__box-name">
+                <h3>Artists</h3>
+              </div>
+              <div class="playlist-dropbox__arrow">
+                <img src="../asset/icons/right-arrow.svg" alt="More">
+              </div>
+            </div>
+            <div class="playlist-dropbox__music-list">
+            </div>
+          </div>
+        </section>
+        <!-- mobile versio library -->
+
 
       </section>
       <section class="friend-list">
@@ -364,7 +439,7 @@
         </div>
       </div>
       <!-- footer mobile version player -->
-      <div class="mobile-footer_music-info">
+      <div class="mobile-footer__music-info">
         <div class="footer-music__image">
           <img src="../asset/images/get-lucky.svg" alt="Get lucky">
         </div>

@@ -119,9 +119,6 @@ function toggleHeart() {
 }
 toggleLike.onclick = toggleHeart;
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const heartImages = document.querySelectorAll(".song-row__liked");
 
@@ -129,7 +126,18 @@ document.addEventListener("DOMContentLoaded", () => {
     this.classList.toggle("active");
   }
 
-  heartImages.forEach(img => {
+  heartImages.forEach((img) => {
     img.addEventListener("click", toggleHeart);
+  });
+});
+
+// Library show-hide music list
+
+const wrappers = document.querySelectorAll(
+  ".playlist-dropbox__dropdown-wrapper",
+);
+wrappers.forEach((wrapper) => {
+  wrapper.addEventListener("click", () => {
+    wrapper.classList.toggle("active");
   });
 });

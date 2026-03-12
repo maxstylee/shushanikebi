@@ -9,18 +9,20 @@
   .mobile-version-search-page {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 1.3rem;
 
     .mobile-version {
       &__input-wrapper {
         position: relative;
+        margin-right: 1.5rem;
+        width: 100%;
 
         input {
           padding: 0.8rem;
           background-color: rgb(32, 32, 32, 0.5);
           border: none;
           border-radius: v.$radius-lg;
-          width: 30rem;
+          width: 100%;
           color: v.$color-text-primary;
         }
         input:focus {
