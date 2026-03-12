@@ -414,3 +414,108 @@ if (mobileMusicList) {
     )
     .join("");
 }
+
+let libraryCardsMobile = document.querySelectorAll(
+  ".playlist-dropbox__music-list",
+);
+
+libraryCardsMobile.forEach((container) => {
+  const htmlContent = AllData.musicDataMix
+    .map(
+      (item) => `
+    <div class="library-card">
+        <div class="library-card__image">
+            <img src="${item.image}" alt="${item.title}">
+            <div class="library-card__pin">
+                <img src="../asset/icons/pinned.svg" alt="Pinned">
+            </div>
+        </div>
+        <div class="library-card__content">
+            <div class="library-card__header">
+                <h3 class="library-card__title">${item.title}</h3>
+                <span class="library-card__count">${item.number}</span>
+            </div>
+            <p class="library-card__description">${item.author}</p>
+        </div>
+    </div>
+  `,
+    )
+    .join("");
+  container.innerHTML += htmlContent;
+});
+
+// library list grid changer
+let toggleList = document.getElementById("mob-version-list-changer");
+let musicList = document.querySelectorAll(".playlist-dropbox__music-list");
+
+musicList.forEach((container) => {
+  generateGridList(container);
+});
+
+function ToggleList() {
+  this.classList.toggle("active");
+
+  musicList.forEach((list) => {
+    list.classList.toggle("mobile-list-position");
+
+    if (list.classList.contains("mobile-list-position")) {
+      generateMobileList(list);
+    } else {
+      generateGridList(list);
+    }
+  });
+}
+
+toggleList.onclick = ToggleList;
+
+// ====== Grid generator ======
+function generateGridList(container) {
+  const htmlContent = AllData.musicDataMix
+    .map(
+      (item) => `
+    <div class="library-card">
+      <div class="library-card__image">
+        <img src="${item.image}" alt="${item.title}">
+        <div class="library-card__pin">
+          <img src="../asset/icons/pinned.svg" alt="Pinned">
+        </div>
+      </div>
+      <div class="library-card__content">
+        <div class="library-card__header">
+          <h3 class="library-card__title">${item.title}</h3>
+          <span class="library-card__count">${item.number}</span>
+        </div>
+        <p class="library-card__description">${item.author}</p>
+      </div>
+    </div>
+    `
+    )
+    .join("");
+
+  container.innerHTML = htmlContent;
+}
+
+// ====== Mobile generator ======
+function generateMobileList(container) {
+  const htmlContent = AllData.musicDataMix
+    .map(
+      (item) => `
+    <div class="music-lists-wrapper">
+      <div class="music-image">
+        <img src="${item.image}" alt="${item.title}">
+      </div>
+      <div class="mark-icon">
+       <img src="../asset/icons/pinned.svg" alt="pinned" class="pin-active">
+        <img src="../asset/icons/Pins.svg" alt="pinned" class="pin-passive">
+      </div>
+      <div class="music-icon">
+        <img src="../asset/icons/music-box.svg" alt="Musics">
+      </div>
+      <p>${item.title}</p>
+    </div>
+    `
+    )
+    .join("");
+
+  container.innerHTML = htmlContent;
+}

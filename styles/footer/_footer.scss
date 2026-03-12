@@ -24,7 +24,7 @@ footer {
       display: none;
     }
 
-    .mobile-footer_music-info {
+    .mobile-footer__music-info {
       display: flex;
     }
     .footer-music {
@@ -236,6 +236,32 @@ footer {
       border: 1px solid rgb(77, 80, 87);
       height: 3.6rem;
       margin-right: 2rem;
+    }
+  }
+}
+.footer-music__image {
+  display: none;
+}
+.mobile-footer {
+  &__music-controls {
+    display: none;
+  }
+}
+.mobile-footer {
+  &__music-info {
+    display: none;
+  }
+}
+
+@media (max-width: 1480px) {
+  .footer-music {
+    &__image {
+      display: flex;
+    }
+  }
+  .mobile-footer {
+    &__music-controls {
+      display: flex;
     }
   }
 }

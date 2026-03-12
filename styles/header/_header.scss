@@ -31,8 +31,10 @@
   li {
     display: flex;
     margin-right: 1.5rem;
-    img {
-      width: 2.5rem;
+    @media (max-width: 1480px) {
+      img {
+        width: 2.5rem;
+      }
     }
   }
   li:hover {
