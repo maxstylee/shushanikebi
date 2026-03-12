@@ -2,24 +2,56 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
-.discover__tab {
-  @include m.primary-button;
-}
-.discover__tab.focuse {
-  background-color: v.$color-text-primary;
-  color: #000;
-  font-weight: 600;
+
+.discover__tabs {
+  padding: 1.2rem 2.5rem;
+
+  @media (max-width: 1480px) {
+    display: flex;
+    gap: 6rem;
+    padding: 0;
+
+    overflow-x: auto;
+    white-space: nowrap;
+
+    background: linear-gradient(#000000 0%, #1e1b1b 100%);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
-.discover__top {
-  padding: 1.2rem 2.5rem;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 1.2rem !important;
-  background-color: rgba(6, 6, 6, 0.8);
-  backdrop-filter: blur(10rem);
+.discover__tab {
+  @include m.primary-button;
+  position: relative;
+  margin-right: 1rem;
+
+  &.focuse {
+    background-color: v.$color-text-primary;
+    color: #000;
+  }
+}
+  @media (max-width: 1480px) {
+  .discover__tab {
+    background: none;
+    border: none;
+    padding: 6rem 0 1rem 0;
+    color: v.$color-text-secondary;
+    position: relative;
+
+    &:hover {
+      background-color: transparent;
+      color: v.$color-text-primary;
+    }
+
+    &.focuse {
+      background-color: transparent;
+      color: v.$color-text-secondary;
+    }
+  }
 }
 
 .discover-page {
@@ -148,4 +180,15 @@
 
 .header-discover {
   background-color: v.$color-bg-secondary;
+}
+
+@media (max-width: 1480px) {
+  .content-wrapper-discover {
+    padding: 0;
+  }
+
+  .discover__top {
+   padding: 0;
+   margin-bottom: 1.3rem;
+  }
 }

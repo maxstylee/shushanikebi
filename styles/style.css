@@ -1369,6 +1369,25 @@ main {
   background-color: rgb(32, 32, 32);
 }
 
+.discover__tabs {
+  padding: 1.2rem 2.5rem;
+}
+@media (max-width: 1480px) {
+  .discover__tabs {
+    display: flex;
+    gap: 6rem;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: linear-gradient(#000000 0%, #1e1b1b 100%);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .discover__tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .discover__tab {
   padding: 0.8rem 1.5rem;
   border-radius: 0.8rem;
@@ -1382,24 +1401,32 @@ main {
 .discover__tab:hover {
   background-color: rgb(58, 58, 58);
 }
-
+.discover__tab {
+  position: relative;
+  margin-right: 1rem;
+}
 .discover__tab.focuse {
   background-color: rgb(224, 224, 224);
   color: #000;
-  font-weight: 600;
 }
 
-.discover__top {
-  padding: 1.2rem 2.5rem;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 1.2rem !important;
-  background-color: rgba(6, 6, 6, 0.8);
-  backdrop-filter: blur(10rem);
+@media (max-width: 1480px) {
+  .discover__tab {
+    background: none;
+    border: none;
+    padding: 6rem 0 1rem 0;
+    color: rgb(137, 137, 137);
+    position: relative;
+  }
+  .discover__tab:hover {
+    background-color: transparent;
+    color: rgb(224, 224, 224);
+  }
+  .discover__tab.focuse {
+    background-color: transparent;
+    color: rgb(137, 137, 137);
+  }
 }
-
 .discover-page {
   background: linear-gradient(#1b2d2a 0%, #1e3833 40%, #603319 100%);
   padding-bottom: 10rem;
@@ -1535,6 +1562,15 @@ main {
   background-color: rgb(17, 17, 17);
 }
 
+@media (max-width: 1480px) {
+  .content-wrapper-discover {
+    padding: 0;
+  }
+  .discover__top {
+    padding: 0;
+    margin-bottom: 1.3rem;
+  }
+}
 .artist-hero {
   position: relative;
   height: 426px;
