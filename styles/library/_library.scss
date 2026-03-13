@@ -162,12 +162,13 @@
       transform: rotate(90deg);
     }
     &__music-list {
-      display: none;
-      position: relative;
-      z-index: 10;
+      display: flex;
       .library-card {
         display: block;
       }
+    }
+    &__music-list.hidden {
+      display: none;
     }
     &__music-list.mobile-list-position {
       flex-direction: column;
@@ -220,7 +221,6 @@
   }
   .music-lists-wrapper {
     position: relative;
-    z-index: 20;
     display: flex;
     align-items: center;
     margin-bottom: 0.7rem;
@@ -239,7 +239,7 @@
       color: v.$color-text-primary;
     }
   }
-  
+
   .mark-icon {
     cursor: pointer;
     .pin-passive {

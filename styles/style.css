@@ -1167,12 +1167,13 @@ main {
     transform: rotate(90deg);
   }
   .playlist-dropbox__music-list {
-    display: none;
-    position: relative;
-    z-index: 10;
+    display: flex;
   }
   .playlist-dropbox__music-list .library-card {
     display: block;
+  }
+  .playlist-dropbox__music-list.hidden {
+    display: none;
   }
   .playlist-dropbox__music-list.mobile-list-position {
     flex-direction: column;
@@ -1219,7 +1220,6 @@ main {
   }
   .music-lists-wrapper {
     position: relative;
-    z-index: 20;
     display: flex;
     align-items: center;
     margin-bottom: 0.7rem;

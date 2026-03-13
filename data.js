@@ -468,7 +468,7 @@ function ToggleList() {
 
 toggleList.onclick = ToggleList;
 
-// ====== Grid generator ======
+// Grid List generator
 function generateGridList(container) {
   const htmlContent = AllData.musicDataMix
     .map(
@@ -488,14 +488,14 @@ function generateGridList(container) {
         <p class="library-card__description">${item.author}</p>
       </div>
     </div>
-    `
+    `,
     )
     .join("");
 
   container.innerHTML = htmlContent;
 }
 
-// ====== Mobile generator ======
+// Mobile list generator
 function generateMobileList(container) {
   const htmlContent = AllData.musicDataMix
     .map(
@@ -504,7 +504,7 @@ function generateMobileList(container) {
       <div class="music-image">
         <img src="${item.image}" alt="${item.title}">
       </div>
-      <div class="mark-icon">
+      <div class="mark-icon active">
        <img src="../asset/icons/pinned.svg" alt="pinned" class="pin-active">
         <img src="../asset/icons/Pins.svg" alt="pinned" class="pin-passive">
       </div>
@@ -513,9 +513,16 @@ function generateMobileList(container) {
       </div>
       <p>${item.title}</p>
     </div>
-    `
+    `,
     )
     .join("");
 
   container.innerHTML = htmlContent;
+  const pinBtns = document.querySelectorAll(".mark-icon");
+
+  pinBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+    });
+  });
 }
