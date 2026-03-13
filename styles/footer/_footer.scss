@@ -59,6 +59,7 @@ footer {
 
         img {
           width: 1.4rem;
+          cursor: pointer;
         }
         .pause-btn {
           display: none;
@@ -179,7 +180,6 @@ footer {
 }
 
 .footer-player-music {
-  padding: 15px 0;
   display: flex;
   justify-content: space-between;
 
@@ -196,6 +196,9 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      p {
+        font-size: v.$text-sm;
+      }
     }
     &__title {
       color: white;

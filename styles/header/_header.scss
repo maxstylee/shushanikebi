@@ -14,7 +14,17 @@
   display: flex;
 }
 .header-section nav ul {
+  .mobile-version-icon {
+    display: none;
+  }
+
   @media (max-width: 1480px) {
+    .mobile-version-icon {
+      display: block;
+    }
+    .desktop-version-icon {
+      display: none;
+    }
     width: 100%;
     padding: 2.5rem 1rem;
     &:last-child {
@@ -27,6 +37,14 @@
 .header-section nav {
   width: 100%;
   justify-content: space-between;
+
+  @media (max-width: 1480px) {
+    background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.85) 0%,
+      #111111 42.62%
+    );
+  }
 
   li {
     display: flex;
@@ -94,3 +112,4 @@
     place-items: center;
   }
 }
+

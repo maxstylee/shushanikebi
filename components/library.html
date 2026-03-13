@@ -102,7 +102,7 @@
           <!-- header navigation mobile version start (gio) -->
           <div class="mobile-version-list">
             <li>
-              <a href="./library.html">
+              <a href="./library.html" class="primary-active-text">
                 <img src="../asset/icons/mobile-library.svg" alt="Library">
                 Library
               </a>
@@ -247,7 +247,7 @@
         <!-- გვანცას კოდი მთავრდება აქ -->
         <!-- mobile versio library -->
         <!-- Playlist -->
-        <section class="mobile-version-library-section">
+         <section class="mobile-version-library-section">
           <div class="playlist-dropbox__dropdown-wrapper">
             <div class="playlist-dropbox__dropbox-wrapper">
               <div class="playlist-dropbox__box-name">
@@ -257,8 +257,8 @@
                 <img src="../asset/icons/right-arrow.svg" alt="More">
               </div>
             </div>
-            <div class="playlist-dropbox__music-list">
-            </div>
+          </div>
+          <div class="playlist-dropbox__music-list hidden">
           </div>
           <!-- Playlists by Spotify -->
           <div class="playlist-dropbox__dropdown-wrapper">
@@ -270,8 +270,8 @@
                 <img src="../asset/icons/right-arrow.svg" alt="More">
               </div>
             </div>
-            <div class="playlist-dropbox__music-list">
-            </div>
+          </div>
+          <div class="playlist-dropbox__music-list hidden">
           </div>
           <!-- Albums -->
           <div class="playlist-dropbox__dropdown-wrapper">
@@ -283,8 +283,8 @@
                 <img src="../asset/icons/right-arrow.svg" alt="More">
               </div>
             </div>
-            <div class="playlist-dropbox__music-list">
-            </div>
+          </div>
+          <div class="playlist-dropbox__music-list hidden">
           </div>
           <!-- Folders -->
           <div class="playlist-dropbox__dropdown-wrapper">
@@ -296,8 +296,8 @@
                 <img src="../asset/icons/right-arrow.svg" alt="More">
               </div>
             </div>
-            <div class="playlist-dropbox__music-list">
-            </div>
+          </div>
+          <div class="playlist-dropbox__music-list hidden">
           </div>
           <!-- Artists -->
           <div class="playlist-dropbox__dropdown-wrapper">
@@ -309,8 +309,8 @@
                 <img src="../asset/icons/right-arrow.svg" alt="More">
               </div>
             </div>
-            <div class="playlist-dropbox__music-list">
-            </div>
+          </div>
+          <div class="playlist-dropbox__music-list hidden">
           </div>
         </section>
         <!-- mobile versio library -->
@@ -414,16 +414,18 @@
         </div>
       </div>
       <div class="footer-player-music">
-        <div class="footer-music__music-info">
-          <div class="footer-music__image">
-            <img src="../asset/images/get-lucky.svg" alt="Get lucky">
+          <a href="./song.html">
+          <div class="footer-music__music-info">
+            <div class="footer-music__image">
+              <img src="../asset/images/get-lucky.svg" alt="Get lucky">
+            </div>
+            <div class="footer-music__info">
+              <p class="footer-music__title">Get Lucky</p>
+              <p class="footer-music__author">Daft Punk</p>
+              <p class="footer-music__album">Random Access Memories</p>
+            </div>
           </div>
-          <div class="footer-music__info">
-            <p class="footer-music__title">Get Lucky</p>
-            <p class="footer-music__author">Daft Punk</p>
-            <p class="footer-music__album">Random Access Memories</p>
-          </div>
-        </div>
+        </a>
         <div class="music-controlers">
           <div id="like-toggle">
             <img src="../asset/icons/like.svg" alt="Like" class="heart-like">
@@ -439,15 +441,17 @@
         </div>
       </div>
       <!-- footer mobile version player -->
-      <div class="mobile-footer__music-info">
-        <div class="footer-music__image">
-          <img src="../asset/images/get-lucky.svg" alt="Get lucky">
+    <a href="./playlist.html">
+        <div class="mobile-footer__music-info">
+          <div class="footer-music__image">
+            <img src="../asset/images/get-lucky.svg" alt="Get lucky">
+          </div>
+          <div class="footer-music__info">
+            <p class="footer-music__title">Get Lucky(feat. Pharrell Williams)</p>
+            <p class="footer-music__author">Daft Punk</p>
+          </div>
         </div>
-        <div class="footer-music__info">
-          <p class="footer-music__title">Get Lucky(feat. Pharrell Williams)</p>
-          <p class="footer-music__author">Daft Punk</p>
-        </div>
-      </div>
+      </a>
 
       <div class="mobile-footer__music-controls">
         <img src="../asset/icons/add.svg" alt="Add">
