@@ -10,10 +10,8 @@
     display: flex;
     gap: 6rem;
     padding: 0;
-
     overflow-x: auto;
     white-space: nowrap;
-
     background: linear-gradient(#000000 0%, #1e1b1b 100%);
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -33,9 +31,8 @@
     background-color: v.$color-text-primary;
     color: #000;
   }
-}
+
   @media (max-width: 1480px) {
-  .discover__tab {
     background: none;
     border: none;
     padding: 6rem 0 1rem 0;
@@ -56,13 +53,21 @@
 
 .discover-page {
   background: linear-gradient(#1b2d2a 0%, #1e3833 40%, #603319 100%);
+  padding-bottom: 10rem;
 
-  padding-bottom: 10rem; // ბოლოში რომ არ გაწყდეს
+  @media (max-width: 1480px) {
+    background: none;
+    padding: 0;
+  }
 }
 
 .discover-hero {
   @include m.flex-align(5rem);
   padding: 6rem 22rem;
+
+  @media (max-width: 1480px) {
+    padding: 0;
+  }
 }
 
 /* LEFT SIDE (BIG COVER) */
@@ -81,6 +86,19 @@
 
 .discover-hero__info {
   @include m.flex-align(1.8rem);
+
+  @media (max-width: 1480px) {
+    position: relative;
+    height: 612px;
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2rem;
+    background-color: v.$color-bg-hover;
+    border-radius: 1rem;
+  }
 }
 
 /* Mini stacked card */
@@ -95,23 +113,49 @@
     width: 100%;
     display: block;
   }
+
+  @media (max-width: 1480px) {
+    position: absolute;
+    left: 2rem;
+    width: 55px;
+
+    img {
+      border-radius: 0.6rem;
+    }
+  }
 }
 
 /* TEXT BLOCK */
 
 .discover-hero__text {
   @include m.flex-column(1.8rem);
+
+  @media (max-width: 1480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-left: 7rem;
+  }
 }
 
 .discover-hero__title {
   font-size: v.$text-xl;
   font-weight: 700;
   color: v.$color-text-primary;
+
+  @media (max-width: 1480px) {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
 }
 
 .discover-hero__meta {
   font-size: v.$text-sm;
   color: v.$color-text-secondary;
+
+  @media (max-width: 1480px) {
+    font-size: 1.3rem;
+  }
 }
 
 .discover-hero__meta .dot {
@@ -126,6 +170,16 @@
 
 .discover-hero__actions {
   @include m.flex-align(2.4rem);
+
+  @media (max-width: 1480px) {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .btn {
@@ -149,11 +203,23 @@
 
 .discover-hero__save-group {
   @include m.flex-align(1rem);
+
+  @media (max-width: 1480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
 }
 
 .discover-hero__likes {
   font-size: v.$text-xs;
   color: v.$color-text-secondary;
+
+   @media (max-width: 1480px) {
+    font-size: 1.2rem;
+    color: v.$color-text-secondary;
+  }
 }
 
 /* TAGS */
@@ -161,6 +227,14 @@
 .discover-hero__tags {
   display: flex;
   gap: 1.2rem;
+
+  @media (max-width: 1480px) {
+    position: absolute;
+    left: 2rem;
+    bottom: 10rem;
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 .discover-hero__tag {
@@ -190,5 +264,9 @@
   .discover__top {
    padding: 0;
    margin-bottom: 1.3rem;
+  }
+
+  .discover-hero__media {
+    display: none;
   }
 }
