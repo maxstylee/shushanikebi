@@ -1,4 +1,4 @@
-# Shushanikebi - Front-End Exam Project
+# SHUSHANIKEBI - Front-End Exam Project
 ### Bound in body, boundless in soul
 
 ## Overview
@@ -91,6 +91,7 @@ project-root/
 ```
 
 ---
+
 
 ## Authors
 
