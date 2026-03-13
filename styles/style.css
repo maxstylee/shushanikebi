@@ -1369,6 +1369,25 @@ main {
   background-color: rgb(32, 32, 32);
 }
 
+.discover__tabs {
+  padding: 1.2rem 2.5rem;
+}
+@media (max-width: 1480px) {
+  .discover__tabs {
+    display: flex;
+    gap: 6rem;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: linear-gradient(#000000 0%, #1e1b1b 100%);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .discover__tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .discover__tab {
   padding: 0.8rem 1.5rem;
   border-radius: 0.8rem;
@@ -1382,27 +1401,41 @@ main {
 .discover__tab:hover {
   background-color: rgb(58, 58, 58);
 }
-
+.discover__tab {
+  position: relative;
+  margin-right: 1rem;
+}
 .discover__tab.focuse {
   background-color: rgb(224, 224, 224);
   color: #000;
-  font-weight: 600;
 }
-
-.discover__top {
-  padding: 1.2rem 2.5rem;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 1.2rem !important;
-  background-color: rgba(6, 6, 6, 0.8);
-  backdrop-filter: blur(10rem);
+@media (max-width: 1480px) {
+  .discover__tab {
+    background: none;
+    border: none;
+    padding: 6rem 0 1rem 0;
+    color: rgb(137, 137, 137);
+    position: relative;
+  }
+  .discover__tab:hover {
+    background-color: transparent;
+    color: rgb(224, 224, 224);
+  }
+  .discover__tab.focuse {
+    background-color: transparent;
+    color: rgb(137, 137, 137);
+  }
 }
 
 .discover-page {
   background: linear-gradient(#1b2d2a 0%, #1e3833 40%, #603319 100%);
   padding-bottom: 10rem;
+}
+@media (max-width: 1480px) {
+  .discover-page {
+    background: none;
+    padding: 0;
+  }
 }
 
 .discover-hero {
@@ -1410,6 +1443,11 @@ main {
   align-items: center;
   gap: 5rem;
   padding: 6rem 22rem;
+}
+@media (max-width: 1480px) {
+  .discover-hero {
+    padding: 0;
+  }
 }
 
 /* LEFT SIDE (BIG COVER) */
@@ -1429,6 +1467,20 @@ main {
   align-items: center;
   gap: 1.8rem;
 }
+@media (max-width: 1480px) {
+  .discover-hero__info {
+    position: relative;
+    height: 612px;
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(32, 32, 32);
+    border-radius: 1rem;
+  }
+}
 
 /* Mini stacked card */
 .discover-hero__mini-cover {
@@ -1441,6 +1493,16 @@ main {
   width: 100%;
   display: block;
 }
+@media (max-width: 1480px) {
+  .discover-hero__mini-cover {
+    position: absolute;
+    left: 2rem;
+    width: 55px;
+  }
+  .discover-hero__mini-cover img {
+    border-radius: 0.6rem;
+  }
+}
 
 /* TEXT BLOCK */
 .discover-hero__text {
@@ -1448,16 +1510,35 @@ main {
   flex-direction: column;
   gap: 1.8rem;
 }
+@media (max-width: 1480px) {
+  .discover-hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-left: 7rem;
+  }
+}
 
 .discover-hero__title {
   font-size: 3rem;
   font-weight: 700;
   color: rgb(224, 224, 224);
 }
+@media (max-width: 1480px) {
+  .discover-hero__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
 
 .discover-hero__meta {
   font-size: 1.4rem;
   color: rgb(137, 137, 137);
+}
+@media (max-width: 1480px) {
+  .discover-hero__meta {
+    font-size: 1.3rem;
+  }
 }
 
 .discover-hero__meta .dot {
@@ -1473,6 +1554,17 @@ main {
   display: flex;
   align-items: center;
   gap: 2.4rem;
+}
+@media (max-width: 1480px) {
+  .discover-hero__actions {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .btn {
@@ -1505,16 +1597,39 @@ main {
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 1480px) {
+  .discover-hero__save-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
 
 .discover-hero__likes {
   font-size: 1.2rem;
   color: rgb(137, 137, 137);
+}
+@media (max-width: 1480px) {
+  .discover-hero__likes {
+    font-size: 1.2rem;
+    color: rgb(137, 137, 137);
+  }
 }
 
 /* TAGS */
 .discover-hero__tags {
   display: flex;
   gap: 1.2rem;
+}
+@media (max-width: 1480px) {
+  .discover-hero__tags {
+    position: absolute;
+    left: 2rem;
+    bottom: 10rem;
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 .discover-hero__tag {
@@ -1535,6 +1650,18 @@ main {
   background-color: rgb(17, 17, 17);
 }
 
+@media (max-width: 1480px) {
+  .content-wrapper-discover {
+    padding: 0;
+  }
+  .discover__top {
+    padding: 0;
+    margin-bottom: 1.3rem;
+  }
+  .discover-hero__media {
+    display: none;
+  }
+}
 .artist-hero {
   position: relative;
   height: 426px;
