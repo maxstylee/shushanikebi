@@ -81,7 +81,7 @@ This project is a front-end web application developed as an exam assignment. It 
 project-root/
 │
 ├── assets/        # Images, Icons and Music
-├── components/    # Reusable HTML sections
+├── layouts/       # Reusable HTML sections
 ├── styles/        # SCSS & CSS files
 │
 ├── data.js        # JavaScript data (if applicable)
