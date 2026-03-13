@@ -83,7 +83,7 @@
     <header class="header-section">
       <!-- this is menu navigation on top header -->
       <nav>
-        <ul>
+        <ul id="padding-fix">
           <li>
             <a href="./home.html">
               <img src="../asset/icons/Home.svg" alt="Home" />
@@ -92,7 +92,8 @@
           </li>
           <li class="header-discover">
             <a href="./discover.html" class="primary-active-text">
-              <img src="../asset/icons/Discover-active.svg" alt="Discover" />
+              <img src="../asset/icons/Discover-active.svg" alt="Discover" class="desktop-version-icon" />
+              <img src="../asset/icons/discover-normal.svg" alt="Discover" class="mobile-version-icon" />
               Discover
             </a>
           </li>
@@ -118,37 +119,37 @@
             </li>
           </div>
           <!-- header navigation mobile version finish -->
-        </ul>
+          </ul>
 
-        <!-- header navigation on left -->
-        <ul>
-          <li>
-            <a href="">
-              <img src="../asset/icons/Notification.svg" alt="Notification" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../asset/icons/block.svg" alt="block" />
-            </a>
-          </li>
-          <li id="friends">
-            <a href="#">
-              <img src="../asset/icons/Groups.svg" alt="Groups" />
-              <img src="../asset/icons/Groups-active.svg" alt="Friend List" class="friend-list-active" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../asset/icons/Settings.svg" alt="Settings" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="../asset/icons/Sprite.svg" alt="Sprite" />
-            </a>
-          </li>
-        </ul>
+          <!-- header navigation on left -->
+          <ul>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Notification.svg" alt="Notification" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/block.svg" alt="block" />
+              </a>
+            </li>
+            <li id="friends">
+              <a href="#">
+                <img src="../asset/icons/Groups.svg" alt="Groups" />
+                <img src="../asset/icons/Groups-active.svg" alt="Friend List" class="friend-list-active" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Settings.svg" alt="Settings" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../asset/icons/Sprite.svg" alt="Sprite" />
+              </a>
+            </li>
+          </ul>
       </nav>
     </header>
 
@@ -373,8 +374,9 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer-player">
+    <footer class="footer-wrapper">
+      <!-- this element will dissapear in mobile version -->
+      <div class="footer-player player-mobile-version-hide">
         <div class="spotify-player">
           <div class="controls">
             <button id="play-pause" class="control-btn">
@@ -402,17 +404,23 @@
           </div>
         </div>
       </div>
+      <!-- this element will dissapear in mobile version -->
+
+
       <div class="footer-player-music">
-        <div class="footer-music__music-info">
-          <div class="footer-music__image">
-            <img src="../asset/images/get-lucky.svg" alt="Get lucky">
-          </div>
-          <div class="footer-music__info">
-            <p class="footer-music__title">Get Lucky</p>
-            <p class="footer-music__author">Daft Punk</p>
-            <p class="footer-music__album">Random Access Memories</p>
-          </div>
-        </div>
+        <a href="./song.html">
+          <a href="./playlist.html">
+            <div class="mobile-footer__music-info">
+              <div class="footer-music__image">
+                <img src="../asset/images/get-lucky.svg" alt="Get lucky">
+              </div>
+              <div class="footer-music__info">
+                <p class="footer-music__title">Get Lucky(feat. Pharrell Williams)</p>
+                <p class="footer-music__author">Daft Punk</p>
+              </div>
+            </div>
+          </a>
+        </a>
         <div class="music-controlers">
           <div id="like-toggle">
             <img src="../asset/icons/like.svg" alt="Like" class="heart-like">

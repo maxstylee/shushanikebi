@@ -40,6 +40,9 @@
   background-color: rgba(6, 6, 6, 0.8);
   backdrop-filter: blur(10rem);
   // border-radius: v.$radius-lg v.$radius-lg 0 0 ;
+  @media (max-width: 1480px) {
+    top: 0;
+  }
 }
 
 .home__tabs {

@@ -139,5 +139,8 @@ const wrappers = document.querySelectorAll(
 wrappers.forEach((wrapper) => {
   wrapper.addEventListener("click", () => {
     wrapper.classList.toggle("active");
+    let listWrapper = wrapper.nextElementSibling;
+    listWrapper.classList.toggle("hidden");
   });
 });
+

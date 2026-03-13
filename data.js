@@ -313,7 +313,7 @@ let trackListdata = document.getElementById("traack-list-generator");
 if (trackListdata) {
   trackListdata.innerHTML += AllData.likedCardsData.map(
     (item, index) => `
-               <li class="track-item">
+                 <li class="track-item">
                   <span class="track-item__index">${index + 1}</span>
 
                   <div class="track-item__info">
@@ -326,10 +326,11 @@ if (trackListdata) {
 
                   <span class="track-item__duration">${item.duration}</span>
 
-                  <button class="track-item__like">
-                    <img src="../asset/icons/like.svg" alt="Like" />
+                  <button class="track-item__like song-row__liked">
+                    <img src="../asset/icons/like.svg" alt="Liked" class="like-desktop-version" />
+                    <img src="../asset/icons/like-active.svg" alt="Liked" class="like-active-desktop-version" />
                   </button>
-                </li>    
+                </li>   
     `,
   );
 }
@@ -338,7 +339,7 @@ let popularListdata = document.getElementById("popular-cardlist-generator");
 if (popularListdata) {
   popularListdata.innerHTML += AllData.likedCardsData.map(
     (item, index) => `
-               <li class="track-item">
+                 <li class="track-item">
                   <span class="track-item__index">${index + 1}</span>
 
                   <div class="track-item__info">
@@ -351,10 +352,11 @@ if (popularListdata) {
 
                   <span class="track-item__duration">${item.duration}</span>
 
-                  <button class="track-item__like">
-                    <img src="../asset/icons/like.svg" alt="Like" />
+                  <button class="track-item__like song-row__liked">
+                    <img src="../asset/icons/like.svg" alt="Liked" class="like-desktop-version" />
+                    <img src="../asset/icons/like-active.svg" alt="Liked" class="like-active-desktop-version" />
                   </button>
-                </li>    
+                </li>   
     `,
   );
 }
@@ -488,7 +490,7 @@ function generateGridList(container) {
         <p class="library-card__description">${item.author}</p>
       </div>
     </div>
-    `
+    `,
     )
     .join("");
 
@@ -513,9 +515,16 @@ function generateMobileList(container) {
       </div>
       <p>${item.title}</p>
     </div>
-    `
+    `,
     )
     .join("");
 
   container.innerHTML = htmlContent;
+  const pinBtns = document.querySelectorAll(".mark-icon");
+
+  pinBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+    });
+  });
 }

@@ -2,7 +2,24 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
+#padding-fix {
+  @media (max-width: 1480px) {
+    padding: 2.5rem 1.8rem;
+  }
+}
 
+.discover__top {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(6, 6, 6, 0.8);
+  backdrop-filter: blur(10rem);
+  z-index: 10;
+  @media (max-width: 1480px) {
+    padding: 0;
+    margin-bottom: 1.3rem;
+  }
+}
 .discover__tabs {
   padding: 1.2rem 2.5rem;
 
@@ -216,7 +233,7 @@
   font-size: v.$text-xs;
   color: v.$color-text-secondary;
 
-   @media (max-width: 1480px) {
+  @media (max-width: 1480px) {
     font-size: 1.2rem;
     color: v.$color-text-secondary;
   }
@@ -261,12 +278,14 @@
     padding: 0;
   }
 
-  .discover__top {
-   padding: 0;
-   margin-bottom: 1.3rem;
-  }
-
   .discover-hero__media {
+    display: none;
+  }
+  .footer-wrapper {
+    visibility: hidden;
+    padding: 0;
+  }
+  .player-mobile-version-hide {
     display: none;
   }
 }
