@@ -467,8 +467,9 @@ function ToggleList() {
     }
   });
 }
-
-toggleList.onclick = ToggleList;
+if (toggleList) {
+  toggleList.onclick = ToggleList;
+}
 
 // ====== Grid generator ======
 function generateGridList(container) {
