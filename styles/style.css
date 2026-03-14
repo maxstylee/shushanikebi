@@ -484,10 +484,8 @@ main {
 
 .friend-list {
   width: 33rem;
-  background-color: rgb(224, 224, 224);
   font-size: 3rem;
   border: 0.1rem solid rgb(32, 32, 32);
-  background-color: rgb(17, 17, 17);
   border-radius: 1rem;
   padding: 2.1rem;
 }
@@ -1195,6 +1193,7 @@ main {
     display: flex;
     position: relative;
     z-index: 10;
+    overflow: scroll;
   }
   .playlist-dropbox__music-list .library-card {
     display: block;
@@ -2755,7 +2754,7 @@ main {
 .names-list {
   display: flex;
   gap: 50px;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 /* Created by */
@@ -2780,7 +2779,7 @@ main {
 /* Gvantsa */
 .names:nth-of-type(1) h2 {
   animation-delay: 0.5s;
-  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  background: linear-gradient(90deg, #ff4798, #ce47ff);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -2795,7 +2794,7 @@ main {
 /* Giorgi */
 .names:nth-of-type(3) h2 {
   animation-delay: 1.5s;
-  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  background: linear-gradient(90deg, #4e4fce, #4e4fce);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -2820,14 +2819,23 @@ main {
     text-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   }
 }
+.profile-img-wrapper {
+  position: relative;
+}
+
 /* start button */
 .start-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 4rem;
   opacity: 0;
   animation: showBtn 0.7s ease forwards;
-  animation-delay: 2.3s;
+  animation-delay: 4.9s;
   font-size: 18px;
   padding: 14px 32px;
   border-radius: 12px;
+  border: none;
+  color: white;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
   cursor: pointer;
@@ -2849,12 +2857,187 @@ main {
 @keyframes showBtn {
   from {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translatex(25px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translatex(-50%);
   }
+}
+.gvantsa-img {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 110rem;
+  opacity: 0;
+  transform: translateY(200px) scale(0.3);
+  animation: gvantsaAppear 1s ease forwards;
+  animation-delay: 2.6s;
+}
+
+@keyframes gvantsaAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.shushanikebi {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .profile-page-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .profile-header__setting-list {
+    margin-bottom: 2rem;
+  }
+}
+.profile-header__profile-content-wrapper {
+  max-width: 97rem;
+  width: 100%;
+}
+.profile-header .profile-image-mobile-version img {
+  width: 0.9rem;
+}
+.profile-header__profile-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.profile-header__profile-wrapper {
+  position: relative;
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.9rem;
+  margin: 0 0.7rem 1.5rem 0.7em;
+  background: linear-gradient(180.48deg, rgba(138, 53, 74, 0.47) -22.33%, rgba(17, 17, 17, 0.47) 89.29%);
+  border-radius: 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.profile-header__profile-info h3 {
+  color: rgb(224, 224, 224);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.profile-header__profile-info .followers-count {
+  margin-bottom: 1rem;
+}
+.profile-header__profile-info p {
+  color: rgb(137, 137, 137);
+  font-size: 1.4rem;
+}
+.profile-header__profile-info p strong {
+  color: rgb(224, 224, 224);
+  margin-right: 0.5rem;
+}
+.profile-header__profile-info p span {
+  font-size: 0.5rem;
+  margin: 0 1rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+.profile-header__profile-actions {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
+  top: 1.3rem;
+  right: 1.9rem;
+}
+.profile-header__premium-wrapper {
+  padding: 1.9rem;
+  background: linear-gradient(180deg, #10301b 0%, #111111 100%);
+  border-radius: 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0.7rem 1.5rem 0.7rem;
+}
+.profile-header__premium-icon {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(224, 224, 224);
+}
+.profile-header__premium-status {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: rgb(30, 215, 96);
+}
+.profile-header__premium-price {
+  font-size: 1.4rem;
+  color: rgb(224, 224, 224);
+}
+.profile-header__settings-wrapper {
+  margin: 0 0.7rem 1.5rem 0.7rem;
+}
+.profile-header__setting-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgb(32, 32, 32);
+}
+.profile-header__setting-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.profile-header__setting-text p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(224, 224, 224);
+}
+.profile-header__list-padding-reset {
+  padding: 0 1rem 0.5rem 0;
+}
+
+.mobile-version__mobile-version-wrapper {
+  position: relative;
+  padding: 4.7rem 1.9rem 2rem 1.9rem;
+  height: 16.5rem;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.2rem;
+  margin: 0 0.7rem 1.5rem 0.7rem;
+}
+.mobile-version__friendlist-wrapper {
+  margin: 0 0.7rem;
+  position: relative;
+  overflow: scroll;
+  height: 11.5rem;
+}
+.mobile-version__mobile-version-wrapper::before {
+  content: "Friends";
+  position: absolute;
+  color: rgb(224, 224, 224);
+  top: 1.3rem;
+  left: 1.9rem;
+  font-size: 1.2rem;
+}
+.mobile-version__add-friend-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1.9rem;
+  top: 1.3rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+.mobile-version__add-friend-icon:hover {
+  background-color: rgba(137, 137, 137, 0.15);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -165,6 +165,7 @@
       display: flex;
       position: relative;
       z-index: 10;
+      overflow: scroll;
       .library-card {
         display: block;
       }

@@ -3,13 +3,15 @@ const closeIcon = document.getElementById("close-btn");
 const friendList = document.querySelector(".friend-list");
 const mainCont = document.querySelector(".main-content");
 
-function toggleFriends() {
-  friendList.classList.toggle("active");
-  mainCont.classList.toggle("active");
-  friendsIcon.classList.toggle("active");
+if (friendList) {
+  function toggleFriends() {
+    friendList.classList.toggle("active");
+    mainCont.classList.toggle("active");
+    friendsIcon.classList.toggle("active");
+  }
+  friendsIcon.onclick = toggleFriends;
+  closeIcon.onclick = toggleFriends;
 }
-friendsIcon.onclick = toggleFriends;
-closeIcon.onclick = toggleFriends;
 // friend list toggle button logic
 
 // category choose class change logic
@@ -59,10 +61,12 @@ playBtn.addEventListener("click", () => {
   playBtn.classList.toggle("active");
 });
 // Toggle Play/Pause for mobile
-playBtnMobile.addEventListener("click", () => {
-  audio.paused ? audio.play() : audio.pause();
-  playBtnMobile.classList.toggle("active");
-});
+if (playBtnMobile) {
+  playBtnMobile.addEventListener("click", () => {
+    audio.paused ? audio.play() : audio.pause();
+    playBtnMobile.classList.toggle("active");
+  });
+}
 
 // function to format seconds into M:SS
 const formatTime = (seconds) => {
@@ -143,4 +147,3 @@ wrappers.forEach((wrapper) => {
     listWrapper.classList.toggle("hidden");
   });
 });
-
